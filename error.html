@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cảnh báo bảo mật</title>
+  <meta name="robots" content="noindex,nofollow" />
+  <style>
+    :root{
+      --bg:#0b0b0f;
+      --card:#14141b;
+      --text:#eaeaf0;
+      --muted:#a6a6b0;
+      --accent:#ff4d4d;
+      --ok:#29c76f;
+      --border:#252532;
+      --radius:18px;
+    }
+    *{box-sizing:border-box}
+    html,body{
+      height:100%; margin:0;
+      background:radial-gradient(1000px 600px at 10% -10%, #1b1b25 0%, transparent 60%) var(--bg);
+      color:var(--text); font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+    }
+    .wrap{
+      min-height:100%;
+      display:grid;
+      place-items:center;
+      padding:24px;
+    }
+    .card{
+      width:min(720px,96vw);
+      background:var(--card);
+      border:1px solid var(--border);
+      border-radius:var(--radius);
+      padding:28px 28px 22px;
+      box-shadow:0 20px 60px rgba(0,0,0,.45), inset 0 0 0 1px rgba(255,255,255,.02);
+      animation:pop .35s ease-out both;
+    }
+    @keyframes pop{
+      from{opacity:0; transform:translateY(8px) scale(.98)}
+      to{opacity:1; transform:translateY(0) scale(1)}
+    }
+    .row{
+      display:flex; gap:16px; align-items:center;
+    }
+    .icon{
+      flex:0 0 64px; height:64px;
+      display:grid; place-items:center;
+      border-radius:16px;
+      background:linear-gradient(135deg, #2a2a36 0%, #1c1c26 100%);
+      border:1px solid var(--border);
+      font-size:30px;
+    }
+    h1{
+      margin:0;
+      font-size:22px; letter-spacing:.2px;
+    }
+    .subtitle{
+      margin:.25rem 0 0; color:var(--muted); font-size:14px;
+    }
+    .note{
+      margin:18px 0 0; padding:14px 16px;
+      background:#181822; border:1px dashed #2b2b3a;
+      border-radius:14px; color:#dcdcef; line-height:1.55; font-size:15px;
+    }
+    .steps{margin:18px 0 0; padding-left:18px; line-height:1.7}
+    .steps li{margin:.2rem 0}
+    .kbd{
+      display:inline-block; min-width:1.8ch; padding:.15rem .45rem;
+      border:1px solid #3a3a4a; border-bottom-width:2px;
+      border-radius:6px; background:#10101a; color:#fff; font-size:.86em;
+    }
+    .actions{
+      display:flex; flex-wrap:wrap; gap:10px;
+      margin-top:20px;
+    }
+    .btn{
+      appearance:none; border:1px solid var(--border);
+      background:#1a1a24; color:var(--text);
+      padding:10px 14px; border-radius:12px;
+      font-weight:600; letter-spacing:.2px; cursor:pointer;
+      transition:.15s transform ease, .15s background ease;
+    }
+    .btn:hover{transform:translateY(-1px)}
+    .btn.primary{background:#202031}
+    .btn.safe{border-color:#25593b; background:#143223}
+    .footer{
+      margin-top:18px; color:var(--muted); font-size:13px;
+      display:flex; justify-content:space-between; gap:8px; flex-wrap:wrap;
+      border-top:1px solid var(--border); padding-top:14px;
+    }
+    a{color:#7aa6ff; text-decoration:none}
+    a:hover{text-decoration:underline}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <main class="card" role="alert" aria-live="polite">
+      <div class="row">
+        <div class="icon" aria-hidden="true">⚠️</div>
+        <div>
+          <h1>Cảnh báo bảo mật</h1>
+          <p class="subtitle">Trang web đã tạm khóa do phát hiện thao tác không được phép.</p>
+        </div>
+      </div>
+
+      <p class="note">
+        Vì lý do bảo mật, nếu bạn phóng to/thu nhỏ (<strong>zoom</strong>) trang hoặc mở công cụ dành cho nhà phát triển (<strong>F12 / DevTools</strong>),
+        trang web sẽ bị khóa tạm thời và bạn sẽ không thể tiếp tục sử dụng.
+      </p>
+
+      <ol class="steps">
+        <li>Đặt lại mức zoom về mặc định:
+          <span class="kbd">Ctrl</span> + <span class="kbd">0</span>
+          (trên macOS: <span class="kbd">⌘</span> + <span class="kbd">0</span>).</li>
+        <li>Đóng DevTools (F12) hoặc cửa sổ dành cho nhà phát triển nếu đang mở.</li>
+        <li>Tải lại trang để tiếp tục sử dụng.</li>
+      </ol>
+
+      <div class="actions">
+        <button class="btn primary" onclick="location.reload()">🔄 Tải lại trang</button>
+        <button class="btn" onclick="history.back()">⬅️ Quay lại trang trước</button>
+        <button class="btn safe" onclick="resetZoomHint()">🛠️ Hướng dẫn đặt lại zoom</button>
+      </div>
+
+      <div class="footer">
+        <span>Mã lỗi: <strong>SEC-BLOCK-ZOOM/F12</strong></span>
+        <span>Gặp vấn đề? Liên hệ quản trị viên.</span>
+      </div>
+    </main>
+  </div>
+
+  <script>
+    function resetZoomHint(){
+      alert(
+`Cách đặt lại mức zoom trình duyệt:
+• Windows/Linux: Ctrl + 0 (hoặc Ctrl + cuộn chuột để 100%)
+• macOS: ⌘ + 0
+• Trên di động: dùng 2 ngón tay thu/phóng về mức mặc định rồi tải lại trang.`
+      );
+    }
+  </script>
+</body>
+</html>

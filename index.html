@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Phim N+ | Phước Phê Phim</title>
+  <link rel="icon" type="image/png" href="logo.png">
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      background: #000;
+    }
+    #l {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: #000;
+      color: #fff;
+      font-family: sans-serif;
+      z-index: 9999;
+      transition: opacity 0.5s ease;
+    }
+    #l h1 {
+      font-size: 80px;
+      margin: 0 0 20px;
+      color: #fff;
+      animation: zoomInOut 2s infinite;
+    }
+    @keyframes zoomInOut {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.3); }
+    }
+    #l p {
+      font-size: 18px;
+      margin: 5px 0 15px;
+      color: #fff;
+    }
+    .spinner {
+      border: 6px solid rgba(255,255,255,0.2);
+      border-top: 6px solid #fff;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      animation: spin 1s linear infinite;
+    }
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    #f {
+      width: 100%;
+      height: 100%;
+      border: none;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div id="l">
+    <h1>N</h1>
+    <p>Đang tải và kiểm tra bảo mật...</p>
+    <div class="spinner"></div>
+  </div>
+  <iframe id="f"></iframe>
+
+  <script>
+  function isMobile(){
+    return /Android|iPhone|iPad|iPod|Opera Mini|IEMobile|WPDesktop/i.test(navigator.userAgent);
+  }
+
+  (function(){
+    const redirectUrl = atob("ZXJyb3IuaHRtbA=="); // error.html
+    const t = 160;
+
+    function redirect(){ window.location.href = redirectUrl; }
+
+    if(!isMobile()){
+      const checkDevtools = ()=>{
+        if(window.outerWidth - window.innerWidth > t 
+           || window.outerHeight - window.innerHeight > t 
+           || (window.console && console.log.toString().includes("[native code]")===false)){
+          redirect();
+        }
+      };
+
+      document.addEventListener("contextmenu",(e)=>{e.preventDefault();redirect()});
+      document.addEventListener("keydown",(e)=>{
+        if((e.ctrlKey&&(e.key==="u"||e.key==="U")) || e.key==="F12" 
+           || (e.ctrlKey&&e.shiftKey&&(e.key==="i"||e.key==="I"))){
+          e.preventDefault();redirect();
+        }
+      });
+
+      setInterval(checkDevtools, 1000);
+      Object.defineProperty(window,"console",{value:{},writable:false});
+      document.addEventListener("DOMContentLoaded",()=>{ setTimeout(checkDevtools,100) });
+    }
+  })();
+
+  (function(){
+    const pages = {
+      home: atob("cGh1b2NwaGVwaGltLmh0bWw="), 
+      watch: atob("d2F0Y2guaHRtbA==")         
+    };
+    const f = document.getElementById("f");
+    const l = document.getElementById("l");
+
+    function showLoadingThenLoad(url){
+      l.style.display = "flex";
+      l.style.opacity = "1";
+      f.style.display = "none";
+      f.style.opacity = "0";
+      setTimeout(()=>{
+        l.style.opacity = "0";
+        setTimeout(()=>{
+          l.style.display = "none";
+          f.style.display = "block";
+          f.style.opacity = "1";
+          f.src = url;
+        }, 500);
+      }, 2000);
+    }
+
+    const query = window.location.search;
+    let target = pages.home;
+    if(query.includes("id=")) {
+      target = pages.watch + query;
+    }
+
+    showLoadingThenLoad(target);
+
+    
+    f.addEventListener("load", ()=>{
+      try {
+        const iframeUrl = new URL(f.contentWindow.location.href);
+        const newQuery = iframeUrl.search;
+        history.replaceState({}, "", "index.html" + newQuery);
+      } catch(e) {
+       
+      }
+    });
+
+   
+    window.addEventListener("message", (e)=>{
+      if(typeof e.data === "string" && e.data.startsWith("updateUrl:")){
+        const newQuery = e.data.replace("updateUrl:", "");
+        history.replaceState({}, "", "index.html" + newQuery);
+      }
+    });
+
+  })();
+  </script>
+</body>
+</html>

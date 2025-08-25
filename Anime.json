@@ -1,0 +1,129 @@
+[
+    {
+    "id": "movie_rk3obowxo",
+    "TieuDe": "Mononoke Phim Điện Ảnh - Chương II: Tro Tàn Cuồng Nộ",
+    "anh": "img_anime/mononoke.jpg",
+    "moTa": "",
+    "loai": "movie",
+    "Dang": ".m3u8",
+    "boloc": [
+      "Phim Chiếu Rạp",
+      "Phim Hoạt Hình"
+    ],
+    "ThuyetMinh": [],
+    "LongTieng": [],
+    "tap": [
+      {
+        "tapSo": null,
+        "video": "https://s6.kkphimplayer6.com/20250814/FXuTfA2x/index.m3u8",
+        "subtitle": "https://static.nutscdn.com/vcc/1/9916fe209a16195948dca2a4e1a775e5/vie-31.vtt",
+        "GioiThieuBatDau": "",
+        "GioiThieuKetThuc": ""
+      }
+    ]
+  },
+    {
+    "id": "movie_81519a65",
+    "TieuDe": "Nhím Sonic 3",
+    "anh": "img_anime/sonicjpg.jpg",
+    "loai": "movie",
+    "Dang": ".m3u8",
+    "boloc": [
+      "Phim Chiếu Rạp",
+      "Phim Hoạt Hình"
+    ],
+    "tap": [
+      {
+        "tapSo": null,
+        "video": "https://dash.motchills.net/raw/81519a6510ef8199194be71e48021c2b/index.m3u8",
+        "GioiThieuBatDau": "00:00",
+        "GioiThieuKetThuc": "00:50",
+        "subtitle": ""
+      }
+    ],
+    "moTa": "",
+    "ThuyetMinh": [],
+    "LongTieng": []
+  },
+  {
+    "id": "movie_d8x6zdspw",
+    "TieuDe": "Khách Sạn Huyền Bí(1,2,3)",
+    "anh": "img_anime/khachanhuyenbi.jpg",
+    "moTa": "",
+    "loai": "series",
+    "Dang": ".m3u8",
+    "boloc": [
+      "Phim Hoạt Hình"
+    ],
+    "ThuyetMinh": [],
+    "LongTieng": [],
+    "tap": [
+      {
+        "tapSo": 1,
+        "video": "https://s5.phim1280.tv/20250413/YIZ8cpp5/index.m3u8",
+        "subtitle": "",
+        "GioiThieuBatDau": "",
+        "GioiThieuKetThuc": ""
+      },
+      {
+        "tapSo": 2,
+        "video": "https://s5.phim1280.tv/20250413/6RVcZciq/index.m3u8",
+        "subtitle": "",
+        "GioiThieuBatDau": "",
+        "GioiThieuKetThuc": ""
+      },
+      {
+        "tapSo": 3,
+        "video": "https://s5.phim1280.tv/20250413/3HwD40va/index.m3u8",
+        "subtitle": "",
+        "GioiThieuBatDau": "",
+        "GioiThieuKetThuc": ""
+      }
+    ]
+  },
+  {
+    "id": "movie_rx96qxqqd",
+    "TieuDe": "Vút Bay",
+    "anh": "img_anime/vutbay.jpg",
+    "moTa": "",
+    "loai": "movie",
+    "Dang": ".m3u8",
+    "boloc": [
+      "Phim Hoạt Hình",
+      "Thuyết Minh"
+    ],
+    "ThuyetMinh": [],
+    "LongTieng": [],
+    "tap": [
+      {
+        "tapSo": null,
+        "video": "https://s5.phim1280.tv/20250327/XtOfXXWh/index.m3u8",
+        "subtitle": "",
+        "GioiThieuBatDau": "",
+        "GioiThieuKetThuc": ""
+      }
+    ]
+  },
+
+  {
+    "id": "movie_d3b8e1hwz",
+    "TieuDe": "Công Chúa Sói Mononoke",
+    "anh": "img_anime/congchuasoiMononoke.jpg",
+    "moTa": "",
+    "loai": "movie",
+    "Dang": ".m3u8",
+    "boloc": [
+      "Phim Chiếu Rạp",
+      "Phim Hoạt Hình"
+    ],
+    "tap": [
+      {
+        "tapSo": null,
+        "video": "https://s1.phim1280.tv/20231018/lbbBusI0/index.m3u8",
+        "subtitle": "https://static.nutscdn.com/vcc/1/4ce935cd3912dbb15aa6e101a1db97cf/vie-29.vtt",
+        "GioiThieuBatDau": "00:00",
+        "GioiThieuKetThuc": "00:00"
+      }
+    ]
+  }
+]

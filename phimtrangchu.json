@@ -1,0 +1,115 @@
+[
+    {
+    "id": "movie_kngigy0yj",
+    "TieuDe": "Superman",
+    "anh": "img/superman.jpg",
+    "moTa": "",
+    "loai": "movie",
+    "Dang": ".m3u8",
+    "boloc": [
+      "Phim Chiếu Rạp"
+    ],
+    "ThuyetMinh": [],
+    "LongTieng": [],
+    "tap": [
+      {
+        "tapSo": null,
+        "video": "https://s6.kkphimplayer6.com/20250718/SGRrkMdW/index.m3u8",
+        "subtitle": "https://static.nutscdn.com/vcc/1/56eed252b8421d5fd495d65e3fe4993b/1755274642.vtt",
+        "GioiThieuBatDau": "",
+        "GioiThieuKetThuc": ""
+      }
+    ]
+  },
+  {
+    "id": "movie_2e4eunv0h",
+    "TieuDe": "Thế Giới Khủng Long: Tái Sinh",
+    "anh": "img/thegioikhunglong.jpg",
+    "moTa": "",
+    "loai": "movie",
+    "Dang": ".m3u8",
+    "boloc": [
+      "Phim Chiếu Rạp"
+    ],
+    "ThuyetMinh": [],
+    "LongTieng": [],
+    "tap": [
+      {
+        "tapSo": null,
+        "video": "https://s6.kkphimplayer6.com/20250717/e4h69LMu/index.m3u8",
+        "subtitle": "https://static.nutscdn.com/vcc/1/ada9b40f7b3f63ad2db6aae82140c54c/vie-2.vtt",
+        "GioiThieuBatDau": "",
+        "GioiThieuKetThuc": ""
+      }
+    ]
+  },
+
+  {
+    "id": "movie_94rcnc9as",
+    "TieuDe": "Ga Tử Thần ",
+    "anh": "img/gatuthan.jpg",
+    "moTa": "",
+    "loai": "movie",
+    "Dang": ".m3u8",
+    "boloc": [
+      "Phim Chiếu Rạp",
+      "Phim Hành Động"
+    ],
+    "tap": [
+      {
+        "tapSo": null,
+        "video": "https://s6.kkphimplayer6.com/20250813/hVNz7I7P/index.m3u8",
+        "subtitle": "",
+        "GioiThieuBatDau": "00:00",
+        "GioiThieuKetThuc": "00:31"
+      }
+    ],
+    "ThuyetMinh": [],
+    "LongTieng": []
+  },  
+  {
+    "id": "movie_1232fnd9t",
+    "TieuDe": "Bộ Tứ Siêu Đẳng: Bước Đi Đầu Tiên (CAM)",
+    "anh": "img/bo-tu-sieu-dang-buoc-di-dau-tien-.jpg",
+    "moTa": "",
+    "loai": "movie",
+    "Dang": ".m3u8",
+    "boloc": [
+      "Phim Chiếu Rạp",
+      "Phim Hành Động"
+    ],
+    "ThuyetMinh": [],
+    "LongTieng": [],
+    "tap": [
+      {
+        "tapSo": null,
+        "video": "https://s6.kkphimplayer6.com/20250731/idTzTRIV/index.m3u8",
+        "subtitle": "",
+        "GioiThieuBatDau": "",
+        "GioiThieuKetThuc": ""
+      }
+    ]
+  },
+  
+    {
+    "id": "movie_v2qawhltc",
+    "TieuDe": "Xem phim Na Tra 2: Ma Đồng Náo Hải",
+    "anh": "img/Natra.jpg",
+    "loai": "movie",
+    "Dang": ".m3u8",
+    "boloc": [
+      "Phim Hành Động",
+      "Phim Hoạt Hình"
+    ],
+    "tap": [
+      {
+        "tapSo": null,
+        "video": "https://vip.opstream90.com/20250731/9896_dd1970fb/index.m3u8",
+        "GioiThieuBatDau": "00:00",
+        "GioiThieuKetThuc": "00:35",
+        "subtitle": ""
+      }
+    ],
+    "moTa": ""
+  }
+]
