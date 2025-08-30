@@ -3,70 +3,74 @@
     "id": "movie_4ogNRlyT",
     "TieuDe": "Doraemon: Nobita Thám Hiểm Vùng Đất Mới – Peko và 5 Nhà Thám Hiểm",
     "anh": "https://motchills.fm/wp-content/uploads/2025/06/doraemon-nobita-tham-hiem-vung-dat-moi-peko-va-5-nha-tham-hiem-18383-thumb.webp",
+    "moTa": "",
+    "loai": "movie",
+    "Dang": ".m3u8",
     "boloc": [
       "Phim Chiếu Rạp",
-      "Phim Hoạt Hình"
+      "Phim Hoạt Hình",
+      "Nhật Bản"
     ],
-    "loai": "movie",
+    "ThuyetMinh": [],
+    "LongTieng": [],
     "tap": [
       {
         "tapSo": null,
         "video": "https://s6.kkphimplayer6.com/20250615/4ogNRlyT/index.m3u8",
+        "subtitle": "",
         "GioiThieuBatDau": "00:00",
-        "GioiThieuKetThuc": "00:20",
-        "subtitle": ""
+        "GioiThieuKetThuc": "00:20"
       }
-    ],
-    "Dang": ".m3u8",
-    "moTa": "",
-    "ThuyetMinh": [],
-    "LongTieng": []
+    ]
   },
   {
     "id": "movie_lRLlx6QL",
     "TieuDe": "Đại Náo Cung Trăng Moonbound (2021)",
     "anh": "https://motchills.fm/wp-content/uploads/2025/06/dai-nao-cung-trang-18236-thumb.webp",
+    "moTa": "",
+    "loai": "movie",
+    "Dang": ".m3u8",
     "boloc": [
       "Phim Chiếu Rạp",
-      "Phim Hoạt Hình"
+      "Phim Hoạt Hình",
+      "Châu âu"
     ],
-    "loai": "movie",
+    "ThuyetMinh": [],
+    "LongTieng": [],
     "tap": [
       {
         "tapSo": null,
         "video": "https://s6.kkphimplayer6.com/20250610/lRLlx6QL/3500kb/hls/index.m3u8",
+        "subtitle": "",
         "GioiThieuBatDau": "00:00",
-        "GioiThieuKetThuc": "00:45",
-        "subtitle": ""
+        "GioiThieuKetThuc": "00:45"
       }
-    ],
-    "Dang": ".m3u8",
-    "moTa": "",
-    "ThuyetMinh": [],
-    "LongTieng": []
+    ]
   },
   {
     "id": "movie_Udg3Oga6",
     "TieuDe": "Quái Xế Baby Baby Driver (2017)",
     "anh": "https://motchills.fm/wp-content/uploads/2025/06/quai-xe-baby-17900-thumb.webp",
+    "moTa": "",
+    "loai": "movie",
+    "Dang": ".m3u8",
     "boloc": [
       "Phim Chiếu Rạp",
-      "Phim Hành Động"
+      "Phim Hành Động",
+      "Châu âu",
+      "Hài Hước"
     ],
-    "loai": "movie",
+    "ThuyetMinh": [],
+    "LongTieng": [],
     "tap": [
       {
         "tapSo": null,
         "video": "https://s6.kkphimplayer6.com/20250601/Udg3Oga6/index.m3u8",
+        "subtitle": "",
         "GioiThieuBatDau": "00:00",
-        "GioiThieuKetThuc": "01:03",
-        "subtitle": ""
+        "GioiThieuKetThuc": "01:03"
       }
-    ],
-    "Dang": ".m3u8",
-    "moTa": "",
-    "ThuyetMinh": [],
-    "LongTieng": []
+    ]
   },
   {
     "id": "movie_5539f998",
@@ -76,8 +80,12 @@
     "loai": "movie",
     "Dang": ".m3u8",
     "boloc": [
-      "Phim Chiếu Rạp"
+      "Phim Chiếu Rạp",
+      "Châu âu",
+      "Hài Hước"
     ],
+    "ThuyetMinh": [],
+    "LongTieng": [],
     "tap": [
       {
         "tapSo": null,
@@ -86,32 +94,33 @@
         "GioiThieuBatDau": "00:00",
         "GioiThieuKetThuc": "00:45"
       }
-    ],
-    "ThuyetMinh": [],
-    "LongTieng": []
+    ]
   },
   {
     "id": "movie_5yjbXUKI",
     "TieuDe": "Đêm Thánh: Đội Săn Quỷ Holy Night: Demon Hunters (2025)",
     "anh": "https://motchills.fm/wp-content/uploads/2025/05/dem-thanh-doi-san-quy-17333-thumb.webp",
+    "moTa": "",
+    "loai": "movie",
+    "Dang": ".m3u8",
     "boloc": [
       "Phim Chiếu Rạp",
-      "Phim Hành Động"
+      "Phim Hành Động",
+      "Hàn Quốc",
+      "Hài Hước",
+      "Võ Thuật"
     ],
-    "loai": "movie",
+    "ThuyetMinh": [],
+    "LongTieng": [],
     "tap": [
       {
         "tapSo": null,
         "video": "https://s6.kkphimplayer6.com/20250530/5yjbXUKI/index.m3u8",
+        "subtitle": "",
         "GioiThieuBatDau": "00:00",
-        "GioiThieuKetThuc": "02:10",
-        "subtitle": ""
+        "GioiThieuKetThuc": "02:10"
       }
-    ],
-    "Dang": ".m3u8",
-    "moTa": "",
-    "ThuyetMinh": [],
-    "LongTieng": []
+    ]
   },
   {
     "id": "movie_yIhJ7TWu",
@@ -123,8 +132,12 @@
     "boloc": [
       "Phim Chiếu Rạp",
       "Phim Hoạt Hình",
-      "Phim Tình Cảm"
+      "Phim Tình Cảm",
+      "Nhật Bản",
+      "Hài Hước"
     ],
+    "ThuyetMinh": [],
+    "LongTieng": [],
     "tap": [
       {
         "tapSo": null,
@@ -133,73 +146,72 @@
         "GioiThieuBatDau": "00:00",
         "GioiThieuKetThuc": "00:26"
       }
-    ],
-    "ThuyetMinh": [],
-    "LongTieng": []
+    ]
   },
   {
     "id": "movie_3516KWoY",
     "TieuDe": "Trò Chơi Con Mực (Phần 2) Squid Game (Season 2) (2024)",
     "anh": "https://motchills.fm/wp-content/uploads/2024/12/tro-choi-con-muc-phan-2-13981-thumb.webp",
-    "boloc": [
-      "Phim Bộ"
-    ],
+    "moTa": "",
     "loai": "series",
+    "Dang": ".m3u8",
+    "boloc": [
+      "Phim Bộ",
+      "Hàn Quốc"
+    ],
+    "ThuyetMinh": [],
+    "LongTieng": [],
     "tap": [
       {
         "tapSo": 1,
         "video": "https://s5.phim1280.tv/20241226/3516KWoY/index.m3u8",
+        "subtitle": "",
         "GioiThieuBatDau": "00:00",
-        "GioiThieuKetThuc": "00:10",
-        "subtitle": ""
+        "GioiThieuKetThuc": "00:10"
       },
       {
         "tapSo": 2,
         "video": "https://s5.phim1280.tv/20241226/m9ZEu1zu/index.m3u8",
+        "subtitle": "",
         "GioiThieuBatDau": "00:00",
-        "GioiThieuKetThuc": "00:10",
-        "subtitle": ""
+        "GioiThieuKetThuc": "00:10"
       },
       {
         "tapSo": 3,
         "video": "https://s5.phim1280.tv/20241226/4uviqIng/index.m3u8",
+        "subtitle": "",
         "GioiThieuBatDau": "00:00",
-        "GioiThieuKetThuc": "00:10",
-        "subtitle": ""
+        "GioiThieuKetThuc": "00:10"
       },
       {
         "tapSo": 4,
         "video": "https://s5.phim1280.tv/20241226/gU6djhRv/index.m3u8",
+        "subtitle": "",
         "GioiThieuBatDau": "00:00",
-        "GioiThieuKetThuc": "00:10",
-        "subtitle": ""
+        "GioiThieuKetThuc": "00:10"
       },
       {
         "tapSo": 5,
         "video": "https://s5.phim1280.tv/20241229/pfMHFQk3/index.m3u8",
+        "subtitle": "",
         "GioiThieuBatDau": "00:00",
-        "GioiThieuKetThuc": "00:10",
-        "subtitle": ""
+        "GioiThieuKetThuc": "00:10"
       },
       {
         "tapSo": 6,
         "video": "https://s5.phim1280.tv/20241226/RPAfD9Do/index.m3u8",
+        "subtitle": "",
         "GioiThieuBatDau": "00:00",
-        "GioiThieuKetThuc": "00:10",
-        "subtitle": ""
+        "GioiThieuKetThuc": "00:10"
       },
       {
         "tapSo": 7,
         "video": "https://s5.phim1280.tv/20241226/XyOULj0V/index.m3u8",
+        "subtitle": "",
         "GioiThieuBatDau": "00:00",
-        "GioiThieuKetThuc": "00:10",
-        "subtitle": ""
+        "GioiThieuKetThuc": "00:10"
       }
-    ],
-    "Dang": ".m3u8",
-    "moTa": "",
-    "ThuyetMinh": [],
-    "LongTieng": []
+    ]
   },
   {
     "id": "movie_pjB2ig9I",
@@ -211,8 +223,11 @@
     "boloc": [
       "Phim Chiếu Rạp",
       "Phim Tâm Lý",
-      "Phim Kinh Dị"
+      "Phim Kinh Dị",
+      "Việt"
     ],
+    "ThuyetMinh": [],
+    "LongTieng": [],
     "tap": [
       {
         "tapSo": null,
@@ -221,31 +236,30 @@
         "GioiThieuBatDau": "00:00",
         "GioiThieuKetThuc": "02:25"
       }
-    ],
-    "ThuyetMinh": [],
-    "LongTieng": []
+    ]
   },
   {
     "id": "movie_ppubHKkA",
     "TieuDe": "Công Tử Bạc Liêu Once Upon A Time In Indochine (2024)",
     "anh": "https://motchills.fm/wp-content/uploads/2025/03/cong-tu-bac-lieu-16408-thumb.webp",
-    "boloc": [
-      "Phim Chiếu Rạp"
-    ],
+    "moTa": "",
     "loai": "movie",
+    "Dang": ".m3u8",
+    "boloc": [
+      "Phim Chiếu Rạp",
+      "Việt"
+    ],
+    "ThuyetMinh": [],
+    "LongTieng": [],
     "tap": [
       {
         "tapSo": null,
         "video": "https://s4.phim1280.tv/20250403/ppubHKkA/index.m3u8",
+        "subtitle": "",
         "GioiThieuBatDau": "00:00",
-        "GioiThieuKetThuc": "00:16",
-        "subtitle": ""
+        "GioiThieuKetThuc": "00:16"
       }
-    ],
-    "Dang": ".m3u8",
-    "moTa": "",
-    "ThuyetMinh": [],
-    "LongTieng": []
+    ]
   },
   {
     "id": "movie_AXRHbHYO",
@@ -257,8 +271,11 @@
     "boloc": [
       "Phim Chiếu Rạp",
       "Phim Hành Động",
-      "Phim Tâm Lý"
+      "Phim Tâm Lý",
+      "Thái Lan"
     ],
+    "ThuyetMinh": [],
+    "LongTieng": [],
     "tap": [
       {
         "tapSo": null,
@@ -267,314 +284,325 @@
         "GioiThieuBatDau": "00:00",
         "GioiThieuKetThuc": "00:42"
       }
-    ],
-    "ThuyetMinh": [],
-    "LongTieng": []
+    ]
   },
   {
     "id": "movie_sk1mfgbz",
     "TieuDe": "Thor: Tình Yêu và Sấm Sét Thor: Love and Thunder (2022)",
     "anh": "https://motchills.fm/wp-content/uploads/2024/12/thor-tinh-yeu-va-sam-set-9978-thumb.webp",
+    "moTa": "",
+    "loai": "movie",
+    "Dang": ".m3u8",
     "boloc": [
       "Phim Chiếu Rạp",
-      "Phim Hành Động"
+      "Phim Hành Động",
+      "Châu âu"
     ],
-    "loai": "movie",
+    "ThuyetMinh": [],
+    "LongTieng": [],
     "tap": [
       {
         "tapSo": null,
         "video": "https://s2.phim1280.tv/20231019/sk1mfgbz/index.m3u8",
+        "subtitle": "",
         "GioiThieuBatDau": "06:45",
-        "GioiThieuKetThuc": "07:23",
-        "subtitle": ""
+        "GioiThieuKetThuc": "07:23"
       }
-    ],
-    "Dang": ".m3u8",
-    "moTa": "",
-    "ThuyetMinh": [],
-    "LongTieng": []
+    ]
   },
   {
     "id": "movie_gTb8DtfG",
     "TieuDe": "Deadpool và Wolverine Deadpool & Wolverine (2024)",
     "anh": "https://motchills.fm/wp-content/uploads/2024/12/deadpool-va-wolverine-11380-thumb.webp",
+    "moTa": "",
+    "loai": "movie",
+    "Dang": ".m3u8",
     "boloc": [
       "Phim Chiếu Rạp",
-      "Phim Hành Động"
+      "Phim Hành Động",
+      "Châu âu"
     ],
-    "loai": "movie",
+    "ThuyetMinh": [],
+    "LongTieng": [],
     "tap": [
       {
         "tapSo": null,
         "video": "https://s4.phim1280.tv/20241001/gTb8DtfG/index.m3u8",
+        "subtitle": "",
         "GioiThieuBatDau": "00:00",
-        "GioiThieuKetThuc": "00:35",
-        "subtitle": ""
+        "GioiThieuKetThuc": "00:35"
       }
-    ],
-    "Dang": ".m3u8",
-    "moTa": "",
-    "ThuyetMinh": [],
-    "LongTieng": []
+    ]
   },
   {
     "id": "movie_617f4ea9",
     "TieuDe": "Trò Chơi Con Mực (Phần 3) Squid Game (Season 3) (2025)",
     "anh": "https://media-cdn-v2.laodong.vn/storage/newsportal/2025/1/31/1456780/Squid-Game-3.jpg",
-    "boloc": [
-      "Phim Bộ"
-    ],
+    "moTa": "",
     "loai": "series",
+    "Dang": ".m3u8",
+    "boloc": [
+      "Phim Bộ",
+      "Hàn Quốc"
+    ],
+    "ThuyetMinh": [],
+    "LongTieng": [],
     "tap": [
       {
         "tapSo": 1,
         "video": "https://dash.motchills.net/raw/617f4ea9f3ab997bd4635513c3c9602c/index.m3u8",
+        "subtitle": "",
         "GioiThieuBatDau": "00:00",
-        "GioiThieuKetThuc": "00:00",
-        "subtitle": ""
+        "GioiThieuKetThuc": "00:00"
       },
       {
         "tapSo": 2,
         "video": "https://dash.motchills.net/raw/4ec6038a9284acc9921e486e08a51581/index.m3u8",
+        "subtitle": "",
         "GioiThieuBatDau": "00:00",
-        "GioiThieuKetThuc": "00:00",
-        "subtitle": ""
+        "GioiThieuKetThuc": "00:00"
       },
       {
         "tapSo": 3,
         "video": "https://dash.motchills.net/raw/5817331ec7440b59aa2fa5f09cb8dab9/index.m3u8",
+        "subtitle": "",
         "GioiThieuBatDau": "00:00",
-        "GioiThieuKetThuc": "00:00",
-        "subtitle": ""
+        "GioiThieuKetThuc": "00:00"
       },
       {
         "tapSo": 4,
         "video": "https://dash.motchills.net/raw/a63c10d69336f0e0e47885fdef78c208/index.m3u8",
+        "subtitle": "",
         "GioiThieuBatDau": "00:00",
-        "GioiThieuKetThuc": "00:00",
-        "subtitle": ""
+        "GioiThieuKetThuc": "00:00"
       },
       {
         "tapSo": 5,
         "video": "https://dash.motchills.net/raw/c596fa2cf45660769ab0dd1c6749f46a/index.m3u8",
+        "subtitle": "",
         "GioiThieuBatDau": "00:00",
-        "GioiThieuKetThuc": "00:00",
-        "subtitle": ""
+        "GioiThieuKetThuc": "00:00"
       },
       {
         "tapSo": 6,
         "video": "https://dash.motchills.net/raw/4f90af36597cd560fc3ddb238c8a74dd/index.m3u8",
+        "subtitle": "",
         "GioiThieuBatDau": "00:00",
-        "GioiThieuKetThuc": "00:00",
-        "subtitle": ""
+        "GioiThieuKetThuc": "00:00"
       }
-    ],
-    "Dang": ".m3u8",
-    "moTa": "",
-    "ThuyetMinh": [],
-    "LongTieng": []
+    ]
   },
   {
     "id": "movie_7eeeaf24",
     "TieuDe": "Natra Ma Đồng Giáng Thế",
     "anh": "https://motchill.phd/wp-content/uploads/2025/02/photo-4-15688181673081251140686.jpg",
-    "boloc": [
-      "Phim Hoạt Hình"
-    ],
+    "moTa": "",
     "loai": "movie",
+    "Dang": ".m3u8",
+    "boloc": [
+      "Phim Hoạt Hình",
+      "Trung Quốc"
+    ],
+    "ThuyetMinh": [],
+    "LongTieng": [],
     "tap": [
       {
         "tapSo": null,
         "video": "https://dash.motchills.net/raw/7eeeaf248594cddeba11cfff845dc2c9/index.m3u8",
+        "subtitle": "",
         "GioiThieuBatDau": "00:00",
-        "GioiThieuKetThuc": "00:55",
-        "subtitle": ""
+        "GioiThieuKetThuc": "00:55"
       }
-    ],
-    "Dang": ".m3u8",
-    "moTa": "",
-    "ThuyetMinh": [],
-    "LongTieng": []
+    ]
   },
   {
     "id": "movie_9d59bbee",
     "TieuDe": "Thợ Săn Dao Mổ Hunter with a Scalpel (2025)",
     "anh": "https://posh-images-alts-production.s3.amazonaws.com/6858d7d13b2cbf9ddff46403/1400x2100.webp",
+    "moTa": "",
+    "loai": "movie",
+    "Dang": ".m3u8",
     "boloc": [
       "Phim Chiếu Rạp",
-      "Phim Hành Động"
+      "Phim Hành Động",
+      "Hàn Quốc"
     ],
-    "loai": "movie",
+    "ThuyetMinh": [],
+    "LongTieng": [],
     "tap": [
       {
         "tapSo": null,
         "video": "https://dash.motchills.net/raw/9d59bbee9f538668d23137a884d5454b/index.m3u8",
+        "subtitle": "",
         "GioiThieuBatDau": "00:00",
-        "GioiThieuKetThuc": "00:17",
-        "subtitle": ""
+        "GioiThieuKetThuc": "00:17"
       }
-    ],
-    "Dang": ".m3u8",
-    "moTa": "",
-    "ThuyetMinh": [],
-    "LongTieng": []
+    ]
   },
   {
     "id": "movie_81519a65",
     "TieuDe": "Nhím Sonic 3",
     "anh": "https://upload.wikimedia.org/wikipedia/vi/1/11/SONIC_THE_HEDGEHOG_3_%E2%80%93_Vietnam_poster.jpg",
+    "moTa": "",
     "loai": "movie",
     "Dang": ".m3u8",
     "boloc": [
       "Phim Chiếu Rạp",
-      "Phim Hoạt Hình"
+      "Phim Hoạt Hình",
+      "Châu âu"
     ],
+    "ThuyetMinh": [],
+    "LongTieng": [],
     "tap": [
       {
         "tapSo": null,
         "video": "https://dash.motchills.net/raw/81519a6510ef8199194be71e48021c2b/index.m3u8",
+        "subtitle": "",
         "GioiThieuBatDau": "00:00",
-        "GioiThieuKetThuc": "00:50",
-        "subtitle": ""
+        "GioiThieuKetThuc": "00:50"
       }
-    ],
-    "moTa": "",
-    "ThuyetMinh": [],
-    "LongTieng": []
+    ]
   },
   {
     "id": "movie_19a4c930",
     "TieuDe": "Venom: Kèo cuối",
     "anh": "https://iguov8nhvyobj.vcdn.cloud/media/catalog/product/cache/3/image/c5f0a1eff4c394a251036189ccddaacd/r/s/rsz_vnm3_intl_online_1080x1350_tsr_01.jpg",
+    "moTa": "",
+    "loai": "movie",
+    "Dang": ".m3u8",
     "boloc": [
       "Phim Chiếu Rạp",
-      "Phim Hành Động"
+      "Phim Hành Động",
+      "Châu âu"
     ],
-    "loai": "movie",
+    "ThuyetMinh": [],
+    "LongTieng": [],
     "tap": [
       {
         "tapSo": null,
         "video": "https://dash.motchills.net/raw/19a4c93039525dd4ae38e83022243584/index.m3u8",
+        "subtitle": "",
         "GioiThieuBatDau": "00:00",
-        "GioiThieuKetThuc": "00:35",
-        "subtitle": ""
+        "GioiThieuKetThuc": "00:35"
       }
-    ],
-    "Dang": ".m3u8",
-    "moTa": "",
-    "ThuyetMinh": [],
-    "LongTieng": []
+    ]
   },
   {
     "id": "movie_76e20c84",
     "TieuDe": "ĐẠI CHIẾN NGƯỜI KHỔNG LỒ: LẦN TẤN CÔNG CUỐI CÙNG",
     "anh": "https://baobariavungtau.com.vn/dataimages/202502/original/images1999187_11M1.jpg",
+    "moTa": "",
+    "loai": "movie",
+    "Dang": ".m3u8",
     "boloc": [
       "Phim Chiếu Rạp",
-      "Phim Hoạt Hình"
+      "Phim Hoạt Hình",
+      "Nhật Bản"
     ],
-    "loai": "movie",
+    "ThuyetMinh": [],
+    "LongTieng": [],
     "tap": [
       {
         "tapSo": null,
         "video": "https://dash.motchills.net/raw/76e20c84621bc52505838382372e8f11/index.m3u8",
+        "subtitle": "",
         "GioiThieuBatDau": "00:00",
-        "GioiThieuKetThuc": "00:35",
-        "subtitle": ""
+        "GioiThieuKetThuc": "00:35"
       }
-    ],
-    "Dang": ".m3u8",
-    "moTa": "",
-    "ThuyetMinh": [],
-    "LongTieng": []
+    ]
   },
   {
     "id": "movie_27717_517",
     "TieuDe": "Phía Tây Không Có Gì Lạ All Quiet on the Western Front (2022)",
     "anh": "https://i1-vnexpress.vnecdn.net/2022/11/03/phia-tay-khong-co-gi-la-1667447373.jpg?w=330&h=495&q=100&dpr=1&fit=crop&s=g6nMb37iVq6ddw7bKkULFQ",
+    "moTa": "",
+    "loai": "movie",
+    "Dang": ".m3u8",
     "boloc": [
       "Phim Chiếu Rạp",
-      "Phim Hành Động"
+      "Phim Hành Động",
+      "Châu âu"
     ],
-    "loai": "movie",
+    "ThuyetMinh": [],
+    "LongTieng": [],
     "tap": [
       {
         "tapSo": null,
         "video": "https://vip.opstream15.com/20221028/27717_517233bf/index.m3u8",
+        "subtitle": "",
         "GioiThieuBatDau": "00:00",
-        "GioiThieuKetThuc": "00:56",
-        "subtitle": ""
+        "GioiThieuKetThuc": "00:56"
       }
-    ],
-    "Dang": ".m3u8",
-    "moTa": "",
-    "ThuyetMinh": [],
-    "LongTieng": []
+    ]
   },
   {
     "id": "movie_9a26fcd8",
     "TieuDe": "Xứ Sở Robot The Electric State (2025)",
     "anh": "https://m.media-amazon.com/images/M/MV5BZDU5YWE3MmItMGI0Ny00MWQ4LWE3NDktMjRkNDk5YmFjYTk2XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
-    "boloc": [],
+    "moTa": "",
     "loai": "movie",
+    "Dang": ".m3u8",
+    "boloc": [
+      "Châu âu"
+    ],
+    "ThuyetMinh": [],
+    "LongTieng": [],
     "tap": [
       {
         "tapSo": null,
         "video": "https://dash.motchills.net/raw/9a26fcd81946270f8c6662caff35b5e7/index.m3u8",
+        "subtitle": "",
         "GioiThieuBatDau": "00:00",
-        "GioiThieuKetThuc": "00:00",
-        "subtitle": ""
+        "GioiThieuKetThuc": "00:00"
       }
-    ],
-    "Dang": ".m3u8",
-    "moTa": "",
-    "ThuyetMinh": [],
-    "LongTieng": []
+    ]
   },
   {
     "id": "movie_KZ3IDVB4",
     "TieuDe": "Sói Già Phố Wall 2013",
     "anh": "https://upload.wikimedia.org/wikipedia/vi/d/d8/The_Wolf_of_Wall_Street_%282013%29.png",
-    "boloc": [
-      "Phim Chiếu Rạp"
-    ],
+    "moTa": "",
     "loai": "movie",
+    "Dang": ".m3u8",
+    "boloc": [
+      "Phim Chiếu Rạp",
+      "Châu âu"
+    ],
+    "ThuyetMinh": [],
+    "LongTieng": [],
     "tap": [
       {
         "tapSo": null,
         "video": "https://s2.phim1280.tv/20231019/KZ3IDVB4/index.m3u8",
+        "subtitle": "",
         "GioiThieuBatDau": "00:00",
-        "GioiThieuKetThuc": "00:42",
-        "subtitle": ""
+        "GioiThieuKetThuc": "00:42"
       }
-    ],
-    "Dang": ".m3u8",
-    "moTa": "",
-    "ThuyetMinh": [],
-    "LongTieng": []
+    ]
   },
   {
     "id": "movie_8576_b7f",
     "TieuDe": "Atlas",
     "anh": "https://motphimchill.online/storage/images/atlas/atlas-thumb.jpg",
+    "moTa": "",
+    "loai": "movie",
+    "Dang": ".m3u8",
     "boloc": [
       "Phim Chiếu Rạp",
-      "Phim Hành Động"
+      "Phim Hành Động",
+      "Châu âu"
     ],
-    "loai": "movie",
+    "ThuyetMinh": [],
+    "LongTieng": [],
     "tap": [
       {
         "tapSo": null,
         "video": "https://vip.opstream17.com/20240524/8576_b7f2d04a/index.m3u8",
+        "subtitle": "",
         "GioiThieuBatDau": "00:00",
-        "GioiThieuKetThuc": "00:00",
-        "subtitle": ""
+        "GioiThieuKetThuc": "00:00"
       }
-    ],
-    "Dang": ".m3u8",
-    "moTa": "",
-    "ThuyetMinh": [],
-    "LongTieng": []
+    ]
   },
   {
     "id": "movie_16422_052",
@@ -638,47 +666,49 @@
     "id": "movie_JEQoRRj",
     "TieuDe": "Robot Hoang Dã The Wild Robot (2024)",
     "anh": "https://i.mpcdn.top/c/JEQoRRj/robot-hoang-da.jpg",
+    "moTa": "",
     "loai": "movie",
     "Dang": ".m3u8",
     "boloc": [
       "Phim Chiếu Rạp",
-      "Phim Hoạt Hình"
+      "Phim Hoạt Hình",
+      "Châu âu"
     ],
+    "ThuyetMinh": [],
+    "LongTieng": [],
     "tap": [
       {
         "tapSo": null,
         "video": "https://s4.phim1280.tv/20241029/0YZTWNPG/index.m3u8",
+        "subtitle": "",
         "GioiThieuBatDau": "00:00",
-        "GioiThieuKetThuc": "00:00",
-        "subtitle": ""
+        "GioiThieuKetThuc": "00:00"
       }
-    ],
-    "moTa": "",
-    "ThuyetMinh": [],
-    "LongTieng": []
+    ]
   },
   {
     "id": "movie_zexx31x",
     "TieuDe": "Transformers Một Transformers One (2024)",
     "anh": "https://i.mpcdn.top/c/zexx31x/transformers-mot.jpg",
+    "moTa": "",
     "loai": "movie",
     "Dang": ".m3u8",
     "boloc": [
       "Phim Chiếu Rạp",
-      "Phim Hoạt Hình"
+      "Phim Hoạt Hình",
+      "Châu âu"
     ],
+    "ThuyetMinh": [],
+    "LongTieng": [],
     "tap": [
       {
         "tapSo": null,
         "video": "https://play.cloudbeta.win/file/play/f224c02a-e809-4bf0-8f71-d318377c041b.m3u8",
+        "subtitle": "",
         "GioiThieuBatDau": "00:00",
-        "GioiThieuKetThuc": "01:17",
-        "subtitle": ""
+        "GioiThieuKetThuc": "01:17"
       }
-    ],
-    "moTa": "",
-    "ThuyetMinh": [],
-    "LongTieng": []
+    ]
   },
   {
     "id": "movie_lpawwnyif",
@@ -690,8 +720,11 @@
     "boloc": [
       "Phim Chiếu Rạp",
       "Phim Hành Động",
-      "Phim Kinh Dị"
+      "Phim Kinh Dị",
+      "Châu âu"
     ],
+    "ThuyetMinh": [],
+    "LongTieng": [],
     "tap": [
       {
         "tapSo": null,
@@ -700,32 +733,31 @@
         "GioiThieuBatDau": "00:00",
         "GioiThieuKetThuc": "00:27"
       }
-    ],
-    "ThuyetMinh": [],
-    "LongTieng": []
+    ]
   },
   {
     "id": "movie_5k8b7fj9e",
     "TieuDe": "Captain America: Thế Giới Mới Captain America: Brave New World (2025)",
     "anh": "https://motphimc.nl/wp-content/uploads/2025/02/captain-america-the-gioi-moi-15818-thumb.webp",
+    "moTa": "",
     "loai": "movie",
     "Dang": ".m3u8",
     "boloc": [
       "Phim Chiếu Rạp",
-      "Phim Hành Động"
+      "Phim Hành Động",
+      "Châu âu"
     ],
+    "ThuyetMinh": [],
+    "LongTieng": [],
     "tap": [
       {
         "tapSo": null,
         "video": "https://s4.phim1280.tv/20250218/3In5bvui/index.m3u8",
+        "subtitle": "",
         "GioiThieuBatDau": "00:00",
-        "GioiThieuKetThuc": "00:35",
-        "subtitle": ""
+        "GioiThieuKetThuc": "00:35"
       }
-    ],
-    "moTa": "",
-    "ThuyetMinh": [],
-    "LongTieng": []
+    ]
   },
   {
     "id": "movie_67jw4v2xh",
@@ -737,8 +769,11 @@
     "boloc": [
       "Phim Hành Động",
       "Phim Bộ",
-      "Phim Kinh Dị"
+      "Phim Kinh Dị",
+      "Châu âu"
     ],
+    "ThuyetMinh": [],
+    "LongTieng": [],
     "tap": [
       {
         "tapSo": 1,
@@ -796,9 +831,7 @@
         "GioiThieuBatDau": "",
         "GioiThieuKetThuc": ""
       }
-    ],
-    "ThuyetMinh": [],
-    "LongTieng": []
+    ]
   },
   {
     "id": "movie_5fid0m0m3",
@@ -809,7 +842,8 @@
     "Dang": ".m3u8",
     "boloc": [
       "Phim Hành Động",
-      "Phim Kinh Dị"
+      "Phim Kinh Dị",
+      "Châu âu"
     ],
     "ThuyetMinh": [],
     "LongTieng": [],
@@ -882,8 +916,11 @@
     "boloc": [
       "Phim Hành Động",
       "Phim Bộ",
-      "Phim Kinh Dị"
+      "Phim Kinh Dị",
+      "Châu âu"
     ],
+    "ThuyetMinh": [],
+    "LongTieng": [],
     "tap": [
       {
         "tapSo": 1,
@@ -941,9 +978,7 @@
         "GioiThieuBatDau": "",
         "GioiThieuKetThuc": ""
       }
-    ],
-    "ThuyetMinh": [],
-    "LongTieng": []
+    ]
   },
   {
     "id": "movie_t11dhrgf2",
@@ -955,8 +990,11 @@
     "boloc": [
       "Phim Hành Động",
       "Phim Bộ",
-      "Phim Kinh Dị"
+      "Phim Kinh Dị",
+      "Châu âu"
     ],
+    "ThuyetMinh": [],
+    "LongTieng": [],
     "tap": [
       {
         "tapSo": 1,
@@ -1014,69 +1052,69 @@
         "GioiThieuBatDau": "",
         "GioiThieuKetThuc": ""
       }
-    ],
-    "ThuyetMinh": [],
-    "LongTieng": []
+    ]
   },
   {
     "id": "movie_0uky11xat",
     "TieuDe": "Marvel’s Ironheart Ironheart (2025)",
     "anh": "https://motchills.fm/wp-content/uploads/2025/06/marvels-ironheart-18844-thumb.webp",
+    "moTa": "",
     "loai": "series",
     "Dang": ".m3u8",
     "boloc": [
       "Phim Chiếu Rạp",
-      "Phim Hành Động"
+      "Phim Hành Động",
+      "Châu âu"
     ],
+    "ThuyetMinh": [],
+    "LongTieng": [],
     "tap": [
       {
         "tapSo": 0,
         "video": "https://s6.kkphimplayer6.com/20250625/Pqacp1uM/index.m3u8",
+        "subtitle": "",
         "GioiThieuBatDau": "00:44",
-        "GioiThieuKetThuc": "00:49",
-        "subtitle": ""
+        "GioiThieuKetThuc": "00:49"
       },
       {
         "tapSo": 2,
         "video": "https://s6.kkphimplayer6.com/20250626/OM8ektp4/index.m3u8",
+        "subtitle": "",
         "GioiThieuBatDau": "00:00",
-        "GioiThieuKetThuc": "01:09",
-        "subtitle": ""
+        "GioiThieuKetThuc": "01:09"
       },
       {
         "tapSo": 3,
         "video": "https://s6.kkphimplayer6.com/20250626/ddNPzkSh/index.m3u8",
+        "subtitle": "",
         "GioiThieuBatDau": "00:00",
-        "GioiThieuKetThuc": "01:12",
-        "subtitle": ""
+        "GioiThieuKetThuc": "01:12"
       }
-    ],
-    "moTa": "",
-    "ThuyetMinh": [],
-    "LongTieng": []
+    ]
   },
   {
     "id": "movie_t27tzxmfe",
     "TieuDe": "Biệt Đội Marvel The Marvels",
     "anh": "https://static.nutscdn.com/vimg/300-0/9d8d1d01bc9b532c7193c7480f75e249.jpg",
+    "moTa": "",
     "loai": "movie",
     "Dang": ".m3u8",
     "boloc": [
       "Phim Chiếu Rạp",
-      "Phim Hành Động"
+      "Phim Hành Động",
+      "Châu âu"
     ],
+    "ThuyetMinh": [],
+    "LongTieng": [],
     "tap": [
       {
         "tapSo": null,
         "video": "https://vip.opstream16.com/20240116/40784_3b9dde9a/index.m3u8",
+        "subtitle": "",
         "GioiThieuBatDau": "00:00",
-        "GioiThieuKetThuc": "00:35",
-        "subtitle": ""
+        "GioiThieuKetThuc": "00:35"
       }
-    ],
-    "moTa": "",
-    "ThuyetMinh": [],
-    "LongTieng": []
+    ]
   },
   {
     "id": "movie_v2qawhltc",
@@ -1087,7 +1125,8 @@
     "Dang": ".m3u8",
     "boloc": [
       "Phim Hành Động",
-      "Phim Hoạt Hình"
+      "Phim Hoạt Hình",
+      "Trung Quốc"
     ],
     "ThuyetMinh": [],
     "LongTieng": [],
@@ -1110,7 +1149,8 @@
     "Dang": ".m3u8",
     "boloc": [
       "Phim Chiếu Rạp",
-      "Phim Hành Động"
+      "Phim Hành Động",
+      "Châu âu"
     ],
     "ThuyetMinh": [],
     "LongTieng": [],
@@ -1140,7 +1180,8 @@
     "Dang": ".m3u8",
     "boloc": [
       "Phim Chiếu Rạp",
-      "Phim Hoạt Hình"
+      "Phim Hoạt Hình",
+      "Nhật Bản"
     ],
     "ThuyetMinh": [],
     "LongTieng": [],
@@ -1163,7 +1204,8 @@
     "Dang": ".m3u8",
     "boloc": [
       "Phim Chiếu Rạp",
-      "Phim Hành Động"
+      "Phim Hành Động",
+      "Châu âu"
     ],
     "ThuyetMinh": [],
     "LongTieng": [],
@@ -1185,7 +1227,8 @@
     "loai": "movie",
     "Dang": ".m3u8",
     "boloc": [
-      "Lồng Tiếng"
+      "Lồng Tiếng",
+      "Nhật Bản"
     ],
     "ThuyetMinh": [],
     "LongTieng": [],
@@ -1208,7 +1251,8 @@
     "Dang": ".m3u8",
     "boloc": [
       "Phim Chiếu Rạp",
-      "Phim Hành Động"
+      "Phim Hành Động",
+      "Châu âu"
     ],
     "ThuyetMinh": [],
     "LongTieng": [],
@@ -1231,7 +1275,8 @@
     "Dang": ".m3u8",
     "boloc": [
       "Phim Hành Động",
-      "Phim Tâm Lý"
+      "Phim Tâm Lý",
+      "Châu âu"
     ],
     "ThuyetMinh": [],
     "LongTieng": [],
@@ -1255,7 +1300,8 @@
     "boloc": [
       "Phim Chiếu Rạp",
       "Phim Hoạt Hình",
-      "Phim Tình Cảm"
+      "Phim Tình Cảm",
+      "Châu âu"
     ],
     "ThuyetMinh": [],
     "LongTieng": [],
@@ -1278,7 +1324,8 @@
     "Dang": ".m3u8",
     "boloc": [
       "Phim Chiếu Rạp",
-      "Phim Hành Động"
+      "Phim Hành Động",
+      "Hàn Quốc"
     ],
     "ThuyetMinh": [],
     "LongTieng": [],
@@ -1300,7 +1347,8 @@
     "loai": "movie",
     "Dang": ".m3u8",
     "boloc": [
-      "Phim Hoạt Hình"
+      "Phim Hoạt Hình",
+      "Nhật Bản"
     ],
     "ThuyetMinh": [],
     "LongTieng": [],
@@ -1322,7 +1370,8 @@
     "loai": "movie",
     "Dang": ".m3u8",
     "boloc": [
-      "Phim Hành Động"
+      "Phim Hành Động",
+      "Thái Lan"
     ],
     "ThuyetMinh": [],
     "LongTieng": [],
@@ -1344,7 +1393,9 @@
     "loai": "movie",
     "Dang": ".m3u8",
     "boloc": [
-      "Phim Hành Động"
+      "Phim Hành Động",
+      "Châu âu",
+      "Việt"
     ],
     "ThuyetMinh": [],
     "LongTieng": [],
@@ -1367,7 +1418,8 @@
     "Dang": ".m3u8",
     "boloc": [
       "Phim Tâm Lý",
-      "Phim Kinh Dị"
+      "Phim Kinh Dị",
+      "Châu âu"
     ],
     "ThuyetMinh": [],
     "LongTieng": [],
@@ -1389,7 +1441,8 @@
     "loai": "movie",
     "Dang": ".m3u8",
     "boloc": [
-      "Phim Kinh Dị"
+      "Phim Kinh Dị",
+      "Châu âu"
     ],
     "ThuyetMinh": [],
     "LongTieng": [],
@@ -1412,7 +1465,8 @@
     "Dang": ".m3u8",
     "boloc": [
       "Phim Chiếu Rạp",
-      "Phim Kinh Dị"
+      "Phim Kinh Dị",
+      "Nhật Bản"
     ],
     "ThuyetMinh": [],
     "LongTieng": [],
@@ -1434,7 +1488,8 @@
     "loai": "movie",
     "Dang": ".m3u8",
     "boloc": [
-      "Phim Hành Động"
+      "Phim Hành Động",
+      "Châu âu"
     ],
     "ThuyetMinh": [],
     "LongTieng": [],
@@ -1456,7 +1511,8 @@
     "loai": "movie",
     "Dang": ".m3u8",
     "boloc": [
-      "Phim Hành Động"
+      "Phim Hành Động",
+      "Châu âu"
     ],
     "ThuyetMinh": [],
     "LongTieng": [],
@@ -1478,7 +1534,8 @@
     "loai": "movie",
     "Dang": ".m3u8",
     "boloc": [
-      "Phim Tình Cảm"
+      "Phim Tình Cảm",
+      "Trung Quốc"
     ],
     "ThuyetMinh": [],
     "LongTieng": [],
@@ -1501,7 +1558,8 @@
     "Dang": ".m3u8",
     "boloc": [
       "Phim Hành Động",
-      "Phim Tâm Lý"
+      "Phim Tâm Lý",
+      "Trung Quốc"
     ],
     "ThuyetMinh": [],
     "LongTieng": [],
@@ -1523,7 +1581,8 @@
     "loai": "movie",
     "Dang": ".m3u8",
     "boloc": [
-      "Thuyết Minh"
+      "Thuyết Minh",
+      "Châu âu"
     ],
     "ThuyetMinh": [],
     "LongTieng": [],
@@ -1545,7 +1604,8 @@
     "loai": "movie",
     "Dang": ".m3u8",
     "boloc": [
-      "Thuyết Minh"
+      "Thuyết Minh",
+      "Thái Lan"
     ],
     "ThuyetMinh": [],
     "LongTieng": [],
@@ -1567,7 +1627,8 @@
     "loai": "movie",
     "Dang": ".m3u8",
     "boloc": [
-      "Thuyết Minh"
+      "Thuyết Minh",
+      "Châu âu"
     ],
     "ThuyetMinh": [],
     "LongTieng": [],
@@ -1589,7 +1650,8 @@
     "loai": "movie",
     "Dang": ".m3u8",
     "boloc": [
-      "Thuyết Minh"
+      "Thuyết Minh",
+      "Nhật Bản"
     ],
     "ThuyetMinh": [],
     "LongTieng": [],
@@ -1611,7 +1673,8 @@
     "loai": "movie",
     "Dang": ".m3u8",
     "boloc": [
-      "Thuyết Minh"
+      "Thuyết Minh",
+      "Nhật Bản"
     ],
     "ThuyetMinh": [],
     "LongTieng": [],
@@ -1634,7 +1697,8 @@
     "Dang": ".m3u8",
     "boloc": [
       "Phim Hành Động",
-      "Phim Tâm Lý"
+      "Phim Tâm Lý",
+      "Châu âu"
     ],
     "ThuyetMinh": [],
     "LongTieng": [],
@@ -1656,7 +1720,9 @@
     "loai": "movie",
     "Dang": ".m3u8",
     "boloc": [
-      "Phim Hành Động"
+      "Phim Hành Động",
+      "Trung Quốc",
+      "Hồng Không"
     ],
     "ThuyetMinh": [],
     "LongTieng": [],
@@ -1679,7 +1745,8 @@
     "Dang": ".m3u8",
     "boloc": [
       "Phim Tâm Lý",
-      "Phim Kinh Dị"
+      "Phim Kinh Dị",
+      "Thái Lan"
     ],
     "ThuyetMinh": [],
     "LongTieng": [],
@@ -1701,7 +1768,8 @@
     "loai": "movie",
     "Dang": ".m3u8",
     "boloc": [
-      "Phim Hành Động"
+      "Phim Hành Động",
+      "Châu âu"
     ],
     "ThuyetMinh": [],
     "LongTieng": [],
@@ -1723,7 +1791,8 @@
     "loai": "movie",
     "Dang": ".m3u8",
     "boloc": [
-      "Lồng Tiếng"
+      "Lồng Tiếng",
+      "Châu âu"
     ],
     "ThuyetMinh": [],
     "LongTieng": [],
@@ -1745,7 +1814,8 @@
     "loai": "movie",
     "Dang": ".m3u8",
     "boloc": [
-      "Phim Chiếu Rạp"
+      "Phim Chiếu Rạp",
+      "Châu âu"
     ],
     "ThuyetMinh": [],
     "LongTieng": [],
@@ -1767,7 +1837,8 @@
     "loai": "movie",
     "Dang": ".m3u8",
     "boloc": [
-      "Phim Chiếu Rạp"
+      "Phim Chiếu Rạp",
+      "Châu âu"
     ],
     "ThuyetMinh": [],
     "LongTieng": [],
@@ -1789,7 +1860,8 @@
     "loai": "movie",
     "Dang": ".m3u8",
     "boloc": [
-      "Phim Chiếu Rạp"
+      "Phim Chiếu Rạp",
+      "Châu âu"
     ],
     "ThuyetMinh": [],
     "LongTieng": [],
@@ -1811,7 +1883,8 @@
     "loai": "movie",
     "Dang": ".m3u8",
     "boloc": [
-      "Phim Chiếu Rạp"
+      "Phim Chiếu Rạp",
+      "Châu âu"
     ],
     "ThuyetMinh": [],
     "LongTieng": [],
@@ -1833,7 +1906,8 @@
     "loai": "movie",
     "Dang": ".m3u8",
     "boloc": [
-      "Phim Chiếu Rạp"
+      "Phim Chiếu Rạp",
+      "Châu âu"
     ],
     "ThuyetMinh": [],
     "LongTieng": [],
@@ -1855,7 +1929,8 @@
     "loai": "movie",
     "Dang": ".m3u8",
     "boloc": [
-      "Phim Chiếu Rạp"
+      "Phim Chiếu Rạp",
+      "Châu âu"
     ],
     "ThuyetMinh": [],
     "LongTieng": [],
@@ -1877,7 +1952,8 @@
     "loai": "movie",
     "Dang": ".m3u8",
     "boloc": [
-      "Phim Hoạt Hình"
+      "Phim Hoạt Hình",
+      "Nhật Bản"
     ],
     "ThuyetMinh": [],
     "LongTieng": [],
@@ -1899,7 +1975,8 @@
     "loai": "movie",
     "Dang": ".m3u8",
     "boloc": [
-      "Phim Hoạt Hình"
+      "Phim Hoạt Hình",
+      "Nhật Bản"
     ],
     "ThuyetMinh": [],
     "LongTieng": [],
@@ -1921,7 +1998,9 @@
     "loai": "movie",
     "Dang": ".m3u8",
     "boloc": [
-      "Phim Hoạt Hình"
+      "Phim Hoạt Hình",
+      "Nhật Bản",
+      "Hài Hước"
     ],
     "ThuyetMinh": [],
     "LongTieng": [],
@@ -1943,7 +2022,9 @@
     "loai": "movie",
     "Dang": ".m3u8",
     "boloc": [
-      "Phim Hoạt Hình"
+      "Phim Hoạt Hình",
+      "Nhật Bản",
+      "Hài Hước"
     ],
     "ThuyetMinh": [],
     "LongTieng": [],
@@ -1965,7 +2046,8 @@
     "loai": "movie",
     "Dang": ".m3u8",
     "boloc": [
-      "Phim Hoạt Hình"
+      "Phim Hoạt Hình",
+      "Nhật Bản"
     ],
     "ThuyetMinh": [],
     "LongTieng": [],
@@ -1987,7 +2069,8 @@
     "loai": "movie",
     "Dang": ".m3u8",
     "boloc": [
-      "Phim Hoạt Hình"
+      "Phim Hoạt Hình",
+      "Nhật Bản"
     ],
     "ThuyetMinh": [],
     "LongTieng": [],
@@ -2011,7 +2094,8 @@
     "boloc": [
       "Phim Chiếu Rạp",
       "Phim Hành Động",
-      "Phim Kinh Dị"
+      "Phim Kinh Dị",
+      "Châu âu"
     ],
     "ThuyetMinh": [],
     "LongTieng": [],
@@ -2034,7 +2118,8 @@
     "Dang": ".m3u8",
     "boloc": [
       "Phim Tình Cảm",
-      "Phim Tâm Lý"
+      "Phim Tâm Lý",
+      "Châu âu"
     ],
     "ThuyetMinh": [],
     "LongTieng": [],
@@ -2058,7 +2143,8 @@
     "boloc": [
       "Phim Tình Cảm",
       "Phim Tâm Lý",
-      "Phim Kinh Dị"
+      "Phim Kinh Dị",
+      "Hàn Quốc"
     ],
     "ThuyetMinh": [],
     "LongTieng": [],
@@ -2124,7 +2210,8 @@
     "loai": "movie",
     "Dang": ".m3u8",
     "boloc": [
-      "Phim Kinh Dị"
+      "Phim Kinh Dị",
+      "Châu âu"
     ],
     "ThuyetMinh": [],
     "LongTieng": [],
@@ -2168,7 +2255,8 @@
     "loai": "movie",
     "Dang": ".m3u8",
     "boloc": [
-      "Phim Kinh Dị"
+      "Phim Kinh Dị",
+      "Châu âu"
     ],
     "ThuyetMinh": [],
     "LongTieng": [],
@@ -2190,7 +2278,8 @@
     "loai": "movie",
     "Dang": ".m3u8",
     "boloc": [
-      "Phim Kinh Dị"
+      "Phim Kinh Dị",
+      "Châu âu"
     ],
     "ThuyetMinh": [],
     "LongTieng": [],
@@ -2214,7 +2303,8 @@
     "boloc": [
       "Phim Chiếu Rạp",
       "Phim Tâm Lý",
-      "Phim Kinh Dị"
+      "Phim Kinh Dị",
+      "Châu âu"
     ],
     "ThuyetMinh": [],
     "LongTieng": [],
@@ -2236,7 +2326,9 @@
     "loai": "movie",
     "Dang": ".m3u8",
     "boloc": [
-      "Phim Chiếu Rạp"
+      "Phim Chiếu Rạp",
+      "Phim Hành Động",
+      "Châu âu"
     ],
     "ThuyetMinh": [],
     "LongTieng": [],
@@ -2258,7 +2350,9 @@
     "loai": "movie",
     "Dang": ".m3u8",
     "boloc": [
-      "Phim Chiếu Rạp"
+      "Phim Chiếu Rạp",
+      "Phim Hành Động",
+      "Châu âu"
     ],
     "ThuyetMinh": [],
     "LongTieng": [],
@@ -2281,7 +2375,8 @@
     "Dang": ".m3u8",
     "boloc": [
       "Phim Chiếu Rạp",
-      "Phim Hoạt Hình"
+      "Phim Hoạt Hình",
+      "Nhật Bản"
     ],
     "ThuyetMinh": [],
     "LongTieng": [],
@@ -2304,7 +2399,9 @@
     "Dang": ".m3u8",
     "boloc": [
       "Phim Chiếu Rạp",
-      "Phim Hành Động"
+      "Phim Hành Động",
+      "Hài Hước",
+      "Hàn Quốc"
     ],
     "ThuyetMinh": [],
     "LongTieng": [],
@@ -2327,7 +2424,8 @@
     "Dang": ".m3u8",
     "boloc": [
       "Phim Tình Cảm",
-      "Phim Tâm Lý"
+      "Phim Tâm Lý",
+      "Hàn Quốc"
     ],
     "ThuyetMinh": [],
     "LongTieng": [],
@@ -2350,7 +2448,9 @@
     "Dang": ".m3u8",
     "boloc": [
       "Phim Chiếu Rạp",
-      "Phim Tình Cảm"
+      "Phim Tình Cảm",
+      "Hài Hước",
+      "Hàn Quốc"
     ],
     "ThuyetMinh": [],
     "LongTieng": [],
@@ -2372,7 +2472,9 @@
     "loai": "movie",
     "Dang": ".m3u8",
     "boloc": [
-      "Phim Tình Cảm"
+      "Phim Hoạt Hình",
+      "Phim Tình Cảm",
+      "Hàn Quốc"
     ],
     "ThuyetMinh": [],
     "LongTieng": [],
@@ -2396,7 +2498,8 @@
     "boloc": [
       "Phim Chiếu Rạp",
       "Phim Tâm Lý",
-      "Phim Kinh Dị"
+      "Phim Kinh Dị",
+      "Hàn Quốc"
     ],
     "ThuyetMinh": [],
     "LongTieng": [],
@@ -2420,7 +2523,8 @@
     "boloc": [
       "Phim Hành Động",
       "Phim Tâm Lý",
-      "Phim Kinh Dị"
+      "Phim Kinh Dị",
+      "Hàn Quốc"
     ],
     "ThuyetMinh": [],
     "LongTieng": [],
@@ -2443,7 +2547,8 @@
     "Dang": ".m3u8",
     "boloc": [
       "Phim Chiếu Rạp",
-      "Phim Hoạt Hình"
+      "Phim Hoạt Hình",
+      "Hàn Quốc"
     ],
     "ThuyetMinh": [],
     "LongTieng": [],
@@ -2467,7 +2572,8 @@
     "boloc": [
       "Phim Chiếu Rạp",
       "Phim Hành Động",
-      "Phim Tâm Lý"
+      "Phim Tâm Lý",
+      "Hàn Quốc"
     ],
     "ThuyetMinh": [],
     "LongTieng": [],
@@ -2491,7 +2597,8 @@
     "boloc": [
       "Phim Chiếu Rạp",
       "Phim Hành Động",
-      "Phim Tâm Lý"
+      "Phim Tâm Lý",
+      "Hàn Quốc"
     ],
     "ThuyetMinh": [],
     "LongTieng": [],
@@ -2515,7 +2622,8 @@
     "boloc": [
       "Phim Chiếu Rạp",
       "Phim Hành Động",
-      "Phim Kinh Dị"
+      "Phim Kinh Dị",
+      "Hàn Quốc"
     ],
     "ThuyetMinh": [],
     "LongTieng": [],
@@ -2539,7 +2647,8 @@
     "boloc": [
       "Phim Chiếu Rạp",
       "Phim Hành Động",
-      "Phim Hoạt Hình"
+      "Phim Hoạt Hình",
+      "Hàn Quốc"
     ],
     "ThuyetMinh": [],
     "LongTieng": [],
@@ -2563,7 +2672,8 @@
     "boloc": [
       "Phim Chiếu Rạp",
       "Phim Tình Cảm",
-      "Phim Tâm Lý"
+      "Phim Tâm Lý",
+      "Hàn Quốc"
     ],
     "ThuyetMinh": [],
     "LongTieng": [],
@@ -2586,7 +2696,8 @@
     "Dang": ".m3u8",
     "boloc": [
       "Phim Chiếu Rạp",
-      "Phim Tâm Lý"
+      "Phim Tâm Lý",
+      "Hàn Quốc"
     ],
     "ThuyetMinh": [],
     "LongTieng": [],
@@ -2609,7 +2720,8 @@
     "Dang": ".m3u8",
     "boloc": [
       "Phim Chiếu Rạp",
-      "Phim Tâm Lý"
+      "Phim Tâm Lý",
+      "Hàn Quốc"
     ],
     "ThuyetMinh": [],
     "LongTieng": [],
@@ -2633,7 +2745,8 @@
     "boloc": [
       "Phim Chiếu Rạp",
       "Phim Hành Động",
-      "Phim Tâm Lý"
+      "Phim Tâm Lý",
+      "Hàn Quốc"
     ],
     "ThuyetMinh": [],
     "LongTieng": [],
@@ -2656,7 +2769,9 @@
     "Dang": ".m3u8",
     "boloc": [
       "Phim Tình Cảm",
-      "Phim Tâm Lý"
+      "Phim Tâm Lý",
+      "Hài Hước",
+      "Hàn Quốc"
     ],
     "ThuyetMinh": [],
     "LongTieng": [],
@@ -2681,7 +2796,8 @@
       "Phim Chiếu Rạp",
       "Phim Hành Động",
       "Phim Tình Cảm",
-      "Phim Tâm Lý"
+      "Phim Tâm Lý",
+      "Hàn Quốc"
     ],
     "ThuyetMinh": [],
     "LongTieng": [],
@@ -2703,7 +2819,10 @@
     "loai": "movie",
     "Dang": ".m3u8",
     "boloc": [
-      "Phim Hành Động"
+      "Phim Hành Động",
+      "Phim Kinh Dị",
+      "Hài Hước",
+      "Hàn Quốc"
     ],
     "ThuyetMinh": [],
     "LongTieng": [],
@@ -2726,8 +2845,12 @@
     "Dang": ".m3u8",
     "boloc": [
       "Phim Chiếu Rạp",
-      "Phim Tình Cảm",
-      "Phim Tâm Lý"
+      "Phim Hành Động",
+      "Phim Tâm Lý",
+      "Phim Kinh Dị",
+      "Võ Thuật",
+      "Hài Hước",
+      "Hàn Quốc"
     ],
     "ThuyetMinh": [],
     "LongTieng": [],
@@ -2751,7 +2874,10 @@
     "boloc": [
       "Phim Chiếu Rạp",
       "Phim Tình Cảm",
-      "Phim Tâm Lý"
+      "Phim Tâm Lý",
+      "Phim Kinh Dị",
+      "Võ Thuật",
+      "Hàn Quốc"
     ],
     "ThuyetMinh": [],
     "LongTieng": [],
@@ -2773,7 +2899,10 @@
     "loai": "movie",
     "Dang": ".m3u8",
     "boloc": [
-      "Phim Chiếu Rạp"
+      "Phim Hành Động",
+      "Phim Kinh Dị",
+      "Võ Thuật",
+      "Hàn Quốc"
     ],
     "ThuyetMinh": [],
     "LongTieng": [],
@@ -2795,7 +2924,9 @@
     "loai": "movie",
     "Dang": ".m3u8",
     "boloc": [
-      "Phim Hoạt Hình"
+      "Phim Hoạt Hình",
+      "Châu âu",
+      "Hài Hước"
     ],
     "ThuyetMinh": [],
     "LongTieng": [],
@@ -2817,7 +2948,8 @@
     "loai": "movie",
     "Dang": ".m3u8",
     "boloc": [
-      "Phim Hành Động"
+      "Phim Hành Động",
+      "Châu âu"
     ],
     "ThuyetMinh": [
       "movie_nxaslsi6i"
@@ -2865,7 +2997,8 @@
     "boloc": [
       "Phim Chiếu Rạp",
       "Phim Tình Cảm",
-      "Phim Kinh Dị"
+      "Phim Kinh Dị",
+      "Châu âu"
     ],
     "ThuyetMinh": [],
     "LongTieng": [],
@@ -2909,7 +3042,8 @@
     "loai": "movie",
     "Dang": ".m3u8",
     "boloc": [
-      "Phim Hành Động"
+      "Phim Hành Động",
+      "Châu âu"
     ],
     "ThuyetMinh": [],
     "LongTieng": [],
@@ -2931,7 +3065,10 @@
     "loai": "series",
     "Dang": ".m3u8",
     "boloc": [
-      "Phim Hoạt Hình"
+      "Phim Hoạt Hình",
+      "Trung Quốc",
+      "Châu âu",
+      "Hài Hước"
     ],
     "ThuyetMinh": [],
     "LongTieng": [],
@@ -2968,7 +3105,9 @@
     "Dang": ".m3u8",
     "boloc": [
       "Phim Hành Động",
-      "Phim Tâm Lý"
+      "Phim Tâm Lý",
+      "Châu âu",
+      "Hài Hước"
     ],
     "ThuyetMinh": [],
     "LongTieng": [],
@@ -2990,7 +3129,8 @@
     "loai": "movie",
     "Dang": ".m3u8",
     "boloc": [
-      "Phim Kinh Dị"
+      "Phim Kinh Dị",
+      "Việt"
     ],
     "ThuyetMinh": [],
     "LongTieng": [],
@@ -3012,7 +3152,8 @@
     "loai": "movie",
     "Dang": ".m3u8",
     "boloc": [
-      "Phim Hoạt Hình"
+      "Phim Hoạt Hình",
+      "Nhật Bản"
     ],
     "ThuyetMinh": [],
     "LongTieng": [],
@@ -3035,7 +3176,9 @@
     "Dang": ".m3u8",
     "boloc": [
       "Phim Hoạt Hình",
-      "Thuyết Minh"
+      "Thuyết Minh",
+      "Châu âu",
+      "Hài Hước"
     ],
     "ThuyetMinh": [],
     "LongTieng": [],
@@ -3057,7 +3200,9 @@
     "loai": "series",
     "Dang": ".m3u8",
     "boloc": [
-      "Phim Hoạt Hình"
+      "Phim Hoạt Hình",
+      "Châu âu",
+      "Hài Hước"
     ],
     "ThuyetMinh": [],
     "LongTieng": [],
@@ -3093,7 +3238,9 @@
     "loai": "series",
     "Dang": ".m3u8",
     "boloc": [
-      "Phim Tình Cảm"
+      "Phim Tình Cảm",
+      "Châu âu",
+      "Hài Hước"
     ],
     "ThuyetMinh": [],
     "LongTieng": [],
@@ -3122,7 +3269,8 @@
     "loai": "movie",
     "Dang": ".m3u8",
     "boloc": [
-      "Phim Kinh Dị"
+      "Phim Kinh Dị",
+      "Việt"
     ],
     "ThuyetMinh": [],
     "LongTieng": [],
@@ -3144,7 +3292,8 @@
     "loai": "movie",
     "Dang": ".m3u8",
     "boloc": [
-      "Phim Hoạt Hình"
+      "Phim Hoạt Hình",
+      "Nhật Bản"
     ],
     "ThuyetMinh": [],
     "LongTieng": [],
@@ -3166,7 +3315,8 @@
     "loai": "movie",
     "Dang": ".m3u8",
     "boloc": [
-      "Phim Hoạt Hình"
+      "Phim Hoạt Hình",
+      "Nhật Bản"
     ],
     "ThuyetMinh": [],
     "LongTieng": [],
@@ -3188,7 +3338,8 @@
     "loai": "movie",
     "Dang": ".m3u8",
     "boloc": [
-      "Phim Hoạt Hình"
+      "Phim Hoạt Hình",
+      "Nhật Bản"
     ],
     "ThuyetMinh": [],
     "LongTieng": [],
@@ -3196,6 +3347,782 @@
       {
         "tapSo": null,
         "video": "https://video.twimg.com/amplify_video/1938440513608437760/pl/avc1/1916x816/ZTPmRALqpIR9zYVz.m3u8",
+        "subtitle": "",
+        "GioiThieuBatDau": "",
+        "GioiThieuKetThuc": ""
+      }
+    ]
+  },
+  {
+    "id": "movie_qdsbj0x1e",
+    "TieuDe": "La Tiểu Hắc Chiến Ký",
+    "anh": "https://vimages.coccoc.com/vimage?ns=anime&url=https%3A%2F%2Fi0.wp.com%2Fapi.anime3s.com%2Fupload%2Fimages%2F2019%2F12%2Fhuyen-thoai-la-tieu-hac-thumbnail.jpg%3Fresize%3D215%252C320%26ssl%3D1",
+    "moTa": "",
+    "loai": "movie",
+    "Dang": ".m3u8",
+    "boloc": [
+      "Phim Chiếu Rạp",
+      "Phim Hoạt Hình",
+      "Trung Quốc"
+    ],
+    "ThuyetMinh": [],
+    "LongTieng": [],
+    "tap": [
+      {
+        "tapSo": null,
+        "video": "https://moloz.blogtool.net/playlist/6533595002ea13250ded197a/master.m3u8",
+        "subtitle": "",
+        "GioiThieuBatDau": "",
+        "GioiThieuKetThuc": ""
+      }
+    ]
+  },
+  {
+    "id": "movie_85nleeem4",
+    "TieuDe": "Diệt Môn Thảm Án 2",
+    "anh": "https://media.themoviedb.org/t/p/w500/xXR6FJNfH77B3KfzMU9HgjXRSMB.jpg",
+    "moTa": "",
+    "loai": "movie",
+    "Dang": ".m3u8",
+    "boloc": [
+      "Phim Kinh Dị",
+      "Hồng Không"
+    ],
+    "ThuyetMinh": [],
+    "LongTieng": [],
+    "tap": [
+      {
+        "tapSo": null,
+        "video": "https://s4.phim1280.tv/20241110/Tr5CjWzI/index.m3u8",
+        "subtitle": "",
+        "GioiThieuBatDau": "",
+        "GioiThieuKetThuc": ""
+      }
+    ]
+  },
+  {
+    "id": "movie_qlrzyxr15",
+    "TieuDe": "Túy quyền 2",
+    "anh": "https://s3.cloud.cmctelecom.vn/2game-vn/pictures/images/2016/1/27/2game_27_1_DCCKM_1.jpg",
+    "moTa": "",
+    "loai": "movie",
+    "Dang": ".m3u8",
+    "boloc": [
+      "Phim Hành Động",
+      "Trung Quốc",
+      "Võ Thuật"
+    ],
+    "ThuyetMinh": [],
+    "LongTieng": [],
+    "tap": [
+      {
+        "tapSo": null,
+        "video": "https://s2.phim1280.tv/20231018/rxCUFFKM/index.m3u8",
+        "subtitle": "",
+        "GioiThieuBatDau": "",
+        "GioiThieuKetThuc": ""
+      }
+    ]
+  },
+  {
+    "id": "movie_vbb9aomrj",
+    "TieuDe": "Quý Ngài Hai Mặt",
+    "anh": "https://image.tmdb.org/t/p/original/oH7gBsbb6cg0gucnOcCfLzhPOgr.jpg",
+    "moTa": "",
+    "loai": "movie",
+    "Dang": ".m3u8",
+    "boloc": [
+      "Phim Tâm Lý",
+      "Châu âu"
+    ],
+    "ThuyetMinh": [],
+    "LongTieng": [],
+    "tap": [
+      {
+        "tapSo": null,
+        "video": "https://s2.phim1280.tv/20231018/q61BH34s/3000kb/hls/index.m3u8",
+        "subtitle": "",
+        "GioiThieuBatDau": "",
+        "GioiThieuKetThuc": ""
+      }
+    ]
+  },
+  {
+    "id": "movie_7gosm8egr",
+    "TieuDe": "Gã Hề Điên Loạn 2",
+    "anh": "https://gaucafephim.vn/wp-content/uploads/2023/12/quan-ao-ga-he-dien-loan-681x1024.jpg",
+    "moTa": "",
+    "loai": "movie",
+    "Dang": ".m3u8",
+    "boloc": [
+      "Phim Kinh Dị",
+      "Châu âu"
+    ],
+    "ThuyetMinh": [],
+    "LongTieng": [],
+    "tap": [
+      {
+        "tapSo": null,
+        "video": "https://vip.opstream15.com/20221030/27820_cfdee6f7/index.m3u8",
+        "subtitle": "",
+        "GioiThieuBatDau": "",
+        "GioiThieuKetThuc": ""
+      }
+    ]
+  },
+  {
+    "id": "movie_wdp558fqf",
+    "TieuDe": "Sát Thủ Lõa Thể",
+    "anh": "https://lh3.googleusercontent.com/-SmTwqVzllXA/Vof1SpY2srI/AAAAAAAAV1A/I7thmvM7hwg/w300/loa-the-sat-thu-naked-killer-1992.jpg",
+    "moTa": "",
+    "loai": "movie",
+    "Dang": ".m3u8",
+    "boloc": [
+      "Phim Hành Động",
+      "Hồng Không",
+      "Võ Thuật"
+    ],
+    "ThuyetMinh": [],
+    "LongTieng": [],
+    "tap": [
+      {
+        "tapSo": null,
+        "video": "https://s4.phim1280.tv/20241031/tIKc2nXe/index.m3u8",
+        "subtitle": "",
+        "GioiThieuBatDau": "",
+        "GioiThieuKetThuc": ""
+      }
+    ]
+  },
+  {
+    "id": "movie_n1h6yioym",
+    "TieuDe": "Gã Hề Điên Loạn 3",
+    "anh": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRONGmBDJBzBkikw5vDK0Sq5Wdz4wiJdQgF7w&s",
+    "moTa": "",
+    "loai": "movie",
+    "Dang": ".m3u8",
+    "boloc": [
+      "Phim Kinh Dị",
+      "Châu âu"
+    ],
+    "ThuyetMinh": [],
+    "LongTieng": [],
+    "tap": [
+      {
+        "tapSo": null,
+        "video": "https://s4.phim1280.tv/20241101/viCMg2gS/2000kb/hls/index.m3u8",
+        "subtitle": "",
+        "GioiThieuBatDau": "",
+        "GioiThieuKetThuc": ""
+      }
+    ]
+  },
+  {
+    "id": "movie_ojqt6f7kg",
+    "TieuDe": "Thần Bài Kaiji Phần 1 , 2 , 3",
+    "anh": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5Vur_jFHQLD1g7Lbsek5GSyivPpalC01IBQ&s",
+    "moTa": "",
+    "loai": "series",
+    "Dang": ".m3u8",
+    "boloc": [
+      "Phim Bộ",
+      "Phim Tâm Lý",
+      "Nhật Bản"
+    ],
+    "ThuyetMinh": [],
+    "LongTieng": [],
+    "tap": [
+      {
+        "tapSo": 1,
+        "video": "https://s4.phim1280.tv/20241114/PM8dWnT0/2000kb/hls/index.m3u8",
+        "subtitle": "",
+        "GioiThieuBatDau": "",
+        "GioiThieuKetThuc": ""
+      },
+      {
+        "tapSo": 2,
+        "video": "https://s4.phim1280.tv/20241114/TL3magwY/2000kb/hls/index.m3u8",
+        "subtitle": "",
+        "GioiThieuBatDau": "",
+        "GioiThieuKetThuc": ""
+      },
+      {
+        "tapSo": 3,
+        "video": "https://s4.phim1280.tv/20241114/fNZOFp97/2000kb/hls/index.m3u8",
+        "subtitle": "",
+        "GioiThieuBatDau": "",
+        "GioiThieuKetThuc": ""
+      }
+    ]
+  },
+  {
+    "id": "movie_07iut26z9",
+    "TieuDe": "Ma Đất Sét",
+    "anh": "https://play-lh.googleusercontent.com/proxy/-lRn764ok6W0Cbc33QdsKbEBQ2dXs1ExNhdSNLaq5sNGj7KfH6d0FLQAAWZfXWQDVZuUXA-nbuWAQZrYtybZysztYmpOEdj4nr-JkwFyN7a3qZGl4-x5mLdnbYuWg6-t-hsPsi6DBdapcBX7jRQRzvwfjWQ8k8c7ZJzmkA",
+    "moTa": "",
+    "loai": "movie",
+    "Dang": ".m3u8",
+    "boloc": [
+      "Phim Kinh Dị",
+      "Nhật Bản"
+    ],
+    "ThuyetMinh": [],
+    "LongTieng": [],
+    "tap": [
+      {
+        "tapSo": null,
+        "video": "https://s5.phim1280.tv/20241112/v03xhhTR/2000kb/hls/index.m3u8",
+        "subtitle": "",
+        "GioiThieuBatDau": "",
+        "GioiThieuKetThuc": ""
+      }
+    ]
+  },
+  {
+    "id": "movie_xx02nb0jf",
+    "TieuDe": "Trò Chơi Sát Nhân",
+    "anh": "https://media.themoviedb.org/t/p/w116_and_h174_face/az0k8pzdeqrrEO9iu8vL081bjA0.jpg",
+    "moTa": "",
+    "loai": "movie",
+    "Dang": ".m3u8",
+    "boloc": [
+      "Phim Kinh Dị",
+      "Châu âu"
+    ],
+    "ThuyetMinh": [],
+    "LongTieng": [],
+    "tap": [
+      {
+        "tapSo": null,
+        "video": "https://s4.phim1280.tv/20241118/DcliKVAI/2000kb/hls/index.m3u8",
+        "subtitle": "",
+        "GioiThieuBatDau": "",
+        "GioiThieuKetThuc": ""
+      }
+    ]
+  },
+  {
+    "id": "movie_447emds0d",
+    "TieuDe": "Án Mạng Lầu 4",
+    "anh": "https://upload.wikimedia.org/wikipedia/vi/e/e0/%C3%81n_m%E1%BA%A1ng_l%E1%BA%A7u_4.jpg",
+    "moTa": "",
+    "loai": "movie",
+    "Dang": ".m3u8",
+    "boloc": [
+      "Phim Tâm Lý",
+      "Phim Kinh Dị",
+      "Việt"
+    ],
+    "ThuyetMinh": [],
+    "LongTieng": [],
+    "tap": [
+      {
+        "tapSo": null,
+        "video": "https://s5.phim1280.tv/20241207/ISYfjTGi/2000kb/hls/index.m3u8",
+        "subtitle": "",
+        "GioiThieuBatDau": "",
+        "GioiThieuKetThuc": ""
+      }
+    ]
+  },
+  {
+    "id": "movie_1onp8w30e",
+    "TieuDe": "Mật Mã Đỏ",
+    "anh": "https://upload.wikimedia.org/wikipedia/vi/1/1b/RED_ONE_-_Vietnam_poster.jpg",
+    "moTa": "",
+    "loai": "movie",
+    "Dang": ".m3u8",
+    "boloc": [
+      "Phim Hành Động",
+      "Châu âu",
+      "Hài Hước"
+    ],
+    "ThuyetMinh": [],
+    "LongTieng": [],
+    "tap": [
+      {
+        "tapSo": null,
+        "video": "https://s4.phim1280.tv/20241213/k8WwowG2/2000kb/hls/index.m3u8",
+        "subtitle": "",
+        "GioiThieuBatDau": "",
+        "GioiThieuKetThuc": ""
+      }
+    ]
+  },
+  {
+    "id": "movie_q5zank6o9",
+    "TieuDe": "Trận Chiến Ánh Sáng",
+    "anh": "https://iguov8nhvyobj.vcdn.cloud/media/catalog/product/cache/1/image/c5f0a1eff4c394a251036189ccddaacd/r/s/rsz_the_current_war_-_poster_final_2.jpg",
+    "moTa": "",
+    "loai": "movie",
+    "Dang": ".m3u8",
+    "boloc": [
+      "Phim Hành Động",
+      "Châu âu"
+    ],
+    "ThuyetMinh": [],
+    "LongTieng": [],
+    "tap": [
+      {
+        "tapSo": null,
+        "video": "https://s2.phim1280.tv/20240207/zfutf4eR/3000kb/hls/index.m3u8",
+        "subtitle": "",
+        "GioiThieuBatDau": "",
+        "GioiThieuKetThuc": ""
+      }
+    ]
+  },
+  {
+    "id": "movie_yv0mcke9n",
+    "TieuDe": "Thiên Sư Trừ Tà",
+    "anh": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQL-s_DR3Ma7W0dgnE79FFVeo-gDFzKarYQpg&s",
+    "moTa": "",
+    "loai": "movie",
+    "Dang": ".m3u8",
+    "boloc": [
+      "Phim Kinh Dị",
+      "Trung Quốc",
+      "Võ Thuật"
+    ],
+    "ThuyetMinh": [],
+    "LongTieng": [],
+    "tap": [
+      {
+        "tapSo": null,
+        "video": "https://s4.phim1280.tv/20241010/NMW9MAqF/2000kb/hls/index.m3u8",
+        "subtitle": "",
+        "GioiThieuBatDau": "",
+        "GioiThieuKetThuc": ""
+      }
+    ]
+  },
+  {
+    "id": "movie_abb0gpb1x",
+    "TieuDe": "Alita: Thiên Thần Chiến Binh",
+    "anh": "https://upload.wikimedia.org/wikipedia/vi/d/d2/Alita_Thi%C3%AAn_th%E1%BA%A7n_chi%E1%BA%BFn_binh_%28%C3%A1p_ph%C3%ADch_2019%29.jpg",
+    "moTa": "",
+    "loai": "movie",
+    "Dang": ".m3u8",
+    "boloc": [
+      "Phim Hành Động",
+      "Phim Hoạt Hình",
+      "Nhật Bản"
+    ],
+    "ThuyetMinh": [],
+    "LongTieng": [],
+    "tap": [
+      {
+        "tapSo": null,
+        "video": "https://s2.phim1280.tv/20240108/sdP5jjqU/3000kb/hls/index.m3u8",
+        "subtitle": "",
+        "GioiThieuBatDau": "",
+        "GioiThieuKetThuc": ""
+      }
+    ]
+  },
+  {
+    "id": "movie_y6w3kzqut",
+    "TieuDe": "lã sanh môn ",
+    "anh": "https://shopphimxua.com/uploads/cms/img_thumb_250/product/lsm1950-2664.jpg",
+    "moTa": "",
+    "loai": "movie",
+    "Dang": ".m3u8",
+    "boloc": [
+      "Phim Tâm Lý",
+      "Nhật Bản"
+    ],
+    "ThuyetMinh": [],
+    "LongTieng": [],
+    "tap": [
+      {
+        "tapSo": null,
+        "video": "https://s1.phim1280.tv/20231120/H5L5KVZq/3000kb/hls/index.m3u8",
+        "subtitle": "",
+        "GioiThieuBatDau": "",
+        "GioiThieuKetThuc": ""
+      }
+    ]
+  },
+  {
+    "id": "movie_nke8y43g2",
+    "TieuDe": "Ông Bác Siêu Nhân",
+    "anh": "https://img.ophim.live/uploads/movies/ong-bac-sieu-nhan-poster.jpg",
+    "moTa": "",
+    "loai": "movie",
+    "Dang": ".m3u8",
+    "boloc": [
+      "Phim Hành Động",
+      "Phim Tình Cảm",
+      "Nhật Bản",
+      "Hài Hước"
+    ],
+    "ThuyetMinh": [],
+    "LongTieng": [],
+    "tap": [
+      {
+        "tapSo": null,
+        "video": "https://s2.phim1280.tv/20231113/8ldCqGDb/3000kb/hls/index.m3u8",
+        "subtitle": "",
+        "GioiThieuBatDau": "",
+        "GioiThieuKetThuc": ""
+      }
+    ]
+  },
+  {
+    "id": "movie_aabjqc0qc",
+    "TieuDe": "Cô Gái Vượt Thời Gian",
+    "anh": "https://upload.wikimedia.org/wikipedia/vi/thumb/5/51/Toki_o_Kakeru_Shoujo_DVD_cover.jpg/330px-Toki_o_Kakeru_Shoujo_DVD_cover.jpg",
+    "moTa": "",
+    "loai": "movie",
+    "Dang": ".m3u8",
+    "boloc": [
+      "Phim Hoạt Hình",
+      "Phim Tình Cảm",
+      "Nhật Bản"
+    ],
+    "ThuyetMinh": [],
+    "LongTieng": [],
+    "tap": [
+      {
+        "tapSo": null,
+        "video": "https://s2.phim1280.tv/20240121/slLmyOqX/index.m3u8",
+        "subtitle": "",
+        "GioiThieuBatDau": "",
+        "GioiThieuKetThuc": ""
+      }
+    ]
+  },
+  {
+    "id": "movie_knqhmxgsq",
+    "TieuDe": "Hoa Và Rắn 3",
+    "anh": "https://77.73.70.174/storage/images/hoa-va-ran-3/hoa-va-ran-3-thumb.webp",
+    "moTa": "",
+    "loai": "movie",
+    "Dang": ".m3u8",
+    "boloc": [
+      "Phim Tâm Lý",
+      "Nhật Bản"
+    ],
+    "ThuyetMinh": [],
+    "LongTieng": [],
+    "tap": [
+      {
+        "tapSo": null,
+        "video": "https://vip.opstream14.com/20230609/37407_340f7ac0/3000k/hls/mixed.m3u8",
+        "subtitle": "",
+        "GioiThieuBatDau": "",
+        "GioiThieuKetThuc": ""
+      }
+    ]
+  },
+  {
+    "id": "movie_w396x3pen",
+    "TieuDe": "Khu Rừng Nhỏ - Hạ/Thu",
+    "anh": "https://cdn.wowweekend.vn/uploads/202307_3023_1.jpg",
+    "moTa": "",
+    "loai": "movie",
+    "Dang": ".m3u8",
+    "boloc": [
+      "Phim Tình Cảm",
+      "Phim Tâm Lý",
+      "Nhật Bản"
+    ],
+    "ThuyetMinh": [],
+    "LongTieng": [],
+    "tap": [
+      {
+        "tapSo": null,
+        "video": "https://s2.phim1280.tv/20231103/FGBGXO11/3000kb/hls/index.m3u8",
+        "subtitle": "",
+        "GioiThieuBatDau": "",
+        "GioiThieuKetThuc": ""
+      }
+    ]
+  },
+  {
+    "id": "movie_wzzvnf8py",
+    "TieuDe": "Vây Hãm: Kẻ Trừng Phạt",
+    "anh": "https://touchcinema.com/uploads/phim-2021/434180573-799738975520819-5725607260019909148-n-poster.jpg",
+    "moTa": "",
+    "loai": "movie",
+    "Dang": ".m3u8",
+    "boloc": [
+      "Phim Hành Động",
+      "Hài Hước",
+      "Hàn Quốc"
+    ],
+    "ThuyetMinh": [],
+    "LongTieng": [],
+    "tap": [
+      {
+        "tapSo": null,
+        "video": "https://s3.phim1280.tv/20240711/09IrApPK/2000kb/hls/index.m3u8",
+        "subtitle": "",
+        "GioiThieuBatDau": "",
+        "GioiThieuKetThuc": ""
+      }
+    ]
+  },
+  {
+    "id": "movie_2pj8lbf0e",
+    "TieuDe": "Túy Quyền II",
+    "anh": "https://upload.wikimedia.org/wikipedia/vi/a/a7/DrunkenMaster2_DVDcover.jpg",
+    "moTa": "",
+    "loai": "movie",
+    "Dang": ".m3u8",
+    "boloc": [
+      "Phim Hành Động",
+      "Võ Thuật",
+      "Trung Quốc"
+    ],
+    "ThuyetMinh": [],
+    "LongTieng": [],
+    "tap": [
+      {
+        "tapSo": null,
+        "video": "https://s2.phim1280.tv/20231220/bHCTODPi/index.m3u8",
+        "subtitle": "",
+        "GioiThieuBatDau": "",
+        "GioiThieuKetThuc": ""
+      }
+    ]
+  },
+  {
+    "id": "movie_ms8pfxmzt",
+    "TieuDe": "Đại Sư Huynh",
+    "anh": "https://s3.cloud.cmctelecom.vn/tinhte1/2018/10/4444778_big_brother_vn_localized_poster_editted_mdiu.jpg",
+    "moTa": "",
+    "loai": "movie",
+    "Dang": ".m3u8",
+    "boloc": [
+      "Võ Thuật",
+      "Trung Quốc"
+    ],
+    "ThuyetMinh": [],
+    "LongTieng": [],
+    "tap": [
+      {
+        "tapSo": null,
+        "video": "https://s2.phim1280.tv/20231120/L8qR6YV5/3000kb/hls/index.m3u8",
+        "subtitle": "",
+        "GioiThieuBatDau": "",
+        "GioiThieuKetThuc": ""
+      }
+    ]
+  },
+  {
+    "id": "movie_3llrktxo7",
+    "TieuDe": "Bác Sĩ Dolittle: Chuyến Phiêu Lưu Thần Thoại",
+    "anh": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5GTK5qi35n9FyzYQHQb1bWqn_bGs6TBOHwA&s",
+    "moTa": "",
+    "loai": "movie",
+    "Dang": ".m3u8",
+    "boloc": [
+      "Phim Tâm Lý",
+      "Châu âu",
+      "Hài Hước"
+    ],
+    "ThuyetMinh": [],
+    "LongTieng": [],
+    "tap": [
+      {
+        "tapSo": null,
+        "video": "https://s1.phim1280.tv/20231118/wFVkoXtp/3000kb/hls/index.m3u8",
+        "subtitle": "",
+        "GioiThieuBatDau": "",
+        "GioiThieuKetThuc": ""
+      }
+    ]
+  },
+  {
+    "id": "movie_7pqx3odvu",
+    "TieuDe": "Tây Du Ký 3: Nữ Nhi Quốc",
+    "anh": "https://upload.wikimedia.org/wikipedia/vi/7/7f/The-monkey-king-3.jpg",
+    "moTa": "",
+    "loai": "movie",
+    "Dang": ".m3u8",
+    "boloc": [
+      "Phim Hành Động",
+      "Hài Hước",
+      "Võ Thuật",
+      "Trung Quốc"
+    ],
+    "ThuyetMinh": [],
+    "LongTieng": [],
+    "tap": [
+      {
+        "tapSo": null,
+        "video": "https://vip.opstream14.com/20220411/7159_11131428/index.m3u8",
+        "subtitle": "",
+        "GioiThieuBatDau": "",
+        "GioiThieuKetThuc": ""
+      }
+    ]
+  },
+  {
+    "id": "movie_i7cav8jp8",
+    "TieuDe": "Hoàng Kim Giáp",
+    "anh": "https://upload.wikimedia.org/wikipedia/vi/2/21/Poster_Hoang_Kim_Giap.jpg",
+    "moTa": "",
+    "loai": "movie",
+    "Dang": ".m3u8",
+    "boloc": [
+      "Phim Hành Động",
+      "Võ Thuật",
+      "Trung Quốc"
+    ],
+    "ThuyetMinh": [],
+    "LongTieng": [],
+    "tap": [
+      {
+        "tapSo": null,
+        "video": "https://s2.phim1280.tv/20231111/CxsbtcuW/index.m3u8",
+        "subtitle": "",
+        "GioiThieuBatDau": "",
+        "GioiThieuKetThuc": ""
+      }
+    ]
+  },
+  {
+    "id": "movie_jiszk3nnz",
+    "TieuDe": "Lão Vệ Sĩ - Ông Nội Tôi Là Đặc Công",
+    "anh": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJ_a-Lbr6n9ZI26E5cTMfLaxCjAC3JgTms0g&s",
+    "moTa": "",
+    "loai": "movie",
+    "Dang": ".m3u8",
+    "boloc": [
+      "Phim Hành Động",
+      "Võ Thuật",
+      "Trung Quốc",
+      "Hồng Không"
+    ],
+    "ThuyetMinh": [],
+    "LongTieng": [],
+    "tap": [
+      {
+        "tapSo": null,
+        "video": "https://s1.phim1280.tv/20231104/NYTgKXW9/index.m3u8",
+        "subtitle": "",
+        "GioiThieuBatDau": "",
+        "GioiThieuKetThuc": ""
+      }
+    ]
+  },
+  {
+    "id": "movie_h47sfhfp6",
+    "TieuDe": "Tông Sư Công Phu Hoắc Nguyên Giáp",
+    "anh": "https://img-zlr1.tv360.vn/image1/2021/09/17/15/51f0021a/51f0021a-d3a5-40c0-89e5-c7e3f3f808ef_360_540.jpg",
+    "moTa": "",
+    "loai": "movie",
+    "Dang": ".m3u8",
+    "boloc": [
+      "Phim Hành Động",
+      "Võ Thuật",
+      "Trung Quốc"
+    ],
+    "ThuyetMinh": [],
+    "LongTieng": [],
+    "tap": [
+      {
+        "tapSo": null,
+        "video": "https://s4.phim1280.tv/20240918/TbOifg1Y/index.m3u8",
+        "subtitle": "",
+        "GioiThieuBatDau": "",
+        "GioiThieuKetThuc": ""
+      }
+    ]
+  },
+  {
+    "id": "movie_8vgvarlfj",
+    "TieuDe": "Kẻ Săn Người Điên Loạn",
+    "anh": "https://media.themoviedb.org/t/p/w500/fTlcWwmUt4iNsu7PKz8Y3jWnLtQ.jpg",
+    "moTa": "",
+    "loai": "movie",
+    "Dang": ".m3u8",
+    "boloc": [
+      "Phim Kinh Dị",
+      "Võ Thuật",
+      "Hồng Không"
+    ],
+    "ThuyetMinh": [],
+    "LongTieng": [],
+    "tap": [
+      {
+        "tapSo": null,
+        "video": "https://s2.phim1280.tv/20240309/YowH7KOM/index.m3u8",
+        "subtitle": "",
+        "GioiThieuBatDau": "",
+        "GioiThieuKetThuc": ""
+      }
+    ]
+  },
+  {
+    "id": "movie_0t44iyo6o",
+    "TieuDe": "Huyết Chiến",
+    "anh": "https://thegioiblu-ray.com/resources/200ceb26807d6bf99fd6f4f0d1ca54d4/1-HD%20LE%2001/P11005.JPG",
+    "moTa": "",
+    "loai": "movie",
+    "Dang": ".m3u8",
+    "boloc": [
+      "Phim Hành Động",
+      "Võ Thuật",
+      "Trung Quốc",
+      "Hồng Không"
+    ],
+    "ThuyetMinh": [],
+    "LongTieng": [],
+    "tap": [
+      {
+        "tapSo": null,
+        "video": "https://s2.phim1280.tv/20240118/95JOv9Ch/index.m3u8",
+        "subtitle": "",
+        "GioiThieuBatDau": "",
+        "GioiThieuKetThuc": ""
+      }
+    ]
+  },
+  {
+    "id": "movie_qms66oom0",
+    "TieuDe": "Tiểu Quyền Quái Chiêu",
+    "anh": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSujF1AUqZxskL61c9q3fuz2W2O04cV0Qqbgw&s",
+    "moTa": "",
+    "loai": "movie",
+    "Dang": ".m3u8",
+    "boloc": [
+      "Phim Hành Động",
+      "Võ Thuật",
+      "Trung Quốc"
+    ],
+    "ThuyetMinh": [],
+    "LongTieng": [],
+    "tap": [
+      {
+        "tapSo": null,
+        "video": "https://s2.phim1280.tv/20240127/AJu9fn1v/index.m3u8",
+        "subtitle": "",
+        "GioiThieuBatDau": "",
+        "GioiThieuKetThuc": ""
+      }
+    ]
+  },
+  {
+    "id": "movie_b0gobbjam",
+    "TieuDe": "sát thủ truyền kỳ ngô kinh",
+    "anh": "https://img.tripi.vn/cdn-cgi/image/width=700,height=700/https://gcs.tripi.vn/public-tripi/tripi-feed/img/473722DGi/legendary-assassin-lang-nha-2008-147644.jpg",
+    "moTa": "",
+    "loai": "movie",
+    "Dang": ".m3u8",
+    "boloc": [
+      "Võ Thuật",
+      "Trung Quốc",
+      "Hồng Không"
+    ],
+    "ThuyetMinh": [],
+    "LongTieng": [],
+    "tap": [
+      {
+        "tapSo": null,
+        "video": "https://s2.phim1280.tv/20240113/rqGwhGqX/3000kb/hls/index.m3u8",
         "subtitle": "",
         "GioiThieuBatDau": "",
         "GioiThieuKetThuc": ""
