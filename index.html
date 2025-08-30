@@ -883,9 +883,7 @@
             </div>
         </div>
 
-
-
-         <div id="recommended-video-section" class="video-feature-section">
+        <div id="recommended-video-section" class="video-feature-section">
             <div class="relative w-full h-full">
                 <iframe src="https://dp3011105.github.io/DataVideo/index2"
                         frameborder="0"
@@ -893,18 +891,13 @@
                         allowfullscreen>
                 </iframe>
                 <div class="video-overlay">
-                    <h2 id="recommended-video-title">THE SUBVERSION (Sát thủ nhân tạo) - Nữ Chính Đỉnh Lắm Luôn Bấm Xem Ngay Đi</h2>
-                    <a href="https://phuocphephim.netlify.app/watch.html?id=https%3A%2F%2Fsundaythekingplays.xyz%2Fhls%2FvbJtHWUqd0EZ6XLM0gMtkYZea04zyoqADLgMDL21opyLD3s3N8PjSGNrCsedeTHV8GvGpku4la9ciK0dsBsOBA%3D%3D%2FaW5kZXgtZjItdjEtYTEubTN1OA%3D%3D.m3u8&title=S%C3%A1t%20Th%E1%BB%A7%20Nh%C3%A2n%20T%E1%BA%A1o" 
-                       class="watch-btn">Xem ngay</a>
+                    <h2 id="recommended-video-title">La Tiểu Hắc Chiến Ký  - Sắp có phần 2 rồi xem phần 1 lấy cảm xúc nào </h2>
+                    <a href="https://moloz.blogtool.net/playlist/6533595002ea13250ded197a/master.m3u8" 
+                       class="watch-btn" data-title="La Tiểu Hắc Chiến Ký">Xem ngay</a>
                 </div>
             </div>
         </div>
 
-
-
-
-
-        <!-- BoLocTuChon3.json -->
         <div id="korean-movies-section" class="category-section">
             <h2 class="text-xl font-bold text-white mb-4">Phim Hàn Quốc nè Annyeong haseyo" (안녕하세요)!</h2>
             <div class="relative">
@@ -922,9 +915,6 @@
             </div>
         </div>
 
-
-
-
         <div id="recommended-video-section" class="video-feature-section">
             <div class="relative w-full h-full">
                 <iframe src="https://dp3011105.github.io/DataVideo/"
@@ -934,16 +924,12 @@
                 </iframe>
                 <div class="video-overlay">
                     <h2 id="recommended-video-title">Superman - Phim Đỉnh Lắm Luôn Bấm Xem Ngay Đi</h2>
-                    <a href="https://phuocphephim.netlify.app/watch.html?id=https%3A%2F%2Fsnowbreeze49.live%2Fhls%2Fd2Y-MI%2BulzGe1hwYD7jt-niSkK%2BNwvFsmrmHt3sbxfxcVAtzjJMiKW8zPbjckBjK5uF2p3Jh2D4%2BnrDTU8AcMdxd1qL6m9P7cvr35k91NFA%3D%2FaW5kZXgtZjMtdjEtYTEubTN1OA%3D%3D.m3u8&title=Superman" 
-                       class="watch-btn">Xem ngay</a>
+                    <a href="https://s6.kkphimplayer6.com/20250718/SGRrkMdW/index.m3u8" 
+                       class="watch-btn" data-title="Superman">Xem ngay</a>
                 </div>
             </div>
         </div>
 
-
-<!--//////////////////////////////////////////////// ToiThayHay.json ///////////////////////////////
-////////////////////////////////////////////////////////////////////////////////////////
-/////////////////////////////////////////////////////////////////////////////////////////////////////-->
         <div id="recommended-movies-section" class="category-section">
             <h2 class="text-xl font-bold text-white mb-4">Anime tui mò được</h2>
             <div class="relative">
@@ -978,13 +964,6 @@
             </div>
         </div> -->
 
-
-
-
-
-
-<!-- 
-        Anime.json -->
         <div id="custom-featured-section" class="custom-featured-section">
             <h2 class="text-xl font-bold text-white mb-4">Phim hoạt hình siêu đỉnh cao luôn </h2>
             <div id="custom-carousel" class="relative w-full h-full">
@@ -1060,7 +1039,7 @@
             const videoId = vid.tap?.[0]?.video || '';
 
             videoCard.innerHTML = `
-                <a href="watch.html?id=${encodeURIComponent(videoId)}&title=${encodeURIComponent(title)}">
+                <a href="${videoId}" data-title="${title}" class="${isBookSlider ? '' : 'w-full h-full'} object-cover">
                     <img src="${thumbnail}" alt="${title}" class="${isBookSlider ? '' : 'w-full h-full'} object-cover" onerror="this.src='img/placeholder.jpg'">
                 </a>
                 <div class="content">
@@ -1251,8 +1230,7 @@
                 pagination.appendChild(btn);
             };
 
-            const maxPagesToShow = 5;
-            let startPage = Math.max(1, currentPage - Math.floor(maxPagesToShow / 2));
+            const Prediction = Math.max(1, currentPage - Math.floor(maxPagesToShow / 2));
             let endPage = Math.min(totalPages, startPage + maxPagesToShow - 1);
 
             if (endPage - startPage + 1 < maxPagesToShow) {
@@ -1317,7 +1295,8 @@
                         } else {
                             featuredEpisodes.textContent = "";
                         }
-                        featuredWatchBtn.href = `watch.html?id=${encodeURIComponent(slide.tap?.[0]?.video || '')}&title=${encodeURIComponent(slide.TieuDe || 'Phim nổi bật')}`;
+                        featuredWatchBtn.href = slide.tap?.[0]?.video || '';
+                        featuredWatchBtn.setAttribute('data-title', slide.TieuDe || 'Phim nổi bật');
                     }
 
                     function changeSlide(newIndex) {
@@ -1364,7 +1343,7 @@
         }
 
         function loadScrollingMovies() {
-            fetch("bolocdidong.json")
+            fetch("BoLoc1.json")
                 .then(response => {
                     if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
                     return response.json();
@@ -1386,7 +1365,7 @@
                             const thumbnail = movie.anh || 'img/placeholder.jpg';
                             const videoId = movie.tap?.[0]?.video || '';
                             card.innerHTML = `
-                                <a href="watch.html?id=${encodeURIComponent(videoId)}&title=${encodeURIComponent(title)}">
+                                <a href="${videoId}" data-title="${title}">
                                     <img src="${thumbnail}" alt="${title}" onerror="this.src='img/placeholder.jpg'">
                                     <h3>${title}</h3>
                                 </a>
@@ -1399,7 +1378,7 @@
                     createScrollingCards();
                 })
                 .catch(error => {
-                    console.error("Lỗi tải danh sách phim từ bolocdidong.json:", error);
+                    console.error("Lỗi tải danh sách phim từ BoLoc1.json:", error);
                     document.getElementById("scrolling-section").innerHTML = '<p class="text-gray-400 text-center">Không thể tải danh sách phim.</p>';
                 });
         }
@@ -1451,7 +1430,7 @@
         }
 
         function loadCustomFeaturedMovies() {
-            fetch("Anime.json")
+            fetch("BoLoc3.json")
                 .then(response => {
                     if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
                     return response.json();
@@ -1494,7 +1473,8 @@
                         const slide = slides[index];
                         featuredTitle.textContent = slide.TieuDe || 'Phim';
                         featuredDescription.textContent = slide.moTa || '';
-                        featuredWatchBtn.href = `watch.html?id=${encodeURIComponent(slide.tap?.[0]?.video || '')}&title=${encodeURIComponent(slide.TieuDe || 'Phim')}`;
+                        featuredWatchBtn.href = slide.tap?.[0]?.video || '';
+                        featuredWatchBtn.setAttribute('data-title', slide.TieuDe || 'Phim');
                     }
 
                     function changeSlide(newIndex) {
@@ -1534,16 +1514,29 @@
                     nextButton.addEventListener("click", nextSlide);
                 })
                 .catch(error => {
-                    console.error("Lỗi tải Anime.json:", error);
+                    console.error("Lỗi tải BoLoc3.json:", error);
                     document.getElementById("custom-featured-section").innerHTML = '<p class="text-gray-400 text-center">Không thể tải danh sách phim.</p>';
                 });
         }
 
         document.addEventListener("DOMContentLoaded", () => {
+            // Handle m3u8 link clicks
+            document.body.addEventListener('click', (e) => {
+                const target = e.target.closest('a[href$=".m3u8"]');
+                if (target) {
+                    e.preventDefault();
+                    const m3u8Url = target.getAttribute('href');
+                    const title = target.getAttribute('data-title') || 'Video không có tiêu đề';
+                    const encodedUrl = encodeURIComponent(m3u8Url);
+                    const encodedTitle = encodeURIComponent(title);
+                    window.location.href = `watch.html?id=${encodedUrl}&title=${encodedTitle}`;
+                }
+            });
+
             loadFeaturedMovies();
             loadScrollingMovies();
-            loadMovies("BoLocTuChon3.json", "korean-movies-grid");
-            loadMovies("ToiThayHay.json", "recommended-movies-grid");
+            loadMovies("BoLoc2.json", "korean-movies-grid");
+            loadMovies("BoLoc4.json", "recommended-movies-grid");
             loadMovies("SapRaMat.json", "upcoming-movies-grid");
             loadCustomFeaturedMovies();
 
