@@ -329,18 +329,10 @@
             <a href="index.html" class="text-2xl font-bold text-white">PHIM N+</a>
             <a href="index.html" class="back-btn">Quay lại Trang chủ</a>
         </div>
-        <div class="filter-container">
+        <div class="filter-container" id="filter-container">
             <input type="text" id="search-input" class="search-input" placeholder="Tìm kiếm phim theo tiêu đề...">
-            <button class="filter-btn" data-filter="all">Tất cả</button>
-            <button class="filter-btn" data-filter="Phim Chiếu Rạp">Phim Chiếu Rạp</button>
-            <button class="filter-btn" data-filter="Phim Hành Động">Phim Hành Động</button>
-            <button class="filter-btn" data-filter="Phim Bộ">Phim Bộ</button>
-            <button class="filter-btn" data-filter="Phim Hoạt Hình">Phim Hoạt Hình</button>
-            <button class="filter-btn" data-filter="Phim Tình Cảm">Phim Tình Cảm</button>
-            <button class="filter-btn" data-filter="Phim Tâm Lý">Phim Tâm Lý</button>
-            <button class="filter-btn" data-filter="Phim Kinh Dị">Phim Kinh Dị</button>
-            <button class="filter-btn" data-filter="Thuyết Minh">Thuyết Minh</button>
-            <button class="filter-btn" data-filter="Lồng Tiếng">Lồng Tiếng</button>
+            <button class="filter-btn active" data-filter="all">Tất cả</button>
+            <!-- Filter buttons will be dynamically added here -->
             <a href="https://discord.gg/uqNA78fs9G" target="_blank" class="filter-btn bg-purple-600 hover:bg-purple-700 text-white">Discord</a>
         </div>
         <div id="video-list"></div>
@@ -407,9 +399,13 @@
             videoList.innerHTML = '<p class="text-gray-400 text-center py-4">Đang tải video...</p>';
 
             let filteredVideos = filter === "all"
-                ? [...videos].reverse() // Đảo ngược để phim mới nhất hiển thị trước
+                ? [...videos].reverse()
                 : filter === "Phim Bộ"
                 ? videos.filter(v => v.loai && v.loai.toLowerCase() === 'series').reverse()
+                : filter === "Thuyết Minh"
+                ? videos.filter(v => Array.isArray(v.ThuyetMinh) && v.ThuyetMinh.length > 0).reverse()
+                : filter === "Lồng Tiếng"
+                ? videos.filter(v => Array.isArray(v.LongTieng) && v.LongTieng.length > 0).reverse()
                 : videos.filter(v => v.boloc && Array.isArray(v.boloc) && v.boloc.includes(filter)).reverse();
 
             if (searchQuery) {
@@ -481,24 +477,27 @@
             if (currentPage < totalPages) createPageButton(currentPage + 1, "Sau");
         }
 
-        document.addEventListener("DOMContentLoaded", () => {
-            const urlParams = new URLSearchParams(window.location.search);
-            const filter = urlParams.get('filter') || 'all';
-            const search = urlParams.get('search') || '';
+        function createFilterButtons(filters) {
+            const filterContainer = document.getElementById("filter-container");
+            if (!filterContainer) return;
 
-            // Set active filter button
-            const activeFilterBtn = document.querySelector(`.filter-btn[data-filter="${filter}"]`);
-            if (activeFilterBtn) {
-                document.querySelectorAll(".filter-btn").forEach(b => b.classList.remove("active"));
-                activeFilterBtn.classList.add("active");
-            } else {
-                document.querySelector('.filter-btn[data-filter="all"]').classList.add("active");
-            }
+            // Remove existing filter buttons except search input, "all" button, and Discord link
+            const staticElements = filterContainer.querySelectorAll('input, .filter-btn[data-filter="all"], .filter-btn.bg-purple-600');
+            filterContainer.innerHTML = '';
+            staticElements.forEach(el => filterContainer.appendChild(el));
 
-            // Set search input value
-            document.getElementById("search-input").value = search;
+            // Add dynamic filter buttons
+            filters.forEach(filter => {
+                if (filter !== 'all') { // Skip 'all' as it's already included
+                    const btn = document.createElement("button");
+                    btn.className = "filter-btn";
+                    btn.dataset.filter = filter;
+                    btn.textContent = filter;
+                    filterContainer.insertBefore(btn, filterContainer.querySelector('.filter-btn.bg-purple-600'));
+                }
+            });
 
-            // Handle filter button clicks
+            // Re-attach event listeners to all filter buttons
             document.querySelectorAll(".filter-btn").forEach(btn => {
                 btn.addEventListener("click", () => {
                     document.querySelectorAll(".filter-btn").forEach(b => b.classList.remove("active"));
@@ -509,6 +508,26 @@
                     displayVideos(filter, currentPage, searchQuery);
                 });
             });
+
+            // Set active filter button based on URL parameter
+            const urlParams = new URLSearchParams(window.location.search);
+            const filter = urlParams.get('filter') || 'all';
+            const activeFilterBtn = document.querySelector(`.filter-btn[data-filter="${filter}"]`);
+            if (activeFilterBtn) {
+                document.querySelectorAll(".filter-btn").forEach(b => b.classList.remove("active"));
+                activeFilterBtn.classList.add("active");
+            } else {
+                document.querySelector('.filter-btn[data-filter="all"]').classList.add("active");
+            }
+        }
+
+        document.addEventListener("DOMContentLoaded", () => {
+            const urlParams = new URLSearchParams(window.location.search);
+            const filter = urlParams.get('filter') || 'all';
+            const search = urlParams.get('search') || '';
+
+            // Set search input value
+            document.getElementById("search-input").value = search;
 
             // Handle search input
             document.getElementById("search-input").addEventListener("input", (e) => {
@@ -534,6 +553,25 @@
                         `;
                         return;
                     }
+
+                    // Collect unique filters from boloc, ThuyetMinh, and LongTieng
+                    const filters = new Set(['all']);
+                    videos.forEach(video => {
+                        if (Array.isArray(video.boloc)) {
+                            video.boloc.forEach(filter => filters.add(filter));
+                        }
+                        if (Array.isArray(video.ThuyetMinh) && video.ThuyetMinh.length > 0) {
+                            filters.add("Thuyết Minh");
+                        }
+                        if (Array.isArray(video.LongTieng) && video.LongTieng.length > 0) {
+                            filters.add("Lồng Tiếng");
+                        }
+                    });
+
+                    // Create filter buttons
+                    createFilterButtons([...filters]);
+
+                    // Display videos with initial filter and search
                     displayVideos(filter, 1, search);
                 })
                 .catch(error => {
