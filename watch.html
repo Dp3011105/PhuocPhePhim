@@ -35,7 +35,11 @@
             color: #e5e5e5;
             margin: 0;
             font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-            transition: background-color 0.5s ease;
+        }
+        
+        .container {
+            transform: scale(0.8);
+            transform-origin: top center;
         }
         
         .video-container {
@@ -48,11 +52,12 @@
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
             opacity: 0;
             animation: fadeIn 0.5s ease forwards;
-            transition: box-shadow 0.5s ease;
+            transition: box-shadow 0.5s ease, padding-bottom 0.3s ease;
         }
         
         .video-container.ambient {
             box-shadow: none;
+            padding-bottom: 60%;
         }
         
         .video-container video {
@@ -97,7 +102,7 @@
             flex-wrap: wrap;
         }
         
-        .ambient-btn, .skip-intro-btn, .next-episode-btn, .subtitle-toggle, .thuyet-minh-btn, .long-tieng-btn {
+        .ambient-btn, .skip-intro-btn, .next-episode-btn, .subtitle-toggle, .thuyet-minh-btn, .long-tieng-btn, .toggle-controls {
             background-color: rgba(229, 9, 20, 0.9);
             color: white;
             padding: 0.4rem 0.8rem;
@@ -112,7 +117,7 @@
             gap: 0.25rem;
         }
         
-        .ambient-btn:hover, .skip-intro-btn:hover, .next-episode-btn:hover, .subtitle-toggle:hover, .thuyet-minh-btn:hover, .long-tieng-btn:hover {
+        .ambient-btn:hover, .skip-intro-btn:hover, .next-episode-btn:hover, .subtitle-toggle:hover, .thuyet-minh-btn:hover, .long-tieng-btn:hover, .toggle-controls:hover {
             background-color: #e50914;
             transform: scale(1.05);
             border-color: #e50914;
@@ -149,35 +154,6 @@
             color: white;
         }
         
-        .video-card {
-            transition: all 0.3s ease-in-out;
-            background-color: #1a1a1a;
-            border-radius: 0.5rem;
-            overflow: hidden;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
-            opacity: 0;
-            animation: fadeIn 0.5s ease forwards;
-            animation-delay: calc(var(--index) * 0.1s);
-        }
-        
-        .video-card:hover {
-            transform: scale(1.05);
-            box-shadow: 0 12px 20px rgba(0, 0, 0, 0.6);
-            background-color: #222222;
-            z-index: 10;
-        }
-        
-        .video-card img {
-            width: 100%;
-            height: 180px;
-            object-fit: cover;
-            transition: transform 0.3s ease;
-        }
-        
-        .video-card:hover img {
-            transform: scale(1.1);
-        }
-
         .filter-container {
             position: sticky;
             top: 0;
@@ -245,33 +221,23 @@
 
         /* Chat box styles */
         .chat-container {
-            position: fixed;
-            right: 0;
-            top: 50%;
-            transform: translateY(-50%);
-            width: 350px;
-            height: 70vh;
             background-color: rgba(18, 18, 18, 0.95);
-            border-left: 1px solid #333;
-            border-radius: 0.5rem 0 0 0.5rem;
-            box-shadow: -4px 0 12px rgba(0, 0, 0, 0.5);
+            border: 1px solid #333;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+            margin-top: 1rem;
             display: flex;
             flex-direction: column;
-            transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
-            z-index: 1000;
+            transition: opacity 0.3s ease-in-out;
+            z-index: 10;
             opacity: 1;
-        }
-
-        .chat-container.hidden {
-            transform: translateY(-50%) translateX(100%);
-            opacity: 0;
         }
 
         .chat-header {
             padding: 0.75rem;
             background-color: #1a1a1a;
             border-bottom: 1px solid #333;
-            border-radius: 0.5rem 0 0 0;
+            border-radius: 0.5rem 0.5rem 0 0;
         }
 
         .chat-header h3 {
@@ -291,6 +257,7 @@
             gap: 0.5rem;
             scrollbar-width: thin;
             scrollbar-color: #444 #1a1a1a;
+            max-height: 400px;
         }
 
         .chat-box::-webkit-scrollbar {
@@ -376,7 +343,7 @@
             box-shadow: 0 0 5px rgba(229, 9, 20, 0.5);
         }
 
-        .chat-send-btn, .chat-toggle-btn {
+        .chat-send-btn {
             background-color: #e50914;
             color: white;
             padding: 0.5rem 1rem;
@@ -387,14 +354,9 @@
             transition: background-color 0.2s ease, transform 0.2s ease;
         }
 
-        .chat-send-btn:hover, .chat-toggle-btn:hover {
+        .chat-send-btn:hover {
             background-color: #c10812;
             transform: scale(1.05);
-        }
-
-        .chat-toggle-btn.active {
-            background-color: #2a2a2a;
-            color: #e5e5e5;
         }
 
         @keyframes fadeIn {
@@ -407,27 +369,16 @@
                 padding-bottom: 75%;
             }
 
-            .video-card img {
-                width: 100%;
-                height: 120px;
-            }
-            
-            .video-card h3 {
-                font-size: 0.875rem;
-                margin-bottom: 0.25rem;
-            }
-            
-            .video-card p {
-                font-size: 0.7rem;
-                margin: 0.1rem 0;
+            .video-container.ambient {
+                padding-bottom: 80%;
             }
 
-            .ambient-btn, .skip-intro-btn, .next-episode-btn, .subtitle-toggle, .thuyet-minh-btn, .long-tieng-btn {
+            .ambient-btn, .skip-intro-btn, .next-episode-btn, .subtitle-toggle, .thuyet-minh-btn, .long-tieng-btn, .toggle-controls {
                 padding: 0.3rem 0.6rem;
                 font-size: 0.7rem;
             }
 
-            .filter-btn, .chat-toggle-btn {
+            .filter-btn {
                 padding: 0.4rem 0.8rem;
                 font-size: 0.75rem;
                 margin-bottom: 0.25rem;
@@ -451,46 +402,29 @@
             }
 
             .chat-container {
-                width: 100%;
-                height: 50vh;
-                top: auto;
-                bottom: 0;
-                transform: translateY(0);
-                border-radius: 0.5rem 0.5rem 0 0;
-                border-left: none;
-                border-top: 1px solid #333;
-            }
-
-            .chat-container.hidden {
-                transform: translateY(100%);
-                opacity: 0;
+                margin-left: 0.5rem;
+                margin-right: 0.5rem;
             }
         }
 
         @media (min-width: 641px) and (max-width: 1024px) {
-            .video-card img {
-                height: 150px;
-            }
-
             .chat-container {
-                width: 300px;
+                margin-left: 1rem;
+                margin-right: 1rem;
             }
         }
     </style>
 </head>
 <body class="font-sans bg-dark-900 text-gray-200">
     <div class="container mx-auto px-4 py-4">
-        <header class="mb-4">
+        <header class="mb-4" id="site-header">
             <a href="index.html" class="text-3xl font-bold text-white">PHIM N+</a>
         </header>
 
-        <div class="filter-container flex flex-wrap gap-2 justify-center sm:justify-start">
-            <!-- <input id="search-input" class="search-input" placeholder="Tìm kiếm phim theo tiêu đề...">  Thay thế -->
-            <a id="search-input" >
+        <div class="filter-container flex flex-wrap gap-2 justify-center sm:justify-start" id="filter-controls">
+            <input id="search-input" class="search-input" placeholder="Tìm kiếm phim theo tiêu đề...">
             <button class="filter-btn px-4 py-2 rounded-lg" data-filter="all">Trang chủ</button>
-          
             <a href="https://discord.gg/uqNA78fs9G" target="_blank" class="filter-btn px-4 py-2 rounded-lg bg-purple-600 hover:bg-purple-700 text-white">Discord</a>
-            <button id="chat-toggle-btn" class="chat-toggle-btn"> Ẩn Chat</button>
         </div>
 
         <div id="main-video-section" class="w-full mt-6">
@@ -503,33 +437,28 @@
                     </div>
                 </div>
             </div>
-            <div class="control-buttons mt-2">
+            <div class="control-buttons mt-2" id="video-controls">
                 <button id="ambient-btn" class="ambient-btn">Chế độ điện ảnh</button>
                 <button id="subtitle-toggle" class="subtitle-toggle hidden">Tắt phụ đề</button>
                 <button id="thuyet-minh-btn" class="thuyet-minh-btn hidden">Phát Thuyết Minh</button>
                 <button id="long-tieng-btn" class="thuyet-minh-btn hidden">Phát Lồng Tiếng</button>
+                <button id="toggle-controls" class="toggle-controls">Ẩn</button>
             </div>
             <h2 id="main-video-title" class="text-xl font-semibold text-white mt-4"></h2>
             <div id="episode-list" class="episode-list hidden"></div>
         </div>
 
-        <div id="recommended-videos" class="mt-4">
-            <h2 class="text-xl font-bold text-white mb-4">Phim gợi ý</h2>
-            <div id="recommended-list" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4"></div>
-        </div>
-
-        <!-- Chat Container -->
-        <div id="chat-container" class="chat-container">
-            <div class="chat-header">
-                <button id="chat-toggle-btnn" class="chat-toggle-btn"> Ẩn X</button>
-                <h5>Mở lại đoạn chat ở trên cùng trang web bên nút Discord nha , Mình đang phát triển nên còn lỗi nhiều lắm </h5>
-                <h3>Chat cộng đồng</h3>
-            </div>
-            <div id="chat-box" class="chat-box"></div>
-            <div class="chat-input-container">
-                <input type="text" id="chat-username" class="chat-username" placeholder="Tên..." value="Anonymous">
-                <input type="text" id="chat-input" class="chat-input" placeholder="Nhập tin nhắn...">
-                <button id="chat-send-btn" class="chat-send-btn">Gửi</button>
+        <div id="community-chat" class="mt-4">
+            <div id="chat-container" class="chat-container">
+                <div class="chat-header">
+                    <h3>Chat cộng đồng</h3>
+                </div>
+                <div id="chat-box" class="chat-box"></div>
+                <div class="chat-input-container">
+                    <input type="text" id="chat-username" class="chat-username" placeholder="Tên..." value="Anonymous">
+                    <input type="text" id="chat-input" class="chat-input" placeholder="Nhập tin nhắn...">
+                    <button id="chat-send-btn" class="chat-send-btn">Gửi</button>
+                </div>
             </div>
         </div>
     </div>
@@ -574,9 +503,6 @@
         const ABLY_KEY = "BDzatA.Frs1jw:_RWjZtJGW0rzDHS6UdJuhfrJbEka-ZdAeYNzp7T2Zlc";
         const ably = new Ably.Realtime({ key: ABLY_KEY, clientId: `client-${Math.random().toString(36).substr(2, 9)}` });
         const channel = ably.channels.get("ephemeral-chat");
-        const chatContainer = document.getElementById("chat-container");
-        const chatToggleBtn = document.getElementById("chat-toggle-btn");
-        const chatToggleBtnn = document.getElementById("chat-toggle-btnn");
         const chatBox = document.getElementById("chat-box");
 
         // Load chat history from cookie
@@ -594,9 +520,7 @@
                         `;
                         chatBox.appendChild(el);
                     });
-                    if (isChatVisible) {
-                        chatBox.scrollTop = chatBox.scrollHeight;
-                    }
+                    chatBox.scrollTop = chatBox.scrollHeight;
                 } catch (e) {
                     console.error("Lỗi khi khôi phục lịch sử chat từ cookie:", e);
                 }
@@ -619,45 +543,15 @@
                 }
             }
             messages.push({ clientId, username, text });
-            // Limit to last 100 messages to avoid cookie size issues
             if (messages.length > 100) {
                 messages = messages.slice(-100);
             }
-            setCookie("chatHistory", JSON.stringify(messages), 10800); // 3 hours
+            setCookie("chatHistory", JSON.stringify(messages), 10800);
         }
-
-        // Toggle chat visibility
-        let isChatVisible = true;
-        chatToggleBtn.addEventListener('click', () => {
-            isChatVisible = !isChatVisible;
-            chatContainer.classList.toggle('hidden', !isChatVisible);
-            chatToggleBtn.classList.toggle('active', !isChatVisible);
-            chatToggleBtn.textContent = isChatVisible ? 'Ẩn Chat' : 'Mở Chat';
-            if (isChatVisible) {
-                chatBox.scrollTop = chatBox.scrollHeight;
-            }
-
-
-        });
-        chatToggleBtnn.addEventListener('click', () => {
-            isChatVisible = !isChatVisible;
-            chatContainer.classList.toggle('hidden', !isChatVisible);
-            chatToggleBtn.classList.toggle('active', !isChatVisible);
-            chatToggleBtn.textContent = isChatVisible ? 'Ẩn Chat' : 'mở Chat';
-            if (isChatVisible) {
-                chatBox.scrollTop = chatBox.scrollHeight;
-            }
-
-            
-        });
-
-
-       
 
         // Receive messages
         channel.subscribe("message", (msg) => {
             const el = document.createElement("div");
-            const username = document.getElementById("chat-username").value.trim() || "Anonymous";
             el.className = `message ${msg.clientId === ably.clientId ? 'self' : ''}`;
             el.innerHTML = `
                 <span class="username">${msg.data.username}</span>
@@ -665,9 +559,7 @@
             `;
             chatBox.appendChild(el);
             saveChatMessage(msg.clientId, msg.data.username, msg.data.text);
-            if (isChatVisible) {
-                chatBox.scrollTop = chatBox.scrollHeight;
-            }
+            chatBox.scrollTop = chatBox.scrollHeight;
         });
 
         // Send message
@@ -688,9 +580,7 @@
         });
 
         // Load chat history on page load
-        document.addEventListener("DOMContentLoaded", () => {
-            loadChatHistory();
-        });
+        document.addEventListener("DOMContentLoaded", loadChatHistory);
 
         function parseTimeToSeconds(timeStr) {
             if (!timeStr || typeof timeStr !== 'string') return 0;
@@ -746,66 +636,6 @@
                 console.error('Lỗi kiểm tra URL quảng cáo:', e);
                 return false;
             }
-        }
-
-        function getRandomVideos(videos, count, excludeVideoId) {
-            const filtered = videos.filter(v => v.tap[0]?.video !== excludeVideoId);
-            const shuffled = [...filtered].sort(() => 0.5 - Math.random());
-            return shuffled.slice(0, Math.min(count, filtered.length));
-        }
-
-        function getVideoTitle(video) {
-            return video.TieuDe && video.TieuDe.trim() !== '' ? video.TieuDe : extractTitleFromUrl(video.tap[0]?.video);
-        }
-
-        function extractTitleFromUrl(url) {
-            if (!url) return "Video không có tiêu đề";
-            try {
-                const match = url.match(/\/video\.[^/]+\/(.+)$/);
-                if (match && match[1] && match[1] !== '_') {
-                    return match[1]
-                        .replace(/_/g, ' ')
-                        .replace(/\b\w/g, c => c.toUpperCase())
-                        .replace(/%20/g, ' ');
-                }
-            } catch (e) {
-                console.error('Lỗi phân tích tiêu đề video:', e);
-            }
-            return "Video không có tiêu đề";
-        }
-
-        function displayRecommendedVideos(excludeVideoId) {
-            const recommendedList = document.getElementById("recommended-list");
-            recommendedList.innerHTML = "";
-
-            const recommendedVideos = getRandomVideos(videos, 10, excludeVideoId);
-
-            recommendedVideos.forEach((vid, index) => {
-                const videoCard = document.createElement("div");
-                videoCard.className = "video-card";
-                videoCard.style.setProperty('--index', index);
-
-                const title = getVideoTitle(vid);
-                const thumbnail = vid.anh || 'img/placeholder.jpg';
-                const categories = vid.boloc ? vid.boloc.join(", ") : '';
-                const videoId = vid.tap[0]?.video || '';
-
-                videoCard.innerHTML = `
-                    <div class="overflow-hidden">
-                        <img src="${thumbnail}" alt="${title}" class="w-full h-full object-cover">
-                    </div>
-                    <div class="p-3">
-                        <h3 class="text-sm font-medium text-white line-clamp-2">${title}</h3>
-                        <p class="text-xs text-gray-400 mt-1">${categories}</p>
-                    </div>
-                `;
-
-                videoCard.addEventListener("click", () => {
-                    window.location.href = `watch.html?id=${encodeURIComponent(videoId)}&title=${encodeURIComponent(title)}`;
-                });
-
-                recommendedList.appendChild(videoCard);
-            });
         }
 
         function playVideo(videoData, title, seriesId, episodeIndex = 0) {
@@ -888,7 +718,7 @@
                     const thuyetMinhVideo = videos.find(v => v.id === videoData.ThuyetMinh[0]);
                     if (thuyetMinhVideo) {
                         const thuyetMinhVideoId = cleanVideoUrl(thuyetMinhVideo.tap[0]?.video);
-                        const thuyetMinhTitle = getVideoTitle(thuyetMinhVideo);
+                        const thuyetMinhTitle = videoData.TieuDe || 'Video không có tiêu đề';
                         window.location.href = `watch.html?id=${encodeURIComponent(thuyetMinhVideoId)}&title=${encodeURIComponent(thuyetMinhTitle)}`;
                     }
                 };
@@ -900,7 +730,7 @@
                     const longTiengVideo = videos.find(v => v.id === videoData.LongTieng[0]);
                     if (longTiengVideo) {
                         const longTiengVideoId = cleanVideoUrl(longTiengVideo.tap[0]?.video);
-                        const longTiengTitle = getVideoTitle(longTiengVideo);
+                        const longTiengTitle = videoData.TieuDe || 'Video không có tiêu đề';
                         window.location.href = `watch.html?id=${encodeURIComponent(longTiengVideoId)}&title=${encodeURIComponent(longTiengTitle)}`;
                     }
                 };
@@ -943,7 +773,6 @@
                 });
             }
 
-            displayRecommendedVideos(seriesId);
             setupVideoControls(video, videoData, title, seriesId);
         }
 
@@ -1081,20 +910,17 @@
                     colorUpdateInterval = setInterval(() => {
                         if (videoElement.videoWidth > 0 && videoElement.videoHeight > 0) {
                             const color = getAverageColor(videoElement);
-                            const rgb = `rgb(${color.r}, ${color.g}, ${color.b})`;
-                            const rgba30 = `rgba(${color.r}, ${color.g}, ${color.b}, 0.5)`;
-                            const rgba60 = `rgba(${color.r}, ${color.g}, ${color.b}, 0.3)`;
-                            videoContainer.style.boxShadow = `0 0 30px ${rgba30}, 0 0 60px ${rgba60}`;
-                            document.body.style.backgroundColor = rgb;
+                            const rgba30 = `rgba(${color.r}, ${color.g}, ${color.b}, 1.5)`; 
+                            const rgba60 = `rgba(${color.r}, ${color.g}, ${color.b}, 1.2)`; 
+                            videoContainer.style.boxShadow = `0 0 50px ${rgba30}, 0 0 100px ${rgba60}`;
                         }
-                    }, 2000);
+                    }, 800);
                 } else {
                     videoContainer.classList.remove('ambient');
                     ambientBtn.textContent = 'Chế độ điện ảnh';
                     clearInterval(colorUpdateInterval);
                     colorUpdateInterval = null;
                     videoContainer.style.boxShadow = '0 4px 12px rgba(0, 0, 0, 0.5)';
-                    document.body.style.backgroundColor = '#0a0a0a';
                 }
             });
 
@@ -1114,6 +940,32 @@
             });
         }
 
+        // Hàm ẩn tất cả các thành phần trừ nút "Hiện"
+        function hideAllControls() {
+            document.querySelectorAll('#video-controls button:not(#toggle-controls)').forEach(btn => {
+                btn.style.display = 'none';
+            });
+            document.getElementById('episode-list').style.display = 'none';
+            document.getElementById('chat-container').style.display = 'none';
+            document.getElementById('site-header').style.display = 'none';
+            document.getElementById('filter-controls').style.display = 'none';
+            document.getElementById('main-video-title').style.display = 'none';
+            document.getElementById('toggle-controls').textContent = 'Hiện';
+        }
+
+        // Hàm hiện tất cả các thành phần
+        function showAllControls() {
+            document.querySelectorAll('#video-controls button:not(#toggle-controls)').forEach(btn => {
+                btn.style.display = '';
+            });
+            document.getElementById('episode-list').style.display = '';
+            document.getElementById('chat-container').style.display = '';
+            document.getElementById('site-header').style.display = '';
+            document.getElementById('filter-controls').style.display = '';
+            document.getElementById('main-video-title').style.display = '';
+            document.getElementById('toggle-controls').textContent = 'Ẩn';
+        }
+
         document.addEventListener("DOMContentLoaded", () => {
             document.querySelectorAll(".filter-btn").forEach(btn => {
                 btn.addEventListener("click", () => {
@@ -1130,6 +982,7 @@
             const title = urlParams.get('title');
 
             if (!videoId || !title) {
+                console.error('Thiếu videoId hoặc title trong URL');
                 return;
             }
 
@@ -1141,11 +994,28 @@
                     if (videoData) {
                         const episodeIndex = videoData.tap.findIndex(ep => cleanVideoUrl(ep.video) === cleanVideoUrl(videoId));
                         playVideo(videoData, decodeURIComponent(title), videoId, episodeIndex);
+
+                        // Tự động bật chế độ điện ảnh và ẩn mọi thứ khi tải trang
+                        const ambientBtn = document.getElementById('ambient-btn');
+                        ambientBtn.click();
+                        hideAllControls();
+                    } else {
+                        console.error('Không tìm thấy video phù hợp trong phim.json');
                     }
                 })
                 .catch(error => {
                     console.error("Lỗi tải danh sách video:", error);
                 });
+
+            // Sự kiện cho nút ẩn/hiện
+            const toggleControlsBtn = document.getElementById('toggle-controls');
+            toggleControlsBtn.addEventListener('click', () => {
+                if (toggleControlsBtn.textContent === 'Ẩn') {
+                    hideAllControls();
+                } else {
+                    showAllControls();
+                }
+            });
         });
     </script>
 </body>
