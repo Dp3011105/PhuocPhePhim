@@ -4128,5 +4128,29 @@
         "GioiThieuKetThuc": ""
       }
     ]
+  },
+  {
+    "id": "movie_i1a4dr89w",
+    "TieuDe": "Giờ Mất Tích Weapons",
+    "anh": "https://static.nutscdn.com/vimg/300-0/7f9c8210eed63c410c95e6724af9e16f.jpg",
+    "moTa": "",
+    "loai": "movie",
+    "Dang": ".m3u8",
+    "boloc": [
+      "Phim Tâm Lý",
+      "Phim Kinh Dị",
+      "Châu âu"
+    ],
+    "ThuyetMinh": [],
+    "LongTieng": [],
+    "tap": [
+      {
+        "tapSo": null,
+        "video": "https://vip.opstream90.com/20250824/11157_89f69258/index.m3u8",
+        "subtitle": "",
+        "GioiThieuBatDau": "",
+        "GioiThieuKetThuc": ""
+      }
+    ]
   }
 ]
