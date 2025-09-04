@@ -804,7 +804,7 @@
 <body class="font-sans bg-dark-900 text-gray-200">
     <div class="container mx-auto px-4 py-4">
         <header class="mb-4 flex justify-between items-center">
-            <a href="index.html" class="text-3xl font-bold text-white">CoInPhIm</a>
+            <a href="https://phuocphephim.netlify.app/xem.html" class="text-3xl font-bold text-white">CoInPhIm</a>
             <a href="https://phuocphephim.netlify.app/login" class="filter-btn">Bộ lọc & Tìm kiếm</a>
         </header>
 
@@ -849,7 +849,7 @@
                 </iframe>
                 <div class="video-overlay">
                     <h2 id="recommended-video-title">La Tiểu Hắc Chiến Ký - Sắp có phần 2 rồi xem phần 1 lấy cảm xúc nào</h2>
-                    <a href="https://phuocphephim.netlify.app" class="watch-btn">Xem ngay</a>
+                    <a href="https://phuocphephim.netlify.app/xem.html" class="watch-btn">Xem ngay</a>
                 </div>
             </div>
         </div>
@@ -880,7 +880,7 @@
                 </iframe>
                 <div class="video-overlay">
                     <h2 id="recommended-video-title">Superman - Phim Đỉnh Lắm Luôn Bấm Xem Ngay Đi</h2>
-                    <a href="https://phuocphephim.netlify.app" class="watch-btn">Xem ngay</a>
+                    <a href="https://phuocphephim.netlify.app/xem.html" class="watch-btn">Xem ngay</a>
                 </div>
             </div>
         </div>
@@ -909,7 +909,7 @@
                 <div class="custom-featured-overlay">
                     <h2 id="custom-featured-title" class="text-2xl font-bold text-white mb-2"></h2>
                     <p id="custom-featured-description" class="text-gray-300 mb-4"></p>
-                    <a id="custom-featured-watch-btn" href="https://phuocphephim.netlify.app" class="watch-btn">Xem ngay</a>
+                    <a id="custom-featured-watch-btn" href="https://phuocphephim.netlify.app/xem.html" class="watch-btn">Xem ngay</a>
                 </div>
                 <button id="custom-prev-slide" class="absolute left-4 top-1/2 transform -translate-y-1/2 bg-dark-600 bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-75 transition z-20">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -960,7 +960,7 @@
 
             if (isBookSlider) {
                 videoCard.innerHTML = `
-                    <a href="https://phuocphephim.netlify.app" data-title="${title}" class="flex w-full h-full">
+                    <a href="https://phuocphephim.netlify.app/xem.html" data-title="${title}" class="flex w-full h-full">
                         <div class="content">
                             <h3>${title}</h3>
                             <p>${description}</p>
@@ -970,7 +970,7 @@
                 `;
             } else {
                 videoCard.innerHTML = `
-                    <a href="https://phuocphephim.netlify.app" data-title="${title}" class="w-full h-full object-cover">
+                    <a href="https://phuocphephim.netlify.app/xem.html" data-title="${title}" class="w-full h-full object-cover">
                         <img src="${thumbnail}" alt="${title}" class="w-full h-full object-cover" onerror="this.src='img/placeholder.jpg'">
                     </a>
                     <div class="content">
@@ -996,7 +996,7 @@
             const viewAllBtn = document.createElement("a");
             viewAllBtn.className = "view-all-btn";
             viewAllBtn.textContent = "Xem tất cả";
-            viewAllBtn.href = `https://phuocphephim.netlify.app`;
+            viewAllBtn.href = `https://phuocphephim.netlify.app/xem.html`;
             headerDiv.appendChild(viewAllBtn);
 
             categorySection.appendChild(headerDiv);
@@ -1298,7 +1298,7 @@
                             const title = getVideoTitle(movie);
                             const thumbnail = movie.anh || 'img/placeholder.jpg';
                             card.innerHTML = `
-                                <a href="https://phuocphephim.netlify.app" data-title="${title}">
+                                <a href="https://phuocphephim.netlify.app/xem.html" data-title="${title}">
                                     <img src="${thumbnail}" alt="${title}" onerror="this.src='img/placeholder.jpg'">
                                     <h3>${title}</h3>
                                 </a>
