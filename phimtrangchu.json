@@ -1,9 +1,84 @@
 [
+  {
+    "id": "movie_w6xd0t9yp",
+    "TieuDe": "Wednesday ",
+    "anh": "https://static.nutscdn.com/vimg/1920-0/f240f8af00e2bca18281331bc5f30bd9.jpg&quot",
+    "moTa": "Wednesday là loạt phim truyền hình thuộc thể loại hài, kinh dị, bí ẩn, kể về cô thiếu nữ Wednesday Addams với phong cách gothic đen tối, lạnh lùng",
+    "loai": "series",
+    "Dang": ".m3u8",
+    "boloc": [
+      "Phim Bộ",
+      "Phim Tâm Lý",
+      "Châu âu"
+    ],
+    "ThuyetMinh": [],
+    "LongTieng": [
+      "movie_w6xd0eryp"
+    ],
+    "tap": [
+      {
+        "tapSo": 1,
+        "video": "https://s1.phim1280.tv/20240222/F61s8JgL/3000kb/hls/index.m3u8",
+        "subtitle": "",
+        "GioiThieuBatDau": "",
+        "GioiThieuKetThuc": ""
+      },
+      {
+        "tapSo": 2,
+        "video": "https://s1.phim1280.tv/20240222/oq5prKvC/3000kb/hls/index.m3u8",
+        "subtitle": "",
+        "GioiThieuBatDau": "",
+        "GioiThieuKetThuc": ""
+      },
+      {
+        "tapSo": 3,
+        "video": "https://s1.phim1280.tv/20240222/7aGMozaA/3000kb/hls/index.m3u8",
+        "subtitle": "",
+        "GioiThieuBatDau": "",
+        "GioiThieuKetThuc": ""
+      },
+      {
+        "tapSo": 4,
+        "video": "https://s1.phim1280.tv/20240222/5fsJTORZ/3000kb/hls/index.m3u8",
+        "subtitle": "",
+        "GioiThieuBatDau": "",
+        "GioiThieuKetThuc": ""
+      },
+      {
+        "tapSo": 5,
+        "video": "https://s1.phim1280.tv/20240222/uxbvd3Nx/3000kb/hls/index.m3u8",
+        "subtitle": "",
+        "GioiThieuBatDau": "",
+        "GioiThieuKetThuc": ""
+      },
+      {
+        "tapSo": 6,
+        "video": "https://s1.phim1280.tv/20240222/sGLgL6XL/3000kb/hls/index.m3u8",
+        "subtitle": "",
+        "GioiThieuBatDau": "",
+        "GioiThieuKetThuc": ""
+      },
+      {
+        "tapSo": 7,
+        "video": "https://s1.phim1280.tv/20240222/X4IGvIWM/3000kb/hls/index.m3u8",
+        "subtitle": "",
+        "GioiThieuBatDau": "",
+        "GioiThieuKetThuc": ""
+      },
+      {
+        "tapSo": 8,
+        "video": "https://s1.phim1280.tv/20240222/l1oWq2kr/3000kb/hls/index.m3u8",
+        "subtitle": "",
+        "GioiThieuBatDau": "",
+        "GioiThieuKetThuc": ""
+      }
+    ]
+  },
     {
     "id": "movie_kngigy0yj",
     "TieuDe": "Superman",
     "anh": "img/superman.jpg",
-    "moTa": "",
+    "moTa": " Superman (2025) kể về Clark Kent (David Corenswet) - phóng viên tại Metropolis, người phải cân bằng giữa di sản Krypton và cuộc sống con người.",
     "loai": "movie",
     "Dang": ".m3u8",
     "boloc": [
@@ -25,7 +100,7 @@
     "id": "movie_2e4eunv0h",
     "TieuDe": "Thế Giới Khủng Long: Tái Sinh",
     "anh": "img/thegioikhunglong.jpg",
-    "moTa": "",
+    "moTa": "(Jurassic World: Rebirth) là một chương mới của loạt phim, lấy bối cảnh 5 năm sau sự kiện của Dominion, nơi một đội khai thác do Scarlett Johansson dẫn đầu, bao gồm Jonathan Bailey và Mahershala Ali, được cử đến một hòn đảo biệt lập để lấy DNA của ba loài khủng long khổng lồ với mục đích y học đột phá",
     "loai": "movie",
     "Dang": ".m3u8",
     "boloc": [
@@ -48,7 +123,7 @@
     "id": "movie_94rcnc9as",
     "TieuDe": "Ga Tử Thần ",
     "anh": "img/gatuthan.jpg",
-    "moTa": "",
+    "moTa": "Ga Tử Thần là một bộ phim kinh dị Hàn Quốc kể về Da Gyeong, một YouTuber cố gắng cứu vãn tài khoản đang thất bại của mình bằng cách khám phá ga tàu điện ngầm Gwanglim, nơi nổi tiếng với những truyền thuyết đô thị và vụ mất tích bí ẩn",
     "loai": "movie",
     "Dang": ".m3u8",
     "boloc": [
@@ -71,7 +146,7 @@
     "id": "movie_1232fnd9t",
     "TieuDe": "Bộ Tứ Siêu Đẳng: Bước Đi Đầu Tiên (CAM)",
     "anh": "img/bo-tu-sieu-dang-buoc-di-dau-tien-.jpg",
-    "moTa": "",
+    "moTa": "(The Fantastic Four: First Steps) là bộ phim khởi đầu cho Kỷ nguyên anh hùng thứ sáu của Marvel, kể về gia đình siêu anh hùng đầu tiên của Marvel — bốn phi hành gia nhận siêu năng lực sau một chuyến thám hiểm không gian",
     "loai": "movie",
     "Dang": ".m3u8",
     "boloc": [
@@ -91,25 +166,28 @@
     ]
   },
   
-    {
+   {
     "id": "movie_v2qawhltc",
-    "TieuDe": "Xem phim Na Tra 2: Ma Đồng Náo Hải",
-    "anh": "img/Natra.jpg",
+    "TieuDe": " Na Tra 2: Ma Đồng Náo Hải",
+    "anh": "https://static.nutscdn.com/vimg/1920-0/862b61e1bc770c7e25e84e6ec745009e.webp",
+    "moTa": "Na Tra 2: Ma Đồng Náo Hải là phim hoạt hình kể về hành trình tái tạo thân xác cho Na Tra và Ngao Bính sau kiếp nạn, nhưng gặp phải sự cản trở của Thân Công Báo và Tứ Đại Long Vương",
     "loai": "movie",
     "Dang": ".m3u8",
     "boloc": [
       "Phim Hành Động",
-      "Phim Hoạt Hình"
+      "Phim Hoạt Hình",
+      "Trung Quốc"
     ],
+    "ThuyetMinh": [],
+    "LongTieng": [],
     "tap": [
       {
         "tapSo": null,
-        "video": "https://vip.opstream90.com/20250731/9896_dd1970fb/index.m3u8",
+        "video": "https://s6.kkphimplayer6.com/20250731/cd0ZOCEr/index.m3u8",
+        "subtitle": "",
         "GioiThieuBatDau": "00:00",
-        "GioiThieuKetThuc": "00:35",
-        "subtitle": ""
+        "GioiThieuKetThuc": "00:35"
       }
-    ],
-    "moTa": ""
+    ]
   }
 ]
