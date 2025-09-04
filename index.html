@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PHIM N+ | Phê Phim</title>
+    <title>Trang Chủ | CoinPhim</title>
     <link rel="icon" type="image/png" href="img/image2-fotor-20250813113121.png">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -89,7 +89,7 @@
             position: absolute;
             top: 0;
             left: 0;
-            filter: brightness(0.7);
+            filter: brightness(0.6) contrast(1.1);
             transition: transform 0.7s ease-in-out;
         }
 
@@ -107,6 +107,7 @@
             display: flex;
             flex-direction: column;
             justify-content: flex-end;
+            align-items: flex-start;
         }
 
         .watch-btn {
@@ -122,8 +123,7 @@
             cursor: pointer;
             box-shadow: 0 4px 15px rgba(229, 9, 20, 0.3);
             text-align: center;
-            width: 100%;
-            display: block;
+            width: fit-content;
         }
 
         .watch-btn:hover {
@@ -131,6 +131,32 @@
             transform: translateY(-2px);
             box-shadow: 0 8px 20px rgba(229, 9, 20, 0.5);
             border-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .play-btn {
+            width: 60px;
+            height: 60px;
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(5px);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: transform 0.3s ease, background 0.3s ease;
+        }
+
+        .play-btn::before {
+            content: '';
+            width: 24px;
+            height: 24px;
+            background: url('https://img.icons8.com/ios-filled/50/ffffff/play.png') no-repeat center;
+            background-size: contain;
+        }
+
+        .play-btn:hover {
+            transform: scale(1.1);
+            background: rgba(255, 255, 255, 0.3);
         }
 
         .carousel-indicator {
@@ -154,6 +180,10 @@
         .category-section {
             margin-bottom: 2rem;
             position: relative;
+            margin-left: -2rem;
+            margin-right: -2rem;
+            padding-left: 2rem;
+            padding-right: 2rem;
         }
 
         .category-section h2 {
@@ -167,7 +197,7 @@
         .category-grid {
             display: flex;
             overflow-x: auto;
-            gap: 1rem;
+            gap: 1.5rem;
             padding-bottom: 1rem;
             scroll-snap-type: x mandatory;
             -webkit-overflow-scrolling: touch;
@@ -180,7 +210,7 @@
         }
 
         .category-grid .video-card {
-            flex: 0 0 200px;
+            flex: 0 0 220px;
             scroll-snap-align: start;
             transition: all 0.3s ease-in-out;
             background-color: #1a1a1a;
@@ -199,7 +229,7 @@
 
         .category-grid .video-card img {
             width: 100%;
-            height: 300px;
+            height: 320px;
             object-fit: cover;
             transition: transform 0.3s ease;
         }
@@ -245,8 +275,8 @@
         .book-slider {
             display: flex;
             overflow-x: auto;
-            gap: 50px;
-            padding-bottom: 20px;
+            gap: 1.5rem;
+            padding-bottom: 1rem;
             scroll-snap-type: x mandatory;
             -webkit-overflow-scrolling: touch;
             scrollbar-width: thin;
@@ -263,57 +293,45 @@
             border-radius: 4px;
         }
 
-        .book {
-            display: flex;
-            flex: 0 0 auto;
-            gap: 20px;
-            align-items: flex-end;
-        }
-
         .book .video-card {
             position: relative;
             transition: transform 0.3s ease;
+            width: 360px;
+            height: 200px;
+            display: flex;
+            flex-direction: row;
+            background: linear-gradient(to right, #1a1a1a 50%, rgba(26, 26, 26, 0.9) 75%, transparent 100%);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
         }
 
         .book .video-card img {
-            width: 150px;
-            height: 220px;
+            width: 50%;
+            height: 100%;
             object-fit: cover;
-            border-radius: 6px;
-            box-shadow: 0 8px 14px rgba(0, 0, 0, 0.6);
-            transition: transform 0.3s ease;
-        }
-
-        .book .video-card:first-child img {
-            transform: skewY(12deg);
-        }
-
-        .book .video-card:last-child img {
-            transform: skewY(-12deg);
+            border-radius: 0 8px 8px 0;
+            z-index: 1;
         }
 
         .book .video-card:hover {
             transform: scale(1.05);
+            box-shadow: 0 12px 20px rgba(0, 0, 0, 0.6);
         }
 
-        .book .video-card:first-child:hover img {
-            transform: scale(1.1) skewY(12deg);
-        }
-
-        .book .video-card:last-child:hover img {
-            transform: scale(1.1) skewY(-12deg);
+        .book .video-card:hover img {
+            transform: scale(1.1);
         }
 
         .book .video-card .content {
-            padding: 0.75rem;
-            background: #1a1a1a;
-            text-align: center;
-            width: 150px;
-            height: 80px;
+            width: 50%;
+            padding: 1.5rem 1rem;
             display: flex;
             flex-direction: column;
-            justify-content: flex-start;
-            align-items: center;
+            justify-content: center;
+            align-items: flex-start;
+            background: transparent;
+            z-index: 2;
         }
 
         .book .video-card .content h3 {
@@ -323,7 +341,6 @@
             line-clamp: 2;
             overflow: hidden;
             text-overflow: ellipsis;
-            min-height: 48px;
             max-height: 48px;
             display: -webkit-box;
             -webkit-line-clamp: 2;
@@ -333,11 +350,13 @@
         .book .video-card .content p {
             font-size: 0.75rem;
             color: #e5e5e5;
-            margin-top: 0.25rem;
-            line-clamp: 1;
+            margin-top: 0.5rem;
+            line-clamp: 3;
             overflow: hidden;
             text-overflow: ellipsis;
-            min-height: 20px;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
         }
 
         .video-feature-section {
@@ -347,25 +366,22 @@
             margin-bottom: 2rem;
             overflow: hidden;
             border-radius: 0.5rem;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
         }
 
         .video-feature-section iframe {
             width: 100%;
             height: 100%;
             object-fit: cover;
-            filter: brightness(0.8);
             aspect-ratio: 16 / 9;
         }
 
-        .video-feature-section::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: radial-gradient(circle, transparent 50%, rgba(0, 0, 0, 0.9) 100%);
-            z-index: 1;
+        .video-feature-section.latiohac {
+            background: linear-gradient(to right, rgba(0, 0, 0, 0.8), transparent 20%, transparent 80%, rgba(0, 0, 0, 0.8));
+        }
+
+        .video-feature-section.superman iframe {
+            filter: brightness(0.8) blur(2px);
         }
 
         .video-overlay {
@@ -376,7 +392,7 @@
             padding: 2rem;
             background: linear-gradient(to top, rgba(0, 0, 0, 0.85), transparent);
             display: flex;
-            justify-content: space-between;
+            justify-content: flex-start;
             align-items: flex-end;
             z-index: 2;
             flex-wrap: wrap;
@@ -393,19 +409,7 @@
         }
 
         .video-overlay .watch-btn {
-            background: linear-gradient(135deg, #e50914 0%, #b20710 100%);
-            border: none;
-            padding: 0.6rem 1.2rem;
-            border-radius: 0.375rem;
-            font-size: 0.875rem;
-            font-weight: 600;
-            box-shadow: 0 4px 15px rgba(229, 9, 20, 0.4);
-            width: fit-content;
-        }
-
-        .video-overlay .watch-btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(229, 9, 20, 0.6);
+            margin-left: auto;
         }
 
         .slider-nav {
@@ -470,9 +474,13 @@
 
         #video-list {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
             gap: 1.5rem;
             min-height: 200px;
+            margin-left: -2rem;
+            margin-right: -2rem;
+            padding-left: 2rem;
+            padding-right: 2rem;
         }
 
         #video-list .video-card {
@@ -493,7 +501,7 @@
 
         #video-list .video-card img {
             width: 100%;
-            height: 300px;
+            height: 320px;
             object-fit: cover;
             transition: transform 0.3s ease;
         }
@@ -539,6 +547,10 @@
         .scrolling-container {
             overflow: hidden;
             width: 100%;
+            margin-left: -2rem;
+            margin-right: -2rem;
+            padding-left: 2rem;
+            padding-right: 2rem;
         }
 
         .scrolling-content {
@@ -548,8 +560,8 @@
         }
 
         .scrolling-card {
-            flex: 0 0 200px;
-            margin-right: 1rem;
+            flex: 0 0 220px;
+            margin-right: 1.5rem;
             background-color: #1a1a1a;
             border-radius: 0.5rem;
             overflow: hidden;
@@ -558,7 +570,7 @@
 
         .scrolling-card img {
             width: 100%;
-            height: 300px;
+            height: 320px;
             object-fit: cover;
         }
 
@@ -609,9 +621,7 @@
             display: flex;
             flex-direction: column;
             justify-content: flex-end;
-            opacity: 0;
-            transform: translateY(20px);
-            transition: opacity 0.5s ease, transform 0.5s ease;
+            align-items: flex-end;
         }
 
         .custom-featured-section:hover .custom-featured-overlay {
@@ -666,134 +676,109 @@
                 height: 45vh;
             }
 
-            .book .video-card img {
-                width: 120px;
+            .watch-btn {
+                padding: 0.5rem 1rem;
+                font-size: 0.75rem;
+            }
+
+            .play-btn {
+                width: 40px;
+                height: 40px;
+            }
+
+            .play-btn::before {
+                width: 16px;
+                height: 16px;
+            }
+
+            .book .video-card {
+                width: 280px;
                 height: 180px;
+                flex: 0 0 100%;
+            }
+
+            .book .video-card img {
+                width: 50%;
+                height: 100%;
             }
 
             .book .video-card .content {
-                width: 120px;
-                height: 70px;
+                width: 50%;
+                height: 100%;
+                padding: 1rem 0.75rem;
             }
 
             .book .video-card .content h3 {
-                font-size: 0.875rem;
-                min-height: 40px;
-                max-height: 40px;
+                font-size: 0.9rem;
             }
 
             .book .video-card .content p {
-                min-height: 16px;
+                font-size: 0.7rem;
+                line-clamp: 2;
+                max-height: 36px;
             }
 
-            .category-section h2 {
-                font-size: 1.25rem;
+            .book-slider {
+                display: flex;
+                justify-content: flex-start;
             }
 
-            .video-feature-section {
-                height: 40vh;
-                aspect-ratio: 16 / 9;
+            .category-section {
+                margin-left: -1rem;
+                margin-right: -1rem;
+                padding-left: 1rem;
+                padding-right: 1rem;
             }
 
-            .video-overlay {
-                padding: 1rem;
-                flex-direction: column;
-                align-items: flex-start;
+            .category-grid .video-card {
+                flex: 0 0 160px;
             }
 
-            .video-overlay h2 {
-                font-size: 1.25rem;
-                max-width: 100%;
-                margin-bottom: 0.5rem;
+            .category-grid .video-card img {
+                height: 240px;
             }
 
-            .video-overlay .watch-btn {
-                padding: 0.5rem 1rem;
-                font-size: 0.75rem;
-                width: 100%;
+            .scrolling-container {
+                margin-left: -1rem;
+                margin-right: -1rem;
+                padding-left: 1rem;
+                padding-right: 1rem;
             }
 
-            .slider-nav {
-                padding: 0.3rem;
+            .scrolling-card {
+                flex: 0 0 160px;
             }
 
-            .slider-nav svg {
-                width: 20px;
-                height: 20px;
-            }
-
-            .filter-btn, .view-all-btn {
-                padding: 0.4rem 0.8rem;
-                font-size: 0.75rem;
-            }
-
-            .pagination-btn {
-                padding: 0.4rem 0.8rem;
-                font-size: 0.75rem;
-                min-width: 32px;
+            .scrolling-card img {
+                height: 240px;
             }
 
             #video-list {
                 grid-template-columns: repeat(2, 1fr);
                 gap: 0.75rem;
+                margin-left: -1rem;
+                margin-right: -1rem;
+                padding-left: 1rem;
+                padding-right: 1rem;
             }
 
-            #video-list .video-card .content {
-                height: 70px;
-            }
-
-            #video-list .video-card .content h3 {
-                font-size: 0.875rem;
-                min-height: 40px;
-                max-height: 40px;
-            }
-
-            #video-list .video-card .content p {
-                min-height: 16px;
-            }
-
-            .category-grid .video-card {
-                flex: 0 0 150px;
-            }
-
-            .category-grid .video-card img {
-                height: 225px;
-            }
-
-            .category-grid .video-card .content {
-                height: 70px;
-            }
-
-            .category-grid .video-card .content h3 {
-                font-size: 0.875rem;
-                min-height: 40px;
-                max-height: 40px;
-            }
-
-            .category-grid .video-card .content p {
-                min-height: 16px;
-            }
-
-            .custom-featured-section {
+            .video-feature-section {
                 height: 40vh;
             }
 
-            .custom-featured-overlay {
-                padding: 1rem;
-            }
-
-            .custom-featured-overlay h2 {
+            .video-overlay h2 {
                 font-size: 1.25rem;
+                max-width: 100%;
             }
 
-            .custom-featured-overlay p {
-                font-size: 0.75rem;
-                -webkit-line-clamp: 2;
+            .custom-featured-overlay {
+                align-items: center;
             }
+        }
 
-            .custom-featured-overlay .watch-btn {
-                padding: 0.5rem 1rem;
-                font-size: 0.75rem;
+        @media (min-width: 641px) {
+            .book .video-card {
+                flex: 0 0 calc(33.333% - 1rem);
             }
         }
 
@@ -803,7 +788,7 @@
             }
 
             #video-list {
-                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+                grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
             }
 
             .category-grid .video-card {
@@ -813,16 +798,6 @@
             .video-feature-section {
                 height: 50vh;
             }
-
-            .video-overlay h2 {
-                font-size: 1.5rem;
-                max-width: 60%;
-            }
-
-            .video-overlay .watch-btn {
-                padding: 0.6rem 1.2rem;
-                font-size: 0.875rem;
-            }
         }
     </style>
 </head>
@@ -830,7 +805,6 @@
     <div id="welcome-alert" class="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50">
         <div class="bg-gray-800 p-6 rounded-lg max-w-md mx-4 shadow-lg">
             <h3 class="text-xl font-bold text-white mb-4">🎉 Chào mừng đến với PHIM N+!</h3>
-                
             <p class="text-gray-300 mb-2">
                 Trang web này mình tự làm để bổ sung vào CV nên có thể còn vài lỗi nhỏ, mong các bạn thông cảm. Do sử dụng service yếu nên web chỉ dùng nội bộ với người quen ĐỪNG SHARE LINH TINH NHÓ.
             </p>
@@ -848,7 +822,7 @@
 
     <div class="container mx-auto px-4 py-4">
         <header class="mb-4 flex justify-between items-center">
-            <a href="index.html" class="text-3xl font-bold text-white">PHIM N+</a>
+            <a href="index.html" class="text-3xl font-bold text-white">CoInPhIm</a>
             <a href="filter.html" class="filter-btn">Bộ lọc & Tìm kiếm</a>
         </header>
 
@@ -858,8 +832,9 @@
                     <div id="carousel-images" class="relative w-full h-full overflow-hidden"></div>
                     <div class="featured-overlay">
                         <h2 id="featured-title" class="text-2xl font-bold text-white mb-2"></h2>
-                        <p id="featured-episodes" class="text-gray-300 mb-4"></p>
-                        <a id="featured-watch-btn" href="" class="watch-btn">Xem ngay</a>
+                        <p id="featured-episodes" class="text-gray-300 mb-2"></p>
+                        <p id="featured-description" class="text-gray-300 mb-4 text-sm line-clamp-3"></p>
+                        <a id="featured-watch-btn" href="" class="play-btn"></a>
                     </div>
                     <button id="prev-slide" class="absolute left-4 top-1/2 transform -translate-y-1/2 bg-dark-600 bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-75 transition z-20">
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -883,7 +858,7 @@
             </div>
         </div>
 
-        <div id="recommended-video-section" class="video-feature-section">
+        <div id="recommended-video-section" class="video-feature-section latiohac">
             <div class="relative w-full h-full">
                 <iframe src="https://dp3011105.github.io/DataVideo/index2"
                         frameborder="0"
@@ -891,7 +866,7 @@
                         allowfullscreen>
                 </iframe>
                 <div class="video-overlay">
-                    <h2 id="recommended-video-title">La Tiểu Hắc Chiến Ký  - Sắp có phần 2 rồi xem phần 1 lấy cảm xúc nào </h2>
+                    <h2 id="recommended-video-title">La Tiểu Hắc Chiến Ký - Sắp có phần 2 rồi xem phần 1 lấy cảm xúc nào</h2>
                     <a href="https://moloz.blogtool.net/playlist/6533595002ea13250ded197a/master.m3u8" 
                        class="watch-btn" data-title="La Tiểu Hắc Chiến Ký">Xem ngay</a>
                 </div>
@@ -899,15 +874,15 @@
         </div>
 
         <div id="korean-movies-section" class="category-section">
-            <h2 class="text-xl font-bold text-white mb-4">Phim Hàn Quốc nè Annyeong haseyo" (안녕하세요)!</h2>
+            <h2 class="text-xl font-bold text-white mb-4">Phim Hàn Quốc nè Annyeong haseyo (안녕하세요)!</h2>
             <div class="relative">
-                <button class="slider-nav prev" onclick="scrollSlider('korean-movies-grid', -320)">
+                <button class="slider-nav prev" onclick="scrollSlider('korean-movies-grid', -360)">
                     <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
                     </svg>
                 </button>
-                <div id="korean-movies-grid" class="book-slider"></div>
-                <button class="slider-nav next" onclick="scrollSlider('korean-movies-grid', 320)">
+                <div id="korean-movies-grid" class="book-slider book"></div>
+                <button class="slider-nav next" onclick="scrollSlider('korean-movies-grid', 360)">
                     <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
                     </svg>
@@ -915,7 +890,8 @@
             </div>
         </div>
 
-        <div id="recommended-video-section" class="video-feature-section">
+       
+         <div id="recommended-video-section" class="video-feature-section latiohac">
             <div class="relative w-full h-full">
                 <iframe src="https://dp3011105.github.io/DataVideo/"
                         frameborder="0"
@@ -925,7 +901,7 @@
                 <div class="video-overlay">
                     <h2 id="recommended-video-title">Superman - Phim Đỉnh Lắm Luôn Bấm Xem Ngay Đi</h2>
                     <a href="https://s6.kkphimplayer6.com/20250718/SGRrkMdW/index.m3u8" 
-                       class="watch-btn" data-title="Superman">Xem ngay</a>
+                       class="watch-btn" data-title="La Tiểu Hắc Chiến Ký">Xem ngay</a>
                 </div>
             </div>
         </div>
@@ -933,13 +909,13 @@
         <div id="recommended-movies-section" class="category-section">
             <h2 class="text-xl font-bold text-white mb-4">Anime tui mò được</h2>
             <div class="relative">
-                <button class="slider-nav prev" onclick="scrollSlider('recommended-movies-grid', -320)">
+                <button class="slider-nav prev" onclick="scrollSlider('recommended-movies-grid', -360)">
                     <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
                     </svg>
                 </button>
-                <div id="recommended-movies-grid" class="book-slider"></div>
-                <button class="slider-nav next" onclick="scrollSlider('recommended-movies-grid', 320)">
+                <div id="recommended-movies-grid" class="book-slider book"></div>
+                <button class="slider-nav next" onclick="scrollSlider('recommended-movies-grid', 360)">
                     <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
                     </svg>
@@ -947,31 +923,14 @@
             </div>
         </div>
 
-        <!-- <div id="upcoming-movies-section" class="category-section">
-            <h2 class="text-xl font-bold text-white mb-4">Phim Sắp Ra Mắt</h2>
-            <div class="relative">
-                <button class="slider-nav prev" onclick="scrollSlider('upcoming-movies-grid', -200)">
-                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
-                    </svg>
-                </button>
-                <div id="upcoming-movies-grid" class="category-grid"></div>
-                <button class="slider-nav next" onclick="scrollSlider('upcoming-movies-grid', 200)">
-                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-                    </svg>
-                </button>
-            </div>
-        </div> -->
-
         <div id="custom-featured-section" class="custom-featured-section">
-            <h2 class="text-xl font-bold text-white mb-4">Phim hoạt hình siêu đỉnh cao luôn </h2>
+            <h2 class="text-xl font-bold text-white mb-4">Phim hoạt hình siêu đỉnh cao luôn</h2>
             <div id="custom-carousel" class="relative w-full h-full">
                 <div id="custom-carousel-images" class="relative w-full h-full overflow-hidden"></div>
                 <div class="custom-featured-overlay">
                     <h2 id="custom-featured-title" class="text-2xl font-bold text-white mb-2"></h2>
                     <p id="custom-featured-description" class="text-gray-300 mb-4"></p>
-                    <a id="custom-featured-watch-btn" href="" class="watch-btn">Xem</a>
+                    <a id="custom-featured-watch-btn" href="" class="watch-btn">Xem ngay</a>
                 </div>
                 <button id="custom-prev-slide" class="absolute left-4 top-1/2 transform -translate-y-1/2 bg-dark-600 bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-75 transition z-20">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -1023,12 +982,12 @@
                 }
                 return null;
             } catch (e) {
-                console.error('Error parsing video title:', e);
+                console.error('Lỗi phân tích tiêu đề video:', e);
                 return null;
             }
         }
 
-        function createVideoCard(vid, index, isBookSlider = false, position = 'left') {
+        function createVideoCard(vid, index, isBookSlider = false) {
             const videoCard = document.createElement("div");
             videoCard.className = "video-card";
             videoCard.style.setProperty('--index', index);
@@ -1037,16 +996,29 @@
             const thumbnail = vid.anh || 'img/placeholder.jpg';
             const categories = Array.isArray(vid.boloc) ? vid.boloc.join(", ") : 'Không có thể loại';
             const videoId = vid.tap?.[0]?.video || '';
+            const description = vid.moTa || 'Không có mô tả';
 
-            videoCard.innerHTML = `
-                <a href="${videoId}" data-title="${title}" class="${isBookSlider ? '' : 'w-full h-full'} object-cover">
-                    <img src="${thumbnail}" alt="${title}" class="${isBookSlider ? '' : 'w-full h-full'} object-cover" onerror="this.src='img/placeholder.jpg'">
-                </a>
-                <div class="content">
-                    <h3>${title}</h3>
-                    <p>${categories}</p>
-                </div>
-            `;
+            if (isBookSlider) {
+                videoCard.innerHTML = `
+                    <a href="${videoId}" data-title="${title}" class="flex w-full h-full">
+                        <div class="content">
+                            <h3>${title}</h3>
+                            <p>${description}</p>
+                        </div>
+                        <img src="${thumbnail}" alt="${title}" class="object-cover" onerror="this.src='img/placeholder.jpg'">
+                    </a>
+                `;
+            } else {
+                videoCard.innerHTML = `
+                    <a href="${videoId}" data-title="${title}" class="w-full h-full object-cover">
+                        <img src="${thumbnail}" alt="${title}" class="w-full h-full object-cover" onerror="this.src='img/placeholder.jpg'">
+                    </a>
+                    <div class="content">
+                        <h3>${title}</h3>
+                        <p>${categories}</p>
+                    </div>
+                `;
+            }
 
             return videoCard;
         }
@@ -1230,7 +1202,8 @@
                 pagination.appendChild(btn);
             };
 
-            const Prediction = Math.max(1, currentPage - Math.floor(maxPagesToShow / 2));
+            const maxPagesToShow = 5;
+            let startPage = Math.max(1, currentPage - Math.floor(maxPagesToShow / 2));
             let endPage = Math.min(totalPages, startPage + maxPagesToShow - 1);
 
             if (endPage - startPage + 1 < maxPagesToShow) {
@@ -1258,6 +1231,7 @@
                     const carouselIndicators = document.getElementById("carousel-indicators");
                     const featuredTitle = document.getElementById("featured-title");
                     const featuredEpisodes = document.getElementById("featured-episodes");
+                    const featuredDescription = document.getElementById("featured-description");
                     const featuredWatchBtn = document.getElementById("featured-watch-btn");
                     const prevButton = document.getElementById("prev-slide");
                     const nextButton = document.getElementById("next-slide");
@@ -1269,6 +1243,7 @@
                     if (!slides || slides.length === 0) {
                         featuredTitle.textContent = "Phim nổi bật";
                         featuredEpisodes.textContent = "";
+                        featuredDescription.textContent = "";
                         return;
                     }
 
@@ -1295,6 +1270,7 @@
                         } else {
                             featuredEpisodes.textContent = "";
                         }
+                        featuredDescription.textContent = slide.moTa || 'Không có mô tả';
                         featuredWatchBtn.href = slide.tap?.[0]?.video || '';
                         featuredWatchBtn.setAttribute('data-title', slide.TieuDe || 'Phim nổi bật');
                     }
@@ -1339,6 +1315,7 @@
                     console.error("Lỗi tải phim nổi bật:", error);
                     document.getElementById("featured-title").textContent = "Phim nổi bật";
                     document.getElementById("featured-episodes").textContent = "";
+                    document.getElementById("featured-description").textContent = "";
                 });
         }
 
@@ -1398,30 +1375,10 @@
                     }
 
                     grid.innerHTML = '';
-                    if (gridId === 'korean-movies-grid' || gridId === 'recommended-movies-grid') {
-                        for (let i = 0; i < movies.length; i += 2) {
-                            const book = document.createElement("div");
-                            book.className = "book";
-                            const movie1 = movies[i];
-                            const movie2 = movies[i + 1];
-
-                            if (movie1) {
-                                const videoCard1 = createVideoCard(movie1, i, true, 'left');
-                                book.appendChild(videoCard1);
-                            }
-                            if (movie2) {
-                                const videoCard2 = createVideoCard(movie2, i + 1, true, 'right');
-                                book.appendChild(videoCard2);
-                            }
-
-                            grid.appendChild(book);
-                        }
-                    } else {
-                        movies.forEach((movie, index) => {
-                            const videoCard = createVideoCard(movie, index, false);
-                            grid.appendChild(videoCard);
-                        });
-                    }
+                    movies.forEach((movie, index) => {
+                        const videoCard = createVideoCard(movie, index, gridId === 'korean-movies-grid' || gridId === 'recommended-movies-grid');
+                        grid.appendChild(videoCard);
+                    });
                 })
                 .catch(error => {
                     console.error(`Lỗi tải ${jsonFile}:`, error);
@@ -1472,7 +1429,7 @@
                     function updateOverlay(index) {
                         const slide = slides[index];
                         featuredTitle.textContent = slide.TieuDe || 'Phim';
-                        featuredDescription.textContent = slide.moTa || '';
+                        featuredDescription.textContent = slide.moTa || 'Không có mô tả';
                         featuredWatchBtn.href = slide.tap?.[0]?.video || '';
                         featuredWatchBtn.setAttribute('data-title', slide.TieuDe || 'Phim');
                     }
@@ -1520,7 +1477,6 @@
         }
 
         document.addEventListener("DOMContentLoaded", () => {
-            // Handle m3u8 link clicks
             document.body.addEventListener('click', (e) => {
                 const target = e.target.closest('a[href$=".m3u8"]');
                 if (target) {
@@ -1557,12 +1513,12 @@
             });
 
             document.addEventListener("keydown", (e) => {
-                const grids = document.querySelectorAll(".category-grid");
+                const grids = document.querySelectorAll(".category-grid, .book-slider");
                 grids.forEach(grid => {
                     if (e.key === "ArrowLeft") {
-                        scrollSlider(grid.id, -200);
+                        scrollSlider(grid.id, -360);
                     } else if (e.key === "ArrowRight") {
-                        scrollSlider(grid.id, 200);
+                        scrollSlider(grid.id, 360);
                     }
                 });
             });
