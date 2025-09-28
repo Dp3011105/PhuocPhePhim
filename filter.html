@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bộ Lọc Phim | PHIM N+</title>
+    <title>Bộ Lọc Phim | CoInPhIm</title>
     <link rel="icon" type="image/png" href="img/image2-fotor-20250813113121.png">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -52,27 +52,27 @@
             margin-bottom: 2rem;
         }
 
-        .filter-btn {
-            transition: all 0.3s ease;
-            background-color: transparent !important;
+        .filter-select {
+            background-color: transparent;
             color: #e5e5e5;
-            border: none !important;
+            border: 1px solid #333;
             border-radius: 0.375rem;
             padding: 0.6rem 1.2rem;
             font-weight: 500;
-            white-space: nowrap;
             cursor: pointer;
+            transition: all 0.3s ease;
+            min-width: 180px;
         }
 
-        .filter-btn:hover {
-            color: #fff;
-            transform: translateY(-2px);
-            background: rgba(229, 9, 20, 0.3) !important;
+        .filter-select:focus {
+            outline: none;
+            border-color: #e50914;
+            box-shadow: 0 0 8px rgba(229, 9, 20, 0.5);
         }
 
-        .filter-btn.active {
-            color: #e50914;
-            background: rgba(229, 9, 20, 0.4) !important;
+        .filter-select option {
+            background-color: #1a1a1a;
+            color: #e5e5e5;
         }
 
         .search-input {
@@ -228,11 +228,10 @@
                 gap: 0.5rem;
             }
 
-            .filter-btn {
+            .filter-select {
                 padding: 0.5rem 1rem;
                 font-size: 0.875rem;
                 width: 100%;
-                text-align: center;
             }
 
             .search-input {
@@ -288,7 +287,7 @@
                 gap: 0.5rem;
             }
 
-            .filter-btn {
+            .filter-select {
                 padding: 0.5rem 1rem;
                 font-size: 0.875rem;
             }
@@ -326,14 +325,15 @@
 <body class="bg-dark-900 text-gray-200">
     <div class="container">
         <div class="header">
-            <a href="index.html" class="text-2xl font-bold text-white">PHIM N+</a>
+            <a href="index.html" class="text-2xl font-bold text-white">CoInPhIm</a>
             <a href="index.html" class="back-btn">Quay lại Trang chủ</a>
         </div>
         <div class="filter-container" id="filter-container">
             <input type="text" id="search-input" class="search-input" placeholder="Tìm kiếm phim theo tiêu đề...">
-            <button class="filter-btn active" data-filter="all">Tất cả</button>
-            <!-- Filter buttons will be dynamically added here -->
-            <a href="https://discord.gg/uqNA78fs9G" target="_blank" class="filter-btn bg-purple-600 hover:bg-purple-700 text-white">Discord</a>
+            <select id="filter-select" class="filter-select">
+                <!-- Filter options will be dynamically added here -->
+            </select>
+            <a href="https://discord.gg/uqNA78fs9G" target="_blank" class="filter-btn bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded-md">Discord</a>
         </div>
         <div id="video-list"></div>
         <div id="pagination" class="pagination"></div>
@@ -456,7 +456,7 @@
                         e.preventDefault();
                         e.stopPropagation();
                         currentPage = page;
-                        const filter = document.querySelector(".filter-btn.active")?.dataset.filter || 'all';
+                        const filter = document.getElementById("filter-select").value || 'all';
                         const searchQuery = document.getElementById("search-input").value || '';
                         displayVideos(filter, currentPage, searchQuery);
                     });
@@ -477,48 +477,31 @@
             if (currentPage < totalPages) createPageButton(currentPage + 1, "Sau");
         }
 
-        function createFilterButtons(filters) {
-            const filterContainer = document.getElementById("filter-container");
-            if (!filterContainer) return;
+        function createFilterDropdown(filters) {
+            const filterSelect = document.getElementById("filter-select");
+            if (!filterSelect) return;
 
-            // Remove existing filter buttons except search input, "all" button, and Discord link
-            const staticElements = filterContainer.querySelectorAll('input, .filter-btn[data-filter="all"], .filter-btn.bg-purple-600');
-            filterContainer.innerHTML = '';
-            staticElements.forEach(el => filterContainer.appendChild(el));
+            filterSelect.innerHTML = '';
 
-            // Add dynamic filter buttons
             filters.forEach(filter => {
-                if (filter !== 'all') { // Skip 'all' as it's already included
-                    const btn = document.createElement("button");
-                    btn.className = "filter-btn";
-                    btn.dataset.filter = filter;
-                    btn.textContent = filter;
-                    filterContainer.insertBefore(btn, filterContainer.querySelector('.filter-btn.bg-purple-600'));
-                }
+                const option = document.createElement("option");
+                option.value = filter;
+                option.textContent = filter === 'all' ? 'Tất cả' : filter;
+                filterSelect.appendChild(option);
             });
 
-            // Re-attach event listeners to all filter buttons
-            document.querySelectorAll(".filter-btn").forEach(btn => {
-                btn.addEventListener("click", () => {
-                    document.querySelectorAll(".filter-btn").forEach(b => b.classList.remove("active"));
-                    btn.classList.add("active");
-                    const filter = btn.dataset.filter;
-                    const searchQuery = document.getElementById("search-input").value;
-                    currentPage = 1;
-                    displayVideos(filter, currentPage, searchQuery);
-                });
-            });
-
-            // Set active filter button based on URL parameter
+            // Set active filter based on URL parameter
             const urlParams = new URLSearchParams(window.location.search);
             const filter = urlParams.get('filter') || 'all';
-            const activeFilterBtn = document.querySelector(`.filter-btn[data-filter="${filter}"]`);
-            if (activeFilterBtn) {
-                document.querySelectorAll(".filter-btn").forEach(b => b.classList.remove("active"));
-                activeFilterBtn.classList.add("active");
-            } else {
-                document.querySelector('.filter-btn[data-filter="all"]').classList.add("active");
-            }
+            filterSelect.value = filter;
+
+            // Add change event listener
+            filterSelect.addEventListener("change", () => {
+                const selectedFilter = filterSelect.value;
+                const searchQuery = document.getElementById("search-input").value;
+                currentPage = 1;
+                displayVideos(selectedFilter, currentPage, searchQuery);
+            });
         }
 
         document.addEventListener("DOMContentLoaded", () => {
@@ -531,10 +514,10 @@
 
             // Handle search input
             document.getElementById("search-input").addEventListener("input", (e) => {
-                const filter = document.querySelector(".filter-btn.active")?.dataset.filter || 'all';
+                const selectedFilter = document.getElementById("filter-select").value || 'all';
                 const searchQuery = e.target.value;
                 currentPage = 1;
-                displayVideos(filter, currentPage, searchQuery);
+                displayVideos(selectedFilter, currentPage, searchQuery);
             });
 
             // Load videos from phim.json
@@ -568,8 +551,8 @@
                         }
                     });
 
-                    // Create filter buttons
-                    createFilterButtons([...filters]);
+                    // Create filter dropdown
+                    createFilterDropdown([...filters]);
 
                     // Display videos with initial filter and search
                     displayVideos(filter, 1, search);
