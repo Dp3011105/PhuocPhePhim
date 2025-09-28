@@ -102,7 +102,7 @@
             flex-wrap: wrap;
         }
         
-        .ambient-btn, .skip-intro-btn, .next-episode-btn, .subtitle-toggle, .thuyet-minh-btn, .long-tieng-btn, .toggle-controls {
+        .ambient-btn, .skip-intro-btn, .next-episode-btn, .subtitle-toggle, .thuyet-minh-btn, .long-tieng-btn {
             background-color: rgba(229, 9, 20, 0.9);
             color: white;
             padding: 0.4rem 0.8rem;
@@ -117,7 +117,7 @@
             gap: 0.25rem;
         }
         
-        .ambient-btn:hover, .skip-intro-btn:hover, .next-episode-btn:hover, .subtitle-toggle:hover, .thuyet-minh-btn:hover, .long-tieng-btn:hover, .toggle-controls:hover {
+        .ambient-btn:hover, .skip-intro-btn:hover, .next-episode-btn:hover, .subtitle-toggle:hover, .thuyet-minh-btn:hover, .long-tieng-btn:hover {
             background-color: #e50914;
             transform: scale(1.05);
             border-color: #e50914;
@@ -198,6 +198,21 @@
             box-shadow: 0 4px 6px -1px rgba(229, 9, 20, 0.3);
         }
 
+        .category-btn {
+            background-color: #2a2a2a;
+            color: #e5e5e5;
+            padding: 0.5rem 1rem;
+            border-radius: 0.25rem;
+            transition: all 0.2s ease;
+            margin: 0.25rem;
+            cursor: pointer;
+        }
+
+        .category-btn:hover {
+            background-color: #333;
+            transform: scale(1.05);
+        }
+
         .search-input {
             background-color: transparent;
             color: #e5e5e5;
@@ -219,7 +234,6 @@
             box-shadow: 0 0 5px rgba(229, 9, 20, 0.5);
         }
 
-        /* Chat box styles */
         .chat-container {
             background-color: rgba(18, 18, 18, 0.95);
             border: 1px solid #333;
@@ -373,12 +387,12 @@
                 padding-bottom: 80%;
             }
 
-            .ambient-btn, .skip-intro-btn, .next-episode-btn, .subtitle-toggle, .thuyet-minh-btn, .long-tieng-btn, .toggle-controls {
+            .ambient-btn, .skip-intro-btn, .next-episode-btn, .subtitle-toggle, .thuyet-minh-btn, .long-tieng-btn {
                 padding: 0.3rem 0.6rem;
                 font-size: 0.7rem;
             }
 
-            .filter-btn {
+            .filter-btn, .category-btn {
                 padding: 0.4rem 0.8rem;
                 font-size: 0.75rem;
                 margin-bottom: 0.25rem;
@@ -442,9 +456,9 @@
                 <button id="subtitle-toggle" class="subtitle-toggle hidden">Tắt phụ đề</button>
                 <button id="thuyet-minh-btn" class="thuyet-minh-btn hidden">Phát Thuyết Minh</button>
                 <button id="long-tieng-btn" class="thuyet-minh-btn hidden">Phát Lồng Tiếng</button>
-                <button id="toggle-controls" class="toggle-controls">Ẩn</button>
             </div>
             <h2 id="main-video-title" class="text-xl font-semibold text-white mt-4"></h2>
+            <div id="category-list" class="flex flex-wrap gap-2 mt-2"></div>
             <div id="episode-list" class="episode-list hidden"></div>
         </div>
 
@@ -758,6 +772,24 @@
             }
 
             document.getElementById("main-video-title").textContent = title;
+
+            // Hiển thị danh sách thể loại
+            const categoryList = document.getElementById("category-list");
+            categoryList.innerHTML = '';
+            const categories = Array.isArray(videoData.boloc) ? videoData.boloc : [];
+            if (videoData.ThuyetMinh && videoData.ThuyetMinh.length > 0) categories.push("Thuyết Minh");
+            if (videoData.LongTieng && videoData.LongTieng.length > 0) categories.push("Lồng Tiếng");
+
+            categories.forEach(category => {
+                const btn = document.createElement('button');
+                btn.className = 'category-btn';
+                btn.textContent = category;
+                btn.addEventListener('click', () => {
+                    window.location.href = `filter.html?filter=${encodeURIComponent(category)}`;
+                });
+                categoryList.appendChild(btn);
+            });
+
             const episodeList = document.getElementById("episode-list");
             episodeList.classList.toggle('hidden', !videoData.tap || videoData.tap.length <= 1);
             episodeList.innerHTML = '';
@@ -940,41 +972,15 @@
             });
         }
 
-        // Hàm ẩn tất cả các thành phần trừ nút "Hiện"
-        function hideAllControls() {
-            document.querySelectorAll('#video-controls button:not(#toggle-controls)').forEach(btn => {
-                btn.style.display = 'none';
-            });
-            document.getElementById('episode-list').style.display = 'none';
-            document.getElementById('chat-container').style.display = 'none';
-            document.getElementById('site-header').style.display = 'none';
-            document.getElementById('filter-controls').style.display = 'none';
-            document.getElementById('main-video-title').style.display = 'none';
-            document.getElementById('toggle-controls').textContent = 'Hiện';
-        }
-
-        // Hàm hiện tất cả các thành phần
-        function showAllControls() {
-            document.querySelectorAll('#video-controls button:not(#toggle-controls)').forEach(btn => {
-                btn.style.display = '';
-            });
-            document.getElementById('episode-list').style.display = '';
-            document.getElementById('chat-container').style.display = '';
-            document.getElementById('site-header').style.display = '';
-            document.getElementById('filter-controls').style.display = '';
-            document.getElementById('main-video-title').style.display = '';
-            document.getElementById('toggle-controls').textContent = 'Ẩn';
-        }
-
         document.addEventListener("DOMContentLoaded", () => {
             document.querySelectorAll(".filter-btn").forEach(btn => {
                 btn.addEventListener("click", () => {
-                    window.location.href = `index.html?filter=${encodeURIComponent(btn.dataset.filter)}`;
+                    window.location.href = `filter.html?filter=${encodeURIComponent(btn.dataset.filter)}`;
                 });
             });
 
             document.getElementById("search-input").addEventListener("input", (e) => {
-                window.location.href = `index.html?search=${encodeURIComponent(e.target.value)}`;
+                window.location.href = `filter.html?search=${encodeURIComponent(e.target.value)}`;
             });
 
             const urlParams = new URLSearchParams(window.location.search);
@@ -994,11 +1000,6 @@
                     if (videoData) {
                         const episodeIndex = videoData.tap.findIndex(ep => cleanVideoUrl(ep.video) === cleanVideoUrl(videoId));
                         playVideo(videoData, decodeURIComponent(title), videoId, episodeIndex);
-
-                        // Tự động bật chế độ điện ảnh và ẩn mọi thứ khi tải trang
-                        const ambientBtn = document.getElementById('ambient-btn');
-                        ambientBtn.click();
-                        hideAllControls();
                     } else {
                         console.error('Không tìm thấy video phù hợp trong phim.json');
                     }
@@ -1006,16 +1007,6 @@
                 .catch(error => {
                     console.error("Lỗi tải danh sách video:", error);
                 });
-
-            // Sự kiện cho nút ẩn/hiện
-            const toggleControlsBtn = document.getElementById('toggle-controls');
-            toggleControlsBtn.addEventListener('click', () => {
-                if (toggleControlsBtn.textContent === 'Ẩn') {
-                    hideAllControls();
-                } else {
-                    showAllControls();
-                }
-            });
         });
     </script>
 </body>
