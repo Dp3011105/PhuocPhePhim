@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trang Chủ | CoinPhim</title>
+    <title>Trang Chủ | CoInPhIm</title>
     <link rel="icon" type="image/png" href="img/image2-fotor-20250813113121.png">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -34,6 +34,70 @@
             margin: 0;
             overflow-x: hidden;
             font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        }
+
+        /* Welcome Screen */
+        .welcome-screen {
+            position: fixed;
+            inset: 0;
+            background: #0a0a0a;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            z-index: 100;
+            transition: opacity 0.5s ease;
+        }
+
+        .welcome-screen.hidden {
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        .welcome-logo {
+            font-size: 4rem;
+            font-weight: 900;
+            color: #e5e5e5;
+            text-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+            margin-bottom: 2rem;
+        }
+
+        .welcome-logo.loading {
+            animation: textGlow 2s ease-in-out forwards;
+        }
+
+        .welcome-btn {
+            background: #ffffff;
+            color: #0a0a0a;
+            padding: 0.75rem 2rem;
+            border-radius: 0.5rem;
+            font-weight: bold;
+            font-size: 1.25rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(255, 255, 255, 0.3);
+        }
+
+        .welcome-btn:hover {
+            background: #e5e5e5;
+            transform: scale(1.05);
+        }
+
+        .welcome-message {
+            max-width: 600px;
+            margin: 1.5rem auto;
+            text-align: center;
+            color: #ffffff;
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+
+        .main-content {
+            display: none;
+        }
+
+        .main-content.active {
+            display: block;
         }
 
         .filter-btn {
@@ -72,6 +136,7 @@
             transform: translateY(-2px);
         }
 
+        /* Featured Section */
         .featured-section {
             position: relative;
             width: 100vw;
@@ -102,12 +167,44 @@
             bottom: 0;
             left: 0;
             width: 100%;
-            padding: 2rem;
+            padding: 1.5rem;
             background: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent);
             display: flex;
-            flex-direction: column;
-            justify-content: flex-end;
-            align-items: flex-start;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+
+        .featured-overlay .content-left {
+            flex: 1;
+            max-width: 60%;
+        }
+
+        .featured-overlay h2 {
+            font-size: 1.75rem;
+            font-weight: 700;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+            line-clamp: 2;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .featured-overlay p {
+            font-size: 0.875rem;
+            color: #e5e5e5;
+            margin-top: 0.5rem;
+            line-clamp: 3;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+        }
+
+        .featured-overlay .content-right {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
         }
 
         .watch-btn {
@@ -159,24 +256,7 @@
             background: rgba(255, 255, 255, 0.3);
         }
 
-        .carousel-indicator {
-            width: 10px;
-            height: 10px;
-            background-color: rgba(255, 255, 255, 0.4);
-            border-radius: 50%;
-            cursor: pointer;
-            transition: background-color 0.3s ease, transform 0.3s ease;
-        }
-
-        .carousel-indicator:hover {
-            transform: scale(1.2);
-        }
-
-        .carousel-indicator.active {
-            background-color: #e50914;
-            transform: scale(1.2);
-        }
-
+        /* Other styles remain unchanged */
         .category-section {
             margin-bottom: 2rem;
             position: relative;
@@ -581,9 +661,78 @@
             color: #fff;
         }
 
-        @keyframes scroll {
-            0% { transform: translateX(0); }
-            100% { transform: translateX(-50%); }
+        .footer {
+            background-color: #0a0a0a;
+            color: #e5e5e5;
+            width: 100%;
+            padding: 1.5rem 1rem;
+            margin-top: 2rem;
+            border-top: 1px solid #333;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .footer-section {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .footer a {
+            color: #e50914;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .footer a:hover {
+            color: #c10812;
+        }
+
+        .footer p {
+            font-size: 0.875rem;
+            margin: 0;
+        }
+
+        .footer .links {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+
+        .footer .disclaimer {
+            font-size: 0.75rem;
+            color: #999;
+        }
+
+        @media (max-width: 640px) {
+            .footer {
+                padding: 1rem 0.5rem;
+            }
+
+            .footer-content {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+
+            .footer p {
+                font-size: 0.75rem;
+            }
+
+            .footer .disclaimer {
+                font-size: 0.65rem;
+            }
+
+            .footer .links {
+                flex-direction: column;
+                align-items: center;
+            }
         }
 
         .custom-featured-section {
@@ -666,14 +815,76 @@
             opacity: 1;
         }
 
+        @keyframes scroll {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+
+        @keyframes textGlow {
+            0% {
+                text-shadow: 0 0 0 rgba(255, 255, 255, 0);
+                color: #e5e5e5;
+            }
+            50% {
+                text-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
+                color: #ffffff;
+            }
+            100% {
+                text-shadow: 0 0 30px rgba(255, 255, 255, 1);
+                color: #ffffff;
+            }
+        }
+
         @keyframes fadeIn {
             from { opacity: 0; transform: translateY(10px); }
             to { opacity: 1; transform: translateY(0); }
         }
 
         @media (max-width: 640px) {
+            .welcome-logo {
+                font-size: 2.5rem;
+            }
+
+            .welcome-btn {
+                padding: 0.5rem 1.5rem;
+                font-size: 1rem;
+            }
+
+            .welcome-message {
+                font-size: 0.875rem;
+                padding: 0 1rem;
+            }
+
             .featured-section {
                 height: 45vh;
+            }
+
+            .featured-overlay {
+                padding: 1rem;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .featured-overlay .content-left {
+                max-width: 100%;
+                margin-bottom: 1rem;
+            }
+
+            .featured-overlay h2 {
+                font-size: 1.25rem;
+                max-width: 100%;
+            }
+
+            .featured-overlay p {
+                font-size: 0.75rem;
+                max-width: 100%;
+                -webkit-line-clamp: 2;
+            }
+
+            .featured-overlay .content-right {
+                flex-direction: row;
+                gap: 0.5rem;
             }
 
             .watch-btn {
@@ -783,8 +994,8 @@
         }
 
         @media (min-width: 641px) and (max-width: 1024px) {
-            .featured-section {
-                height: 55vh;
+            .welcome-logo {
+                font-size: 3.5rem;
             }
 
             #video-list {
@@ -802,25 +1013,24 @@
     </style>
 </head>
 <body class="font-sans bg-dark-900 text-gray-200">
-    <div id="welcome-alert" class="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50">
-        <div class="bg-gray-800 p-6 rounded-lg max-w-md mx-4 shadow-lg">
-            <h3 class="text-xl font-bold text-white mb-4">🎉 Chào mừng đến với CoinPhim!</h3>
-            <p class="text-gray-300 mb-2">
+    <div id="welcome-screen" class="welcome-screen">
+        <h1 class="welcome-logo">CoInPhIm</h1>
+        <button id="watch-btn" class="welcome-btn">Xem Phim</button>
+        <div id="welcome-message" class="welcome-message">
+            <p class="mb-2">🎉 Chào mừng đến với PHIM N+!</p>
+            <p class="mb-2">
                 Trang web này mình tự làm để bổ sung vào CV nên có thể còn vài lỗi nhỏ, mong các bạn thông cảm. Do sử dụng service yếu nên web chỉ dùng nội bộ với người quen ĐỪNG SHARE LINH TINH NHÓ.
             </p>
-            <p class="text-gray-300 mb-2">
+            <p class="mb-2">
                 ⚠️ Nếu bạn là cán bộ Công An hoặc An Ninh Mạng THUỘC CƠ QUAN NHÀ NƯỚC: đây không phải là web phim lậu. Nguồn video được nhúng từ các trang khác. Nếu cần danh sách link để kiểm soát/chặn, mình sẵn sàng cung cấp.
             </p>
-            <p class="text-gray-300 mb-4">
+            <p class="mb-2">
                 Trang không chứa quảng cáo và hoàn toàn phi lợi nhuận, chỉ dành cho bạn bè và người thân sử dụng.
             </p>
-            <button id="close-welcome-alert" class="w-full bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded transition">
-                OK đọc rồi hoặc đếch quan tâm
-            </button>
         </div>
     </div>
 
-    <div class="container mx-auto px-4 py-4">
+    <div class="container mx-auto px-4 py-4 main-content">
         <header class="mb-4 flex justify-between items-center">
             <a href="index.html" class="text-3xl font-bold text-white">CoInPhIm</a>
             <a href="filter.html" class="filter-btn">Bộ lọc & Tìm kiếm</a>
@@ -831,10 +1041,15 @@
                 <div id="carousel" class="relative w-full h-full">
                     <div id="carousel-images" class="relative w-full h-full overflow-hidden"></div>
                     <div class="featured-overlay">
-                        <h2 id="featured-title" class="text-2xl font-bold text-white mb-2"></h2>
-                        <p id="featured-episodes" class="text-gray-300 mb-2"></p>
-                        <p id="featured-description" class="text-gray-300 mb-4 text-sm line-clamp-3"></p>
-                        <a id="featured-watch-btn" href="" class="play-btn"></a>
+                        <div class="content-left">
+                            <h2 id="featured-title" class="text-2xl font-bold text-white mb-2"></h2>
+                            <p id="featured-episodes" class="text-gray-300 mb-2"></p>
+                            <p id="featured-description" class="text-gray-300 mb-4 text-sm line-clamp-3"></p>
+                        </div>
+                        <div class="content-right">
+                            <a id="featured-watch-btn" href="" class="watch-btn">Xem ngay</a>
+                            <a id="featured-play-btn" href="" class="play-btn"></a>
+                        </div>
                     </div>
                     <button id="prev-slide" class="absolute left-4 top-1/2 transform -translate-y-1/2 bg-dark-600 bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-75 transition z-20">
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -846,7 +1061,6 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
                         </svg>
                     </button>
-                    <div id="carousel-indicators" class="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex gap-2"></div>
                 </div>
             </div>
         </div>
@@ -890,8 +1104,7 @@
             </div>
         </div>
 
-       
-         <div id="recommended-video-section" class="video-feature-section latiohac">
+        <div id="recommended-video-section" class="video-feature-section latiohac">
             <div class="relative w-full h-full">
                 <iframe src="https://dp3011105.github.io/DataVideo/"
                         frameborder="0"
@@ -942,7 +1155,6 @@
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
                     </svg>
                 </button>
-                <div id="custom-carousel-indicators" class="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex gap-2"></div>
             </div>
         </div>
 
@@ -951,6 +1163,34 @@
             <div id="video-list"></div>
             <div id="pagination" class="pagination"></div>
         </div>
+
+        <footer class="footer bg-dark-900 text-gray-200 w-full py-6 px-4">
+            <div class="footer-content max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-6">
+                <div class="footer-section text-center md:text-left">
+                    <h3 class="text-lg font-bold text-white mb-2">CoInPhIm</h3>
+                    <p class="text-sm">Trang web xem phim miễn phí, phi lợi nhuận dành cho bạn bè và người thân. Không quảng cáo, nguồn video nhúng từ các trang hợp pháp.</p>
+                </div>
+                <div class="footer-section text-center md:text-left">
+                    <h4 class="text-md font-semibold text-white mb-2">Liên kết nhanh</h4>
+                    <div class="links flex flex-col md:flex-row gap-4">
+                        <a href="index.html" class="text-netflix-red hover:text-red-700">Trang chủ</a>
+                        <a href="filter.html" class="text-netflix-red hover:text-red-700">Bộ lọc phim</a>
+                        <a href="https://discord.gg/uqNA78fs9G" target="_blank" class="text-netflix-red hover:text-red-700">Discord</a>
+                    </div>
+                </div>
+                <div class="footer-section text-center md:text-left">
+                    <h4 class="text-md font-semibold text-white mb-2">Liên hệ</h4>
+                    <p class="text-sm">Email: <a href="mailto:support@coinphim.com" class="text-netflix-red hover:text-red-700">support@coinphim.com</a></p>
+                    <p class="text-sm">Phản hồi lỗi: <a href="mailto:feedback@coinphim.com" class="text-netflix-red hover:text-red-700">feedback@coinphim.com</a></p>
+                </div>
+                <div class="footer-section text-center md:text-left">
+                    <h4 class="text-md font-semibold text-white mb-2">Thông tin</h4>
+                    <p class="text-sm">Phiên bản: 1.0 | Cập nhật: 28/09/2025</p>
+                    <p class="disclaimer text-xs text-gray-500 mt-2">Trang web không lưu trữ video, chỉ nhúng từ nguồn bên thứ ba. Liên hệ để gỡ bỏ nếu có vấn đề bản quyền.</p>
+                </div>
+            </div>
+            <p class="text-sm text-center mt-6">&copy; 2025 CoInPhIm</p>
+        </footer>
     </div>
 
     <script>
@@ -962,6 +1202,23 @@
         let customFeaturedMovies = [];
         const videosPerPage = 20;
         let currentPage = 1;
+
+        function setCookie(name, value, hours) {
+            const date = new Date();
+            date.setTime(date.getTime() + (hours * 60 * 60 * 1000));
+            const expires = "expires=" + date.toUTCString();
+            document.cookie = name + "=" + value + ";" + expires + ";path=/";
+        }
+
+        function getCookie(name) {
+            const nameEQ = name + "=";
+            const ca = document.cookie.split(';');
+            for(let i=0; i < ca.length; i++) {
+                let c = ca[i].trim();
+                if (c.indexOf(nameEQ) === 0) return c.substring(nameEQ.length, c.length);
+            }
+            return null;
+        }
 
         function getVideoTitle(video) {
             return video.TieuDe && video.TieuDe.trim() !== '' 
@@ -1228,11 +1485,11 @@
                 })
                 .then(data => {
                     const carouselImages = document.getElementById("carousel-images");
-                    const carouselIndicators = document.getElementById("carousel-indicators");
                     const featuredTitle = document.getElementById("featured-title");
                     const featuredEpisodes = document.getElementById("featured-episodes");
                     const featuredDescription = document.getElementById("featured-description");
                     const featuredWatchBtn = document.getElementById("featured-watch-btn");
+                    const featuredPlayBtn = document.getElementById("featured-play-btn");
                     const prevButton = document.getElementById("prev-slide");
                     const nextButton = document.getElementById("next-slide");
 
@@ -1255,13 +1512,6 @@
                         carouselImages.appendChild(img);
                     });
 
-                    slides.forEach((_, index) => {
-                        const indicator = document.createElement("div");
-                        indicator.className = `carousel-indicator ${index === 0 ? 'active' : ''}`;
-                        indicator.addEventListener("click", () => changeSlide(index));
-                        carouselIndicators.appendChild(indicator);
-                    });
-
                     function updateOverlay(index) {
                         const slide = slides[index];
                         featuredTitle.textContent = slide.TieuDe || 'Phim nổi bật';
@@ -1273,18 +1523,17 @@
                         featuredDescription.textContent = slide.moTa || 'Không có mô tả';
                         featuredWatchBtn.href = slide.tap?.[0]?.video || '';
                         featuredWatchBtn.setAttribute('data-title', slide.TieuDe || 'Phim nổi bật');
+                        featuredPlayBtn.href = slide.tap?.[0]?.video || '';
+                        featuredPlayBtn.setAttribute('data-title', slide.TieuDe || 'Phim nổi bật');
                     }
 
                     function changeSlide(newIndex) {
                         const allSlides = document.querySelectorAll(".carousel-slide");
-                        const allIndicators = document.querySelectorAll(".carousel-indicator");
 
                         allSlides[currentIndex].classList.remove("active");
-                        allIndicators[currentIndex].classList.remove("active");
 
                         currentIndex = newIndex;
                         allSlides[currentIndex].classList.add("active");
-                        allIndicators[currentIndex].classList.add("active");
 
                         updateOverlay(currentIndex);
                         clearInterval(intervalId);
@@ -1400,7 +1649,6 @@
                     }
 
                     const carouselImages = document.getElementById("custom-carousel-images");
-                    const carouselIndicators = document.getElementById("custom-carousel-indicators");
                     const featuredTitle = document.getElementById("custom-featured-title");
                     const featuredDescription = document.getElementById("custom-featured-description");
                     const featuredWatchBtn = document.getElementById("custom-featured-watch-btn");
@@ -1419,13 +1667,6 @@
                         carouselImages.appendChild(img);
                     });
 
-                    slides.forEach((_, index) => {
-                        const indicator = document.createElement("div");
-                        indicator.className = `carousel-indicator ${index === 0 ? 'active' : ''}`;
-                        indicator.addEventListener("click", () => changeSlide(index));
-                        carouselIndicators.appendChild(indicator);
-                    });
-
                     function updateOverlay(index) {
                         const slide = slides[index];
                         featuredTitle.textContent = slide.TieuDe || 'Phim';
@@ -1436,14 +1677,11 @@
 
                     function changeSlide(newIndex) {
                         const allSlides = document.querySelectorAll("#custom-carousel-images .carousel-slide");
-                        const allIndicators = document.querySelectorAll("#custom-carousel-indicators .carousel-indicator");
 
                         allSlides[currentIndex].classList.remove("active");
-                        allIndicators[currentIndex].classList.remove("active");
 
                         currentIndex = newIndex;
                         allSlides[currentIndex].classList.add("active");
-                        allIndicators[currentIndex].classList.add("active");
 
                         updateOverlay(currentIndex);
                         clearInterval(intervalId);
@@ -1477,6 +1715,32 @@
         }
 
         document.addEventListener("DOMContentLoaded", () => {
+            // Handle welcome screen
+            const welcomeScreen = document.getElementById("welcome-screen");
+            const watchBtn = document.getElementById("watch-btn");
+            const welcomeMessage = document.getElementById("welcome-message");
+            const welcomeLogo = document.querySelector(".welcome-logo");
+            const mainContent = document.querySelector(".main-content");
+
+            const viewedWelcome = getCookie("viewedWelcome");
+
+            if (viewedWelcome === "true") {
+                welcomeScreen.classList.add("hidden");
+                mainContent.classList.add("active");
+            } else {
+                watchBtn.addEventListener("click", () => {
+                    welcomeLogo.classList.add("loading");
+                    watchBtn.classList.add("hidden");
+                    welcomeMessage.classList.add("hidden");
+                    setCookie("viewedWelcome", "true", 3); // Set cookie to expire in 3 hours
+                    setTimeout(() => {
+                        welcomeScreen.classList.add("hidden");
+                        mainContent.classList.add("active");
+                    }, 2000);
+                });
+            }
+
+            // Load content
             document.body.addEventListener('click', (e) => {
                 const target = e.target.closest('a[href$=".m3u8"]');
                 if (target) {
@@ -1495,10 +1759,6 @@
             loadMovies("BoLoc4.json", "recommended-movies-grid");
             loadMovies("SapRaMat.json", "upcoming-movies-grid");
             loadCustomFeaturedMovies();
-
-            document.getElementById("close-welcome-alert").addEventListener("click", () => {
-                document.getElementById("welcome-alert").classList.add("hidden");
-            });
 
             const urlParams = new URLSearchParams(window.location.search);
             const filter = urlParams.get('filter') || 'all';
